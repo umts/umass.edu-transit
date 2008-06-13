@@ -1,6 +1,0 @@
-task :deploy, :hosts => "transit@webadmin.oit.umass.edu" do
-  @date = Time.now
-  run "mv transit2 transit2-#{@date.year}-#{@date.month}-#{@date.day}-#{@date.hour}-#{@date.min}"
-  run "mkdir transit2"
-  source.checkout("index.html")
-end
