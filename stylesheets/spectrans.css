@@ -1,0 +1,23 @@
+#spec-contacts{
+  border-collapse: collapse;
+  font-size:15px;
+}
+
+#spec-contacts #alternate-header{
+  vertical-align: bottom;
+  height: 40px;
+  font-size:15px;
+}
+
+#sched-full{
+  border-collapse: collapse;
+  width: 340px;
+  font-size:15px;
+}
+
+#sched-reduce{
+  border-collapse: collapse;
+  width: 340px;
+  font-size:15px;
+}
+
