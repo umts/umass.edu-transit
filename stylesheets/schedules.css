@@ -20,6 +20,7 @@
 }
 .scheduleBounds{
   border-color: rgb(240, 240, 240);
+  width: 500px;
 }
 
 .schedule {
@@ -27,7 +28,6 @@
   height:400px;
   overflow:scroll;
   position:static;
-  width:600px;
   border-collapse: collapse;
 }
 .scheduleHeader{
