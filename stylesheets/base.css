@@ -94,7 +94,7 @@ body
   border-collapse: collapse;
   border-top: 1px solid white;
   height: 318px;
-  width:800px; /*"800"*/
+  width:100%; /*"800"*/
 }
 
 #container #intro_table a {
@@ -146,6 +146,7 @@ body
 #container #main_table td{
   padding: 0px;
   border: 1px solid white;
+  border-bottom: 1px solid #CCCCCC;
   border-left: none;
 }
 #container #main_table #left{
@@ -276,14 +277,16 @@ body
 }
 #container #navigation_table{
   border-collapse: collapse;
-  border: 1px solid white;
+  height: auto;
   width:800px; /*"800"*/
 }
 #container #navigation_table th{
   padding: 0px;
-  border: 1px solid white;
   vertical-align: middle;
   text-align: left;
+}
+#container #navigation_table .first{
+  border-right: 1px solid white;
 }
 #container #navigation_table th .header{
   background-color: #999999;
@@ -298,7 +301,6 @@ body
 }
 #container #navigation_table td{
   padding: 0px;
-  border: 1px solid white;
   text-align: left;
   vertical-align: top; 
   width: 266px;
@@ -309,6 +311,7 @@ body
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	color: #996666;
 	line-height: 20px;
+	border-bottom: 1px solid #CCCCCC;
 }
 #container #navigation_table td  a {
 	font-size: 11px;
@@ -325,7 +328,7 @@ body
 }
 #container #footer_table{
   border: none;
-  width:800px; /*"800"*/
+  width: 800px; /*"800"*/
 }
 #container #footer_table td{
   padding: 0px;
@@ -339,13 +342,12 @@ body
 #container #footer_table #footer {
 	background-color: #FFFFFF;
 	height: 120px;
-	width: 800px;
+	width: auto;
 	text-align: center;
 	margin-bottom: 0px;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 9px;
 	color: #999999;
-	border-top: solid #CCCCCC 1px;
 }
 #container #footer_table #footer a {
 	background-color: #FFFFFF;
