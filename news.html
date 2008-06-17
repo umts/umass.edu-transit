@@ -52,7 +52,7 @@
                 </div>
                 <div id="left_services">
                   <a href="buses.html">PVTA BUSES</a><br>
-                  <a href="spectrans.html">SPECIAL TRANSPORTATION</a><br>
+                  <a href="spectrans.html">SPEC TRANS</a><br>
                   <a href="fieldtrip.html">FIELD TRIP</a><br>
                   <a href="http://www.umass.edu/campus_services/meetandgreet.html">MEET &amp; GREET</a><br>
                   <a href="join_team.html">JOIN THE TEAM!</a><br>
@@ -86,9 +86,15 @@
                 News
               </div>
               <div id="page_text_field">
-                  <iframe id="iframe" src="https://www.umasstransit.org/news2.php" name="news">
+                  <iframe id="iframe" frameborder="0" src="https://www.umasstransit.org/news2.php" name="news">
                   	<p>Your browser does not handle iframes... please go <a href="https://www.umasstransit.org/news.php">here</a> to read news items.</p>
                   </iframe>
+                  <!-- 
+                      Ok, Firefox and Opera completely mess up the page layout unless there is content in page_text_field, unfortunately
+                     it does not recognize the iframe as content, had no problems in IE or Safari though. Anyways adding a few &nbsp; 
+                     fixes the problem in firefox, can't seem to get opera to work. Still looks allright but everything is shifted
+                     slightly to the right.
+                     -->&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
               </div>
             </td>   
           </tr>

@@ -1,0 +1,8 @@
+task :deploy, :hosts => "transit@webadmin.oit.umass.edu" do
+  @date = Time.now
+  run "mkdir transittemp"
+  put "..", "transittemp"
+  run " cd .."
+  run "mv transit2 transit2_#{@date.year}-#{@date.month}-#{@date.day}-#{@date.hour}-#{@date.min}-#{@date.sec}"
+  run "mv transittemp transit2"
+end

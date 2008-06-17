@@ -3,9 +3,10 @@
   position: relative;
   left: 33px;
   top: -23px;
+  #top: -20px;
   height: 300px;
   width: 560px;
-  border: none;
+  border: 0px;
   text-align: center;
   overflow: visible;
 }
