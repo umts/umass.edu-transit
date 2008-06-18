@@ -8,7 +8,7 @@ set :repository,  "svn+ssh://mattmoretti@transit-dev.admin.umass.edu/usr/local/s
 # servers (which is the default), you can specify the actual location
 # via the :deploy_to variable:
 #set :deploy_to, "/srv/#{application}"
-set :oit_location, "/transit/captest"
+set :oit_location, "transit/captest"
 set :deploy_to, "/cwis/http/htdocs/#{oit_location}"
 set :user, "transit"
 set :use_sudo, false
@@ -38,10 +38,10 @@ namespace :deploy do
     
     rewrite_file = <<-EOF
       RewriteEngine On
-      RewriteBase #{oit_location}
+      RewriteBase #{oit_location}/
       RewriteRule (*.) #{oit_location}/current
     EOF
-    put rewrite_file, "#{deploy_to}/" 
+    put rewrite_file, "#{deploy_to}/.htaccess" 
   end
   
   task :cold do
