@@ -7,8 +7,8 @@ end
 set :application, "transit"
 set :repository,  "svn+ssh://#{svn_user}@transit-dev.admin.umass.edu/usr/local/svn/public"
 
-set :oit_location, "transit/drafts"
-set :deploy_to, "/cwis/http/htdocs/#{oit_location}"
+set :oit_location, "/transit/drafts"
+set :deploy_to, "/cwis/http/htdocs#{oit_location}"
 set :user, "transit"
 set :use_sudo, false
 
@@ -67,10 +67,14 @@ namespace :deploy do
     dirs = [deploy_to, releases_path]
     run "umask 02 && mkdir -p #{dirs.join(' ')}"
     
+    #This creates a .htaccess file in the deploy directory that redirects
+    #requests to the deploy directory (ie /transit) to the current release
+    #directory (ie /transit/current) behind-the-scenes.  This wouldn't be
+    #necisary if we had controll over the server.
     rewrite_file = <<-EOF
       RewriteEngine On
       RewriteBase #{oit_location}/
-      RewriteRule (*.) #{oit_location}/current
+      RewriteRule (.*) #{oit_location}/current/$1
     EOF
     put rewrite_file, "#{deploy_to}/.htaccess" 
   end
