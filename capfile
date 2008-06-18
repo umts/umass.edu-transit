@@ -7,7 +7,7 @@ end
 set :application, "transit"
 set :repository,  "svn+ssh://#{svn_user}@transit-dev.admin.umass.edu/usr/local/svn/public"
 
-set :oit_location, "transit/captest"
+set :oit_location, "transit/drafts"
 set :deploy_to, "/cwis/http/htdocs/#{oit_location}"
 set :user, "transit"
 set :use_sudo, false
