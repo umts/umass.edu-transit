@@ -1,8 +1,32 @@
-task :deploy, :hosts => "transit@webadmin.oit.umass.edu" do
-  @date = Time.now
-  run "mkdir transittemp"
-  put "..", "transittemp"
-  run " cd .."
-  run "mv transit2 transit2_#{@date.year}-#{@date.month}-#{@date.day}-#{@date.hour}-#{@date.min}-#{@date.sec}"
-  run "mv transittemp transit2"
+require 'capistrano/version'
+load 'deploy' if respond_to?(:namespace) # cap2 differentiator
+
+set :application, "transit"
+set :repository,  "svn+ssh://mattmoretti@transit-dev.admin.umass.edu/usr/local/svn/public"
+
+# If you aren't deploying to /u/apps/#{application} on the target
+# servers (which is the default), you can specify the actual location
+# via the :deploy_to variable:
+#set :deploy_to, "/srv/#{application}"
+set :deploy_to, "/home/transit/transit2"
+set :user, "transit"
+set :use_sudo, false
+
+set :deploy_via, :copy
+set :copy_strategy, :export
+set :copy_remote_dir, deploy_to
+
+role :app, "webadmin.oit.umass.edu"
+role :web, "webadmin.oit.umass.edu"
+
+# Override deploy to prevent restarting
+namespace :deploy do 
+  task :default do
+    update # task from standard cap recipe
+  end
+
+  # Override update_code to remove Rails directories
+  task :finalize_update, :except => { :no_release => true } do
+    run "chmod -R g+w #{latest_release}" if fetch(:group_writable, true)
+  end
 end
