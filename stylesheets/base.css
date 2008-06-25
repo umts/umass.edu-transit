@@ -90,6 +90,31 @@ body
 	letter-spacing: 1px;
 	padding-left: 45px;
 }
+#container #newsmenu {
+  border-top: 1px solid white;
+	font-size: 10px;
+	width: auto;
+	height: auto;
+	background-color: black;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 10px;
+	text-align: left;
+	letter-spacing: 1px;
+}
+#container #newsmenu a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: yellow;
+	font-weight: bold;
+	text-decoration: none;
+	letter-spacing: 1px;
+	padding-left: 45px;
+}
+#container #newsmenu a:hover {
+	color: #CCCCCC;
+	text-decoration: none;
+}
 #container #intro_table{
   border-collapse: collapse;
   border-top: 1px solid white;
@@ -134,7 +159,7 @@ body
 	text-align: left;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 12px;
-	color: #666666;
+	color: black;
 	line-height: 16px;
 	padding: 5px 15px 15px 15px;
 }
@@ -202,19 +227,19 @@ body
 	height: auto;
 	padding: 15px 15px 15px 15px;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
-	color: #666666;
+	color: black;
 	line-height: normal;
 }
 #container #main_table #left #left_news a {
 	font-size: 11px;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
-	color: #666666;
+	color: black;
 	text-decoration: none;
 }
 #container #main_table #left #left_news a:hover {
 	font-size: 11px;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
-	color: #666666;
+	color: black;
 	text-decoration: underline;
 }
 #container #main_table #left #left_helpful_links {
@@ -224,19 +249,19 @@ body
 	height: auto;
 	padding: 15px 15px 15px 15px;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
-	color: #666666;
+	color: black;
 	line-height: normal;
 }
 #container #main_table #left #left_helpful_links  a {
 	font-size: 11px;
 	text-decoration: none;
-	color: #666666;
+	color: black;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 #container #main_table #left #left_helpful_links a:hover {
 	font-size: 11px;
 	text-decoration: underline;
-	color: #666666;
+	color: black;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 #container #main_table #right #page_title {
@@ -256,7 +281,7 @@ body
 	text-align: left;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 12px;
-	color: #666666;
+	color: black;
 	line-height: 16px;
 	margin-right: 20px;
 	margin-left: 20px;

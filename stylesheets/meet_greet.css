@@ -1,5 +1,5 @@
 #container #main_table #right #table {
-  color: #666666;
+  color: black;
   font-family: Verdona, Arial, Helvetica, sans-serif;
   font-size: 12px;
   border-collapse: collapse;
@@ -10,5 +10,5 @@
 }
 .required{
   color: red;
-  font-size: 14px;
+  font-size: 18px;
 }
