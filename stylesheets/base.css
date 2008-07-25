@@ -184,6 +184,7 @@ body
   text-align: left;
   background-color: #EEEEEE;
   width: 592px;
+	border-right: none;
 }
 #container #main_table  #left .left_menu_title {
 	background-color: #666666;
