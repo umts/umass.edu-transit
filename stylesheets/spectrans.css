@@ -3,21 +3,35 @@
   font-size:15px;
 }
 
-#spec-contacts #alternate-header{
+#container #main_table #spec-contacts td{
+  border: none;
+}
+
+#container #main_table #spec-contacts #alternate-header{
   vertical-align: bottom;
   height: 40px;
   font-size:15px;
 }
 
-#sched-full{
+#container #main_table #sched-full{
+  border-collapse: collapse;
+  width: 340px;
+  font-size:15px;
+}
+#container #main_table #sched-full td{
+padding: 4px;
+  border: none;
+}
+
+#container #main_table #sched-reduce{
   border-collapse: collapse;
   width: 340px;
   font-size:15px;
 }
 
-#sched-reduce{
-  border-collapse: collapse;
-  width: 340px;
-  font-size:15px;
+#container #main_table #sched-reduce td{
+  
+  padding: 4px;
+  border:none;
 }
 
