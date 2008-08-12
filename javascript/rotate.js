@@ -14,8 +14,6 @@ var fadeimages=new Array()
 fadeimages[0]="images/bus_bike_night.jpg"
 fadeimages[1]="images/gilligside.jpg"
 fadeimages[2]="images/transit.jpg"
-fadeimages[3]="images/fieldtrip.jpg"
-fadeimages[4]="images/spectrans.jpg"
 
 ////NO need to edit beyond here/////////////
 
