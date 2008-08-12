@@ -4,10 +4,10 @@
   border-collapse: collapse;
   border: none;
 }
-#container #main_table #right #contacts #page_text_field tr{
+#container #main_table #right #page_text_field #contacts  tr{
   border: none;
 }
-#container #main_table #right #contacts #page_text_field td{
+#container #main_table #right #page_text_field #contacts  td{
   border: none;
 }
 #container #main_table #right #contacts .number{
