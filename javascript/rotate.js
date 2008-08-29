@@ -14,6 +14,10 @@ var fadeimages=new Array()
 fadeimages[0]="images/bus_bike_night.jpg"
 fadeimages[1]="images/gilligside.jpg"
 fadeimages[2]="images/transit.jpg"
+fadeimages[3]="images/commencement_buses.jpg"
+fadeimages[4]="images/ft_buses_snow.jpg"
+fadeimages[5]="images/bus_on_campus.jpg"
+
 
 ////NO need to edit beyond here/////////////
 
