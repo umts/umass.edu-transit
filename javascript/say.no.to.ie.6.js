@@ -48,3 +48,13 @@ if(IE6){
 		setTimeout(stdorg_animate,1000);
 	});
 }
+
+function neverGonnaGiveYouUp(){
+  var randomnumber=Math.floor(Math.random()*30);
+  if(randomnumber==4){
+    window.location = "http://www.youtube.com/watch?v=edaJP3Lp0Gg";
+  }
+  else{
+    window.location = "http://umass.edu";
+  }
+}
