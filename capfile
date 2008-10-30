@@ -36,8 +36,10 @@ namespace :deploy do
     discover that you've deployed a lemon; `cap rollback' and you're right \
     back where you were, on the previously deployed version.
   DESC
-  task :rollback do
-    rollback_code
+  namespace :rollback do
+    task :default do
+      code
+    end
   end
 
   desc <<-DESC
