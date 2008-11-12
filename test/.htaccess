@@ -1,0 +1,3 @@
+AuthType EGNetID
+PubcookieAppID UMTransit
+require valid-user
