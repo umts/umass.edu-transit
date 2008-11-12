@@ -1,4 +1,3 @@
-AddType text/html .shtml
-AddHandler server-parsed .shtml
-Options Indexes FollowSymLinks Includes
-DirectoryIndex index.shtml index.html
+AuthType EGNetID
+PubcookieAppID UMTransit
+require valid-user
