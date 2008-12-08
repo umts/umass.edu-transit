@@ -270,10 +270,6 @@ body
 	color: black;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
-
-
-
-
 #container #main_table #left #left_helpful_links {
 	font-size: 11px;
 	background-color: #FFFFFF;
@@ -295,14 +291,7 @@ body
 	text-decoration: underline;
 	color: black;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
-
-
-
-
-
-
-
-
+}
 #container #main_table #right #page_title {
 	background-color: #993334;
 	height: 20px;
