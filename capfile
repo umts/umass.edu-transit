@@ -5,7 +5,7 @@ set(:svn_user) do
   Capistrano::CLI.ui.ask "Enter a username to access the SVN repository: "
 end
 set :application, "transit"
-set :repository,  "svn+ssh://#{svn_user}@transit-dev.admin.umass.edu/usr/local/svn/public"
+set :repository,  "svn+altssh://#{svn_user}@transit-dev.admin.umass.edu/usr/local/svn/public"
 
 set :oit_location, "/transit"
 set :deploy_to, "/cwis/http/htdocs#{oit_location}"
@@ -18,6 +18,14 @@ set :copy_remote_dir, deploy_to
 
 role :app, "webadmin.oit.umass.edu"
 role :web, "webadmin.oit.umass.edu"
+
+namespace :emergency do
+  task :on do
+  end
+  
+  task :off do
+  end
+end
 
 # Overrides of default tasks:
 namespace :deploy do 
