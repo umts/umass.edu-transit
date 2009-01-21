@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<script src="say.no.to.ie.6.js"></script>
+
 
 <html>
   <head>
@@ -9,24 +9,28 @@
     <link href="stylesheets/base.css" rel="stylesheet" type="text/css">
     <link href="stylesheets/meet_greet.css" rel="stylesheet" type="text/css">
     <link href="stylesheets/meet_greet_form.css" rel="stylesheet" type="text/css">
-    <script>
-      function neverGonnaGiveYouUp(){
-        var randomnumber=Math.floor(Math.random()*30);
-        if(randomnumber==4){
-          window.location = "http://www.youtube.com/watch?v=edaJP3Lp0Gg";
-        }
-        else{
-          window.location = "http://umass.edu";
-        }
-      }
-    </script>
+<script src="javascript/prototype.js"></script>
+<script type="text/javascript">
+var typedSoFar = new String;
+function konami(e) {
+  //66 is keycode for B, 65 is keycode for A
+  var konami = Event.KEY_UP + "" + Event.KEY_UP + "" + Event.KEY_DOWN + "" + Event.KEY_DOWN;
+  konami += Event.KEY_LEFT + "" + Event.KEY_RIGHT + "" + Event.KEY_LEFT + "" + Event.KEY_RIGHT;
+  konami += '66656665';
+  typedSoFar += e.keyCode;
+  if(typedSoFar.include(konami)){
+    window.location = "http://www.yougotrickrolled.com/";
+  }
+}
+
+</script>
   </head>
   
-  <body>
+  <body onkeydown="konami(event)">
     <div id="container" >
       <!-- Begin UMass Amherst top banner --> 
       <div id="topbanner"> 
-        <a onclick="neverGonnaGiveYouUp(); return false;" href="http://umass.edu">
+        <a  href="http://umass.edu">
           <img id="banner_wordmark" src="images/informal_fff_on_000.gif" alt="UMass Amherst">
         </a>
           <form id="banner_search" action="http://googlebox.oit.umass.edu/search" method="get" name="gs" onsubmit="if (this.q.value=='Search UMass Amherst') return false;">

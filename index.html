@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<script src="say.no.to.ie.6.js"></script>
+
 
 <html>
   <head>
@@ -16,9 +16,24 @@
     }
     //-->
     </script>
+    <script src="javascript/prototype.js"></script>
+    <script type="text/javascript">
+    var typedSoFar = new String;
+    function konami(e) {
+      //66 is keycode for B, 65 is keycode for A
+      var konami = Event.KEY_UP + "" + Event.KEY_UP + "" + Event.KEY_DOWN + "" + Event.KEY_DOWN;
+      konami += Event.KEY_LEFT + "" + Event.KEY_RIGHT + "" + Event.KEY_LEFT + "" + Event.KEY_RIGHT;
+      konami += '66656665';
+      typedSoFar += e.keyCode;
+      if(typedSoFar.include(konami)){
+        window.location = "http://www.yougotrickrolled.com/";
+      }
+    }
+
+    </script>
   </head>
   
-  <body>
+  <body onkeydown="konami(event)">
     <div id="container" >
       <!-- Begin UMass Amherst top banner --> 
       <div id="topbanner"> 
