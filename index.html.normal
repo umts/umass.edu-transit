@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<script src="say.no.to.ie.6.js"></script>
+
 
 <html>
   <head>
@@ -16,35 +16,28 @@
     }
     //-->
     </script>
-    <script>
-      function neverGonnaGiveYouUp(){
-        var randomnumber=Math.floor(Math.random()*30);
-        if(randomnumber==4){
-          window.location = "http://www.youtube.com/watch?v=edaJP3Lp0Gg";
-        }
-        else{
-          window.location = "http://umass.edu";
-        }
+    <script src="javascript/prototype.js"></script>
+    <script type="text/javascript">
+    var typedSoFar = new String;
+    function konami(e) {
+      //66 is keycode for B, 65 is keycode for A
+      var konami = Event.KEY_UP + "" + Event.KEY_UP + "" + Event.KEY_DOWN + "" + Event.KEY_DOWN;
+      konami += Event.KEY_LEFT + "" + Event.KEY_RIGHT + "" + Event.KEY_LEFT + "" + Event.KEY_RIGHT;
+      konami += '6665';
+      typedSoFar += e.keyCode;
+      if(typedSoFar.include(konami)){
+        window.location = "http://www.yougotrickrolled.com/";
       }
-    </script>
-    <script>
-      function neverGonnaGiveYouUp(){
-        var randomnumber=Math.floor(Math.random()*30);
-        if(randomnumber==4){
-          window.location = "http://www.youtube.com/watch?v=edaJP3Lp0Gg";
-        }
-        else{
-          window.location = "http://umass.edu";
-        }
-      }
+    }
+
     </script>
   </head>
   
-  <body>
+  <body onkeydown="konami(event)">
     <div id="container" >
       <!-- Begin UMass Amherst top banner --> 
       <div id="topbanner"> 
-        <a onclick="neverGonnaGiveYouUp(); return false;" href="http://umass.edu">
+        <a href="http://umass.edu">
           <img id="banner_wordmark" src="images/informal_fff_on_000.gif" alt="UMass Amherst">
         </a>
           <form id="banner_search" action="http://googlebox.oit.umass.edu/search" method="get" name="gs" onsubmit="if (this.q.value=='Search UMass Amherst') return false;">
@@ -84,28 +77,10 @@
           <tbody>
             <tr>
               <td id="image_column">
-<!-- BEGIN EMERGENCY HACK-->
-                <div style="background-color:yellow">
-                  
-                    
-                    <br>NOTICE: <blockquote style="background-color:yellow">Due to snow, campus will close at 10AM Fri, Dec 19, and will remain closed through the evening.
-                      <br>
-
-                      Buses will run on full service schedules. Expect delays.<br>
-                      <br>
-                      
-                      In order to accommodate final exams on Sat Dec 20, supplemental <strong>finals</strong> buses will run in addition to those already scheduled - see our <a href="http://www.umass.edu/transit/schedules.html">schedules</a> and <a href="http://www.umass.edu/transit/calendar.html">service calendar</a>.<br>
-                      <br>
-                      
-                      See this <a href="http://www.umass.edu/transit/pdf/finals_buses_2008.12.20.pdf">PDF</a> for details or consult the composite schedules for the following routes: <a href="http://www.umass.edu/transit/pdf/Route30_20081220.pdf">30</a>, <a href="http://www.umass.edu/transit/pdf/Route31_20081220.pdf">31</a>, <a href="http://www.umass.edu/transit/pdf/Route35_20081220.pdf">35</a>, and <a href="http://www.umass.edu/transit/pdf/Route38_20081220.pdf">38</a>.
-                    </blockquote>
-                <div>
-<!-- END EMERGENCY HACK-->                
-                <!--><div id="slideshow">
+                <div id="slideshow">
                   <script type="text/javascript" src="javascript/rotate.js">
-
                   </script>
-                </div>-->
+                </div>
               </td>
               <td id="discription_column">
                 <div id="text_field">
@@ -135,6 +110,7 @@
               <a href="maps.html">Maps</a><br>
               <a href="calendar.html">Calendar</a><br>
               <a href="trip_planner.html">Trip Planner</a><br>
+              <a href="http://dieselnet.cs.umass.edu">Bus Tracker</a><br>
               <a href="join_team.html">Join the Team!</a><br>
                     <br>
             </div></td>
