@@ -7,33 +7,37 @@
     <title>UMass Transit</title>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <link href="stylesheets/base.css" rel="stylesheet" type="text/css">
-    <link href="stylesheets/news.css" rel="stylesheet" type="text/css">
-    
-    <link rel="alternate" type="application/rss+xml" title="UMTS Service Bulletins" 
-    href="http://www.umasstransit.org/feed.php"/>
-    
-<script src="javascript/prototype.js"></script>
-<script type="text/javascript">
-var typedSoFar = new String;
-function konami(e) {
-  //66 is keycode for B, 65 is keycode for A
-  var konami = Event.KEY_UP + "" + Event.KEY_UP + "" + Event.KEY_DOWN + "" + Event.KEY_DOWN;
-  konami += Event.KEY_LEFT + "" + Event.KEY_RIGHT + "" + Event.KEY_LEFT + "" + Event.KEY_RIGHT;
-  konami += '6665';
-  typedSoFar += e.keyCode;
-  if(typedSoFar.include(konami)){
-    window.location = "http://www.yougotrickrolled.com/";
-  }
-}
+    <script language="JavaScript">
+    <!--
+    function MM_preloadImages() { //v3.0
+     var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+       var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+       if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+    }
+    //-->
+    </script>
+    <script src="javascript/prototype.js"></script>
+    <script type="text/javascript">
+    var typedSoFar = new String;
+    function konami(e) {
+      //66 is keycode for B, 65 is keycode for A
+      var konami = Event.KEY_UP + "" + Event.KEY_UP + "" + Event.KEY_DOWN + "" + Event.KEY_DOWN;
+      konami += Event.KEY_LEFT + "" + Event.KEY_RIGHT + "" + Event.KEY_LEFT + "" + Event.KEY_RIGHT;
+      konami += '6665';
+      typedSoFar += e.keyCode;
+      if(typedSoFar.include(konami)){
+        window.location = "http://www.yougotrickrolled.com/";
+      }
+    }
 
-</script>
+    </script>
   </head>
   
   <body onkeydown="konami(event)">
     <div id="container" >
       <!-- Begin UMass Amherst top banner --> 
       <div id="topbanner"> 
-        <a  href="http://umass.edu">
+        <a href="http://umass.edu">
           <img id="banner_wordmark" src="images/informal_fff_on_000.gif" alt="UMass Amherst">
         </a>
           <form id="banner_search" action="http://googlebox.oit.umass.edu/search" method="get" name="gs" onsubmit="if (this.q.value=='Search UMass Amherst') return false;">
@@ -64,66 +68,73 @@ function konami(e) {
         <a href="contactus.html">CONTACT US</a>
       </div>
       
-      <table id="main_table">
-        <tbody>
+      <!--
+      <div id="newsmenu">
+        <a href="news.html">CLICK HERE FOR IMPORTANT NEWS UPDATES</a>
+      </div>
+      -->
+        <table id="intro_table">
+          <tbody>
+            <tr>
+              <td id="image_column">
+                <div id="slideshow">
+                  <script type="text/javascript" src="javascript/rotate.js">
+                  </script>
+                </div>
+              </td>
+              <td id="discription_column">
+                <div id="text_field">
+                  <p>
+                  Managed by Transportation professionals and operated by students, UMass Transit provides <a href="bus.html">bus</a> and 
+                  <a href="spectrans.html">van</a> service to the University/Five College
+                  communities. We're committed to providing safe, efficient, and economical mobility for nearly 15,000 riders everyday.
+                  </p>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <table id="navigation_table">
+          <thead>
+            <tr>
+              <th class="first"><div id="bottom_menu_services" class="header">Transit</div></td>
+              <th><div id="bottom_helpful_links" class="header">Related Links</div></td>
+            </tr>
+          </thead>
+          <tbody>
+
           <tr>
-             <td id="left">
-                <div class="left_menu_title">
-                  Transit
-                </div>
-                <div id="left_services">
-                  <a href="schedules.html">Schedules</a><br>
-                  <a href="maps.html">Maps</a><br>
-                  <a href="calendar.html">Calendar</a><br>
-                  <a href="trip_planner.html">Trip Planner</a><br>
-                  <a href="http://dieselnet.cs.umass.edu">Bus Tracker</a><br>
-                  <a href="join_team.html">Join the Team!</a><br>
-                </div>
-                
-                <div class="left_menu_title">
-                  Related Links
-                </div>
-                
-                <div id="left_helpful_links"> 
-                  <a href="http://www.umass.edu/campus_services">
-                    Campus Services
-                  <a><br><br>
-                  <a href="http://www.masstraveler.com/">
-                    Mass Traveler
-                  </a><br><br>
-                  <a href="http://parking.umass.edu/index.php/home/">
-                    Parking Services
-                  </a><br><br>
-                  <a href="http://umasstransit.org">
-                    Transit Employee Login
-                  </a><br><br>
-
-                  <a href="related_info.html">
-                    More Related Links
-                  </a><br><br>
-                </div>
-             </td>
-
-
-            <!-- InstanceBeginEditable name="Content" -->
-            <td id="right">
-              
-              <div id="page_title">
-                News
-              </div>
-              <div id="page_text_field">
-                  <iframe id="iframe" frameborder="0" src="https://www.umasstransit.org/news2.php" name="news">
-                  	<p>Your browser does not handle iframes... please go <a href="https://www.umasstransit.org/news.php">here</a> to read news items.</p>
-                  </iframe>
-              </div>
-            </td>   
+            <td class="first"><div id="services">
+              <a href="schedules.html">Schedules</a><br>
+              <a href="maps.html">Maps</a><br>
+              <a href="calendar.html">Calendar</a><br>
+              <a href="trip_planner.html">Trip Planner</a><br>
+              <a href="http://dieselnet.cs.umass.edu">Bus Tracker</a><br>
+              <a href="join_team.html">Join the Team!</a><br>
+                    <br>
+            </div></td>
+            <td><div id="external_links">
+              <a href="http://www.umass.edu/campus_services">
+                Campus Services
+              <a><br>
+              <a href="http://www.masstraveler.com/">
+                Mass Traveler
+              </a><br>
+              <a href="http://parking.umass.edu/index.php/home/">
+                Parking Services
+              </a><br>
+              <a href="http://umasstransit.org">
+                Transit Employee Login
+              </a><br>
+              <a href="related_info.html">
+                More Related Links
+              </a><br>
+            </div></td>
           </tr>
-        </tbody>
-      </table>
-
-      <table id="footer_table">
-        <tbody>
-          <tr>
+        </tbody></table>
+        <table id="footer_table">
+          <tbody><tr>
             <td>
               <div id="footer">
                 <p><br>
@@ -131,11 +142,12 @@ function konami(e) {
                   &copy; 2008 <a href="http://www.umass.edu/">University of Massachusetts Amherst</a> &#8226; <a href="http://umass.edu/umhome/policies.html">Site Policies</a><br>
                   <br>
                   <img src="images/seal.jpg" id="seal" alt="Seal"></p>
+                </p>
               </div>
             </td>
           </tr>
-      </tbody>
-    </table>
-  </div>
-  </body>
-</html>
+        </tbody>
+      </table>
+      </div>
+    </body>
+  </html>
