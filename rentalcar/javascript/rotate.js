@@ -7,13 +7,14 @@
 
 var slideshow_width='532px' //SET IMAGE WIDTH
 var slideshow_height='318px' //SET IMAGE HEIGHT
-var pause=10000 //SET PAUSE BETWEEN SLIDE (3000=3 seconds)
+var pause=1000000 //SET PAUSE BETWEEN SLIDE (3000=3 seconds)
 
 var fadeimages=new Array()
 //SET IMAGE PATHS. Extend or contract array as needed
-fadeimages[0]="images/betterfirst.jpg"
-fadeimages[1]="images/first.jpg"
-fadeimages[2]="images/second.jpg"
+fadeimages[0]="images/gradiant.jpg"
+//fadeimages[0]="images/betterfirst.jpg"
+//fadeimages[1]="images/first.jpg"
+//fadeimages[2]="images/second.jpg"
 //fadeimages[3]="images/commencement_buses.jpg"
 //fadeimages[4]="images/ft_buses_snow.jpg"
 //fadeimages[5]="images/bus_on_campus.jpg"
