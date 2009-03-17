@@ -251,7 +251,7 @@ body
 #container #main_table #left #left_enterprise_links {
 	font-size: 11px;
 	background-color: #CCCCCC;
-	width: 230px;
+	width: auto;
 	height: auto;
 	padding: 15px 15px 15px 15px;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
