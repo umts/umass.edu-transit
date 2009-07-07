@@ -109,8 +109,8 @@ function konami(e) {
             <!-- InstanceBeginEditable name="Content" -->
             <td id="right">
               <div id="page_title">Rental Cost Comparison</div>
-              <div id="page_text_field"> 
-                
+              <div id="page_text_field">
+                 
                 Here is some information to help you compare rental costs to the standard reimbursement rate. Please pay special attention to the disclaimers when making a decision.
                 <br>
                 <br>
@@ -131,6 +131,104 @@ function konami(e) {
                 <br>
                 <br>
                 If you would like to make a more current comparison, please visit the <a href="http://www.enterprise.com/car_rental/mileageCalculator.do">Mileage Cost Calculator</a>. Be prepaired to enter in the current fuel price, the price of the rental car that you wish to use, and the round trip mileage of your journey.
+
+
+
+                <br>
+                <br>
+                <br>
+                <br>
+                
+                <form>
+                <table>
+                  
+                  <tr>
+                    <td>Vehicle Type:</td>
+                    <td>
+                      <select name="vehicle_type">
+                        <option>Compact</option>
+                        <option>Intermediate</option>
+                        <option>Standard</option>
+                        <option>Full Size</option>
+                        <option>Premium</option>
+                        <option>Pickup Truck</option>
+                        <option>Luxury</option>
+                        <option>Minivan</option>
+                        <option>SUV</option>
+                        <option>12 Pax Van</option>
+                        <option>Cargo Van</option>
+                      </select>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td>Total days in Trip:</td>
+                    <td><input type="text" name="days_in_trip"></input></td>
+                  </tr>
+                  
+                  <tr>
+                    <td>Destination:</td>
+                    <td>
+                      <select name="dest">
+                        <option>Boston</option>
+                        <option>Bradley Int'l</option>
+                        <option>Shrewsbury</option>
+                      </select>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td></td>
+                    <td>or use a round trip distance:</td>
+                    <td><input type="checkbox" name="use_distance_instead"></input></td>
+                    <td><input type="text" name="distance"></input></td>
+                    <td>(Miles)</td>
+                  </tr> 
+                  
+                  <tr>
+                    <td>Cost of Fuel:</td>
+                    <td><input type="text" name="cost_of_fuel"></input></td>
+                    <td>(Dollars)</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>Reimbursment Rate:</td>
+                    <td><input type="text" value="0.55" name="reim_rate"></input></td>
+                    <td>(Dollars)</td>
+                  </tr>
+                  
+                  <!--<tr>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  
+                  <tr>
+                    <td></td>
+                    <td></td>
+                  </tr>-->
+                  
+                  <tr>
+                    <td>
+                      <input type="submit" value="Make Estimate"></input>
+                    </td>
+                  </tr>
+
+                </table>
+                </form>
+
+                <?php
+                  
+                  $mpg = 0;
+                  $distance = 0;
+                  $fuelcost = 0;
+                  $days_of_rental = 0;
+                  $cost_of_rental_per_day = 0;
+                  $reimbursement_rate = 0;
+                  
+                  print('fuck poop');
+
+
+                ?>
 
               </div>
             </td>   
