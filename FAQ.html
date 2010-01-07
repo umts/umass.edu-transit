@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html>
+  <head>
+    <title>UMass Transit</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <link href="stylesheets/base.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/news.css" rel="stylesheet" type="text/css">
+    
+    <link rel="alternate" type="application/rss+xml" title="UMTS Service Bulletins" 
+    href="http://www.umasstransit.org/feed.php"/>
+    
+<script src="javascript/prototype.js"></script>
+<script type="text/javascript">
+var typedSoFar = new String;
+function konami(e) {
+  //66 is keycode for B, 65 is keycode for A
+  var konami = Event.KEY_UP + "" + Event.KEY_UP + "" + Event.KEY_DOWN + "" + Event.KEY_DOWN;
+  konami += Event.KEY_LEFT + "" + Event.KEY_RIGHT + "" + Event.KEY_LEFT + "" + Event.KEY_RIGHT;
+  konami += '6665';
+  typedSoFar += e.keyCode;
+  if(typedSoFar.include(konami)){
+    window.location = "http://www.yougotrickrolled.com/";
+  }
+}
+
+</script>
+  </head>
+  
+  <body onkeydown="konami(event)">
+	<a name="top">
+    <div id="container" >
+      <!-- Begin UMass Amherst top banner --> 
+      <div id="topbanner"> 
+        <a  href="http://umass.edu">
+          <img id="banner_wordmark" src="images/informal_fff_on_000.gif" alt="UMass Amherst">
+        </a>
+          <form id="banner_search" action="http://googlebox.oit.umass.edu/search" method="get" name="gs" onsubmit="if (this.q.value=='Search UMass Amherst') return false;">
+            <div>
+              <label for="q">
+              <input name="q" id="q" size="22" value="Search UMass Amherst" onfocus="if (this.value=='Search UMass Amherst') this.value=''" onblur="if (this.value=='') this.value='Search UMass Amherst'" type="text">
+              </label>
+              <input input="submit" name="sa" value="Go" type="submit">
+              <input name="site" value="default_collection" type="hidden">
+              <input name="client" value="default_frontend" type="hidden">
+              <input name="proxystylesheet" value="default_frontend" type="hidden">
+              <input name="output" value="xml_no_dtd" type="hidden">
+            </div>
+          </form>
+      </div>
+      
+      <div id="banner">
+        <!--Banner image rendered through css-->
+        <a id="banner_link" href="index.html"></a>
+      </div>
+      
+      <div id="topmenu"> 
+        <a href="news.html">NEWS</a>
+        <a href="buses.html">PVTA BUSES</a>
+        <a href="spectrans.html">SPECTRANS</a>
+        <a href="fieldtrip.html">FIELD TRIP</a>
+        <a href="meet_greet.html">MEET &amp; GREET</a>
+        <a href="contactus.html">CONTACT US</a>
+      </div>
+      
+      <table id="main_table">
+        <tbody>
+          <tr>
+             <td id="left">
+                <div class="left_menu_title">
+                  Transit
+                </div>
+                <div id="left_services">
+                  <a href="schedules.html">Schedules</a><br>
+                  <a href="maps.html">Maps</a><br>
+                  <a href="calendar.html">Calendar</a><br>
+                  <a href="trip_planner.html">Trip Planner</a><br>
+                  <a href="http://dieselnet.cs.umass.edu">Bus Tracker</a><br>
+                  <a href="join_team.html">Join the Team!</a><br>
+                </div>
+                
+                <div class="left_menu_title">
+                  Related Links
+                </div>
+                
+                <div id="left_helpful_links"> 
+                  <a href="http://www.umass.edu/vehicle">
+                    Transportation Services
+                  <a><br><br>
+                  <a href="http://www.masstraveler.com/">
+                    Mass Traveler
+                  </a><br><br>
+                  <a href="http://parking.umass.edu/index.php/home/">
+                    Parking Services
+                  </a><br><br>
+                  <a href="http://umasstransit.org">
+                    Transit Employee Login
+                  </a><br><br>
+
+                  <a href="related_info.html">
+                    More Related Links
+                  </a><br><br>
+                </div>
+             </td>
+
+
+            <!-- InstanceBeginEditable name="Content" -->
+            <td id="right">
+              
+              <div id="page_title">
+                Frequently Asked Questions
+              </div>
+              <div id="page_text_field"> 
+          			<div id="FAQ_stuff">
+
+						<ol>
+						<li><a href="#Section_1">The Bus Tracker</a>
+							<ul>
+								<li><a href="#Sub1_Section_1">What is the Bus Tracker?</a>
+								<li><a href="#Sub2_Section_1">How do I use the Bus Tracker?</a>
+								<li><a href="#Sub3_Section_1">What is the difference between "Current Location" and "Scheduled Location"?</a>	
+								<li><a href="#Sub4_Section_1">What if I have a problem using the Bus Tracker?</a>
+									
+									</ul>
+	                  	<li><a href="#Section_2">Using Google Transit with the PVTA</a>
+						<ul>
+							<li><a href="#Sub1_Section_2">What is Google Transit and where can I find it?</a>
+							<li><a href="#Sub2_Section_2">Question 2?</a>
+							<li><a href="#Sub3_Section_2">Question 3?</a>
+							<li><a href="#Sub4_Section_2">Question 4?</a>	
+								</ul>
+	                  	<li><a href="#Section_3">The Trip Planner</a>
+							<ul>
+								<li><a href="#Sub1_Section_3">Question 1?</a>
+								<li><a href="#Sub2_Section_3">Question 2?</a>
+								<li><a href="#Sub3_Section_3">Question 3?</a>
+								<li><a href="#Sub4_Section_3">Question 4?</a>	
+									</ul>
+	                  	<li><a href="#Section_4">Using a Bus Schedule</a>
+							<ul>
+								<li><a href="#Sub1_Section_4">Question 1?</a>
+								<li><a href="#Sub2_Section_4">Question 2?</a>
+								<li><a href="#Sub3_Section_4">Question 3?</a>
+								<li><a href="#Sub4_Section_4">Question 4?</a>	
+									</ul>
+	                  	<li><a href="#Section_5">Here are some great questions that you might have about Whatever</a>
+							<ul>
+								<li><a href="#Sub1_Section_5">Question 1?</a>
+								<li><a href="#Sub2_Section_5">Question 2?</a>
+								<li><a href="#Sub3_Section_5">Question 3?</a>
+								<li><a href="#Sub4_Section_5">Question 4?</a>	
+									</ul>
+		<br> <br>
+						</ol>
+		
+	                </div>
+	<blockquote>	<a name="Section_1" href="#top"><H2>The Bus Tracker</H2></a><br>
+		<a name="Sub1_Section_1" href="#top"><b>What is the Bus Tracker?</b></a><br><br>
+		The Bus Tracker is a web based application that can be used by anyone to help figure out the current location of any bus run by UMass Transit Services. This tool, when used in conjunction with a Bus Schedule (which can be found <a href="http://www.umass.edu/transit/schedules.html">Here</a>) will help you plan your day with some of the best information available. Though we are striving for more accurate data, this is still in the experimental phase, and as a result, not all buses will always show up to date information. 
+<br><br>
+			<a name="Sub2_Section_1" href="#top"><b>How do I use the Bus Tracker?</b></a><br><br>
+			<p>The bus tracker is located <a href="http://dieselnet.cs.umass.edu">Here</a>. Upon arriving at the site, you will see a google map with blue dots and bus icons. The blue dots represent bus stops and the buses represent a current or scheduled location for a given bus. Though tools such as the bus tracker are helping to improve our service, "Current Location" and "Scheduled Location" are not always the same. </p>
+
+		<p>	There are two very important pieces of information you can get from the Bus Tracker. The first is the next scheduled departure from whatever bus stop you want. By simply clicking on your stop, you can view the next several departure times, along with the number of the bus on that route.</p>
+
+		<p>	The second piece of information is where the a bus is located, and what route it is following. All over the map there are Bus icons. If you mouse over a bus, it will highlight the route that it is on.  You will also see a text bubble that will tell you what bus you are looking at, what route it is on, the direction it is heading, and the last time it "Checked In"</p><br>
+			<a name="Sub3_Section_1" a href="#top"><b>What is the difference between "Current Location" and "Scheduled Location"?</b></a><br><br>
+			<p>Due to the experimental nature of this application, the Bus Tracker does not always have 100% reception (much like a cell phone). When a bus does have connectivity, it will constantly be "Checking In". This happens approximately every 10 seconds. When a bus is able to check in, it will appear on the google map with a green icon.  When the icon is green, this means that you are seeing the actual location of the bus in real time. </p>
+
+		<p>	For any number of reason, a bus might not be "Checking In" (ie. mechanical difficulties with the Bus Tracker, poor reception) When this happens, the bus will not disappear from the map, but instead show up as a grey icon. The grey icon indicates the "Scheduled Location". Because the system is not receiving accurate information, it reverts to the scheduled information.</p><br>
+		<a name="Sub4_Section_1" a href="#top"><b>What if I have a problem using the Bus Tracker?</b></a><br><br>
+		<p>Because of the experimental nature of this project, sometimes there are problems that present themselves on the Bus Tracker that we are not already aware of. We appreciate input from everyone and we would love to hear from you. If you have any Comments, Questions, or Issues with the Bus Tracker, please let us know <a href="http://dieselnet.cs.umass.edu/contact"> Here</a> (A link called "Contact" to this page is also available on the left hand side of the Bus Tracker). We will try to fix any problem, or respond to any question as fast as possible. <br>
+	</blockquote>
+	<blockquote>
+	<a name="Section_2" href="#top"><H2>Using Google Transit with the PVTA</H2></a><br>
+
+		<a name="Sub1_Section_2" href="#top"><b>What is Google Transit and where can I find it?</b></a><br><br>
+Google Transit is an interactive tool that allows people to plan a trip using public transportation. Located <a href="http://www.google.com/transit">Here</a>, Google Transit is very easy to use. All you have to do is enter the address of your starting and ending locations, and it will guide you on your way. On the right hand side of the screen you will be presented with a Map which will outline your route for you. On the left hand side of the screen you will be given the different modes of transportation needed to go from one destination to another (ie. Walking to a bus stop, Traveling on a bus, Transferring to a new bus, etc.)<br><br>
+<a name="Sub2_Section_2" href="#top"><b>Question 2?</b></a><br><br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br><br>
+<a name="Sub3_Section_2" href="#top"><b>Question 3?</b></a><br><br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br>
+	<a name="Sub4_Section_2" href="#top"><b>Question 4?</b></a><br><br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+	</blockquote>
+		<blockquote>
+		<a name="Section_3" href="#top"><H2>The Trip Planner</H2></a><br>
+
+			<a name="Sub1_Section_3" href="#top"><b>Question 1?</b></a><br><br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br><br>
+	<a name="Sub2_Section_3" href="#top"><b>Question 2?</b></a><br><br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br><br>
+	<a name="Sub3_Section_3" href="#top"><b>Question 3?</b></a><br><br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+		<a name="Sub4_Section_3" href="#top"><b>Question 4?</b></a><br><br>
+			blah blah blah<br>
+			blah blah blah<br>
+			blah blah blah<br>
+			blah blah blah<br>
+			blah blah blah<br>
+			blah blah blah<br>
+			blah blah blah<br>
+			blah blah blah<br>
+			blah blah blah<br>
+		</blockquote>
+				<blockquote>
+				<a name="Section_4" href="#top"><H2>Using a Bus Schedule</H2></a><br>
+
+					<a name="Sub1_Section_4" href="#top"><b>Question 1?</b></a><br><br>
+				blah blah blah<br>
+				blah blah blah<br>
+				blah blah blah<br>
+				blah blah blah<br>
+				blah blah blah<br>
+				blah blah blah<br>
+				blah blah blah<br>
+				blah blah blah<br><br>
+			<a name="Sub2_Section_4" href="#top"><b>Question 2?</b></a><br><br>
+				blah blah blah<br>
+				blah blah blah<br>
+				blah blah blah<br>
+				blah blah blah<br>
+				blah blah blah<br>
+				blah blah blah<br>
+				blah blah blah<br>
+				blah blah blah<br>
+				blah blah blah<br><br>
+			<a name="Sub3_Section_4" href="#top"><b>Question 3?</b></a><br><br>
+				blah blah blah<br>
+				blah blah blah<br>
+				blah blah blah<br>
+				blah blah blah<br>
+				blah blah blah<br>
+				blah blah blah<br>
+				blah blah blah<br>
+				blah blah blah<br>
+				blah blah blah<br>
+				<a name="Sub4_Section_4" href="#top"><b>Question 4?</b></a><br><br>
+					blah blah blah<br>
+					blah blah blah<br>
+					blah blah blah<br>
+					blah blah blah<br>
+					blah blah blah<br>
+					blah blah blah<br>
+					blah blah blah<br>
+					blah blah blah<br>
+					blah blah blah<br>
+</blockquote>
+	<blockquote>
+	<a name="Section_5" href="#top"><H2>Here are some great questions that you might have about Whatever</H2></a><br>
+
+		<a name="Sub1_Section_5" href="#top"><b>Question 1?</b></a><br><br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br><br>
+<a name="Sub2_Section_5" href="#top"><b>Question 2?</b></a><br><br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br><br>
+<a name="Sub3_Section_5" href="#top"><b>Question 3?</b></a><br><br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br>
+	blah blah blah<br>
+	<a name="Sub4_Section_5" href="#top"><b>Question 4?</b></a><br><br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+		blah blah blah<br>
+</blockquote>
+		
+            </td>   
+
+          </tr>
+        </tbody>
+      </table>
+
+      <table id="footer_table">
+        <tbody>
+          <tr>
+            <td>
+              <div id="footer">
+                <p><br>
+                  This page is maintained by <a href="index.html">Umass Transit Services</a>.<br>
+                  &copy; 2008 <a href="http://www.umass.edu/">University of Massachusetts Amherst</a> &#8226; <a href="http://umass.edu/umhome/policies.html">Site Policies</a><br>
+                  <br>
+                  <img src="images/seal.jpg" id="seal" alt="Seal"></p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+  </body>
+</html>
