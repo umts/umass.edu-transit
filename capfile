@@ -22,12 +22,14 @@ role :web, "webadmin.oit.umass.edu"
 namespace :index do
   desc "Sets the index page of our public webpage to the one with a news feed"
   task :news do
-    run "cp #{current_path}/index.html.news #{current_path}/index.html"
+    run "ln -f -s #{current_path}/index.html.news #{current_path}/index.html &&
+         echo \"news\" > #{deploy_to}/MODE"
   end
   
   desc "Sets the index page of our public webpage to the one with a slideshow"
   task :slideshow do
-    run "cp #{current_path}/index.html.slideshow #{current_path}/index.html"
+    run "ln -f -s #{current_path}/index.html.slideshow #{current_path}/index.html &&
+         echo \"slideshow\" > #{deploy_to}/MODE"
   end
 end
 
@@ -36,11 +38,13 @@ namespace :deploy do
   desc "Deploys your project. For our non-rails app, this just calls `update'"
   task :default do
     update
+    run "ln -f -s #{current_path}/index.html.`cat #{deploy_to}/MODE` #{current_path}/index.html"
   end
   
   desc "Alias for deploy.  A cold-deploy is the same as a 'warm' one for non-rails apps"
   task :cold do
-    default
+    update
+    index.slideshow
   end
   
   desc <<-DESC
