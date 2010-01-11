@@ -19,11 +19,15 @@ set :copy_remote_dir, deploy_to
 role :app, "webadmin.oit.umass.edu"
 role :web, "webadmin.oit.umass.edu"
 
-namespace :emergency do
-  task :on do
+namespace :index do
+  desc "Sets the index page of our public webpage to the one with a news feed"
+  task :news do
+    run "cp #{current_location}/index.html.news #{current_location}/index.html"
   end
   
-  task :off do
+  desc "Sets the index page of our public webpage to the one with a slideshow"
+  task :slideshow do
+    run "cp #{current_location}/index.html.slideshow #{current_location}/index.html"
   end
 end
 
