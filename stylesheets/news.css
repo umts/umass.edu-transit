@@ -1,16 +1,23 @@
 #iframe{
   padding-top: 0px;
   position: relative;
-  left: 33px;
-  top: -13px;
-  #top: -20px;
   height: 300px;
-  width: 560px;
+  width: 591px;
   border: 0px;
   text-align: center;
   overflow: visible;
 }
 
+#twitter-widget{
+  position: relative;
+  left: 45px;
+}
+
+h3{
+  padding: 0px 20px;
+}
+
 #container #main_table #right #page_text_field {
   margin: 0px;
+  padding: 0px;
 }

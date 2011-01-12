@@ -99,9 +99,45 @@
                 News
               </div>
               <div id="page_text_field">
-                  <iframe id="iframe" frameborder="0" src="https://www.umasstransit.org/news2.php" name="news">
-                  	<p>Your browser does not handle iframes... please go <a href="https://www.umasstransit.org/news.php">here</a> to read news items.</p>
-                  </iframe>
+                <h3>Service Bullitins:</h3>
+                <div id="twitter-widget">
+                  <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+                  <script>
+                  new TWTR.Widget({
+                    version: 2,
+                    type: 'profile',
+                    rpp: 6,
+                    interval: 5000,
+                    width: 500,
+                    height: 100,
+                    theme: {
+                      shell: {
+                        background: '#666666',
+                        color: '#ffffff'
+                      },
+                      tweets: {
+                        background: '#333333',
+                        color: '#eeeeee',
+                        links: '#993334'
+                      }
+                    },
+                    features: {
+                      scrollbar: false,
+                      loop: true,
+                      live: true,
+                      hashtags: false,
+                      timestamp: true,
+                      avatars: false,
+                      behavior: 'default'
+                    }
+                  }).render().setUser('umasstransit').start();
+                  </script>
+                </div>
+                            
+                <h3>General News Items:</h3>
+                <iframe id="iframe" frameborder="0" src="https://www.umasstransit.org/news2.php" name="news">
+                  <p>Your browser does not handle iframes... please go <a href="https://www.umasstransit.org/news.php">here</a> to read news items.</p>
+                </iframe>
               </div>
             </td>   
           </tr>
