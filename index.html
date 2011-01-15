@@ -1,0 +1,24 @@
+<!--NOTE: Users should never get to this page.  It is sym-linked over by Capistrano
+    during the deploy process.  The default "index page" that we typically display
+    is located in slideshow.html.
+
+    If you wish to switch to/from the "news" version of our site, use the Capistrano
+    tasks:
+      cap index:news
+           -or-
+      cap index:slideshow
+
+    This page is provided as a fail-safe in case the Capistrano task goes awry, 
+    manually forwarding users to http://umass.edu/transit/news.html
+-->
+
+<html>
+  <head>
+    <title>UMass Transit</title>
+    <meta http-equiv="Refresh" content="0; http://umass.edu/transit/news.html">
+  </head>
+  <body>
+    <p>There is an error in the configuration of our site.  We hope to have it resoved shorly;
+    please continue on to our <a href="news.html">News Page</a> for the interim.  Thank you.</p>
+  </body>
+</html>
