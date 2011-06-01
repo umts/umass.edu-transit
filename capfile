@@ -107,3 +107,5 @@ namespace :deploy do
   task :stop do
   end
 end
+
+# vi: set filetype=ruby :
