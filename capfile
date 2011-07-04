@@ -20,14 +20,38 @@ role :web, "webadmin.oit.umass.edu"
 namespace :index do
   desc "Sets the index page of our public webpage to the one with a news feed"
   task :news do
-    run "ln -f -s #{current_path}/news.html #{current_path}/index.html &&
-         echo \"news.html\" > #{deploy_to}/MODE"
+    set :index_page, "news.html"
+    link
   end
   
   desc "Sets the index page of our public webpage to the one with a slideshow"
   task :slideshow do
-    run "ln -f -s #{current_path}/slideshow.html #{current_path}/index.html &&
-         echo \"slideshow.html\" > #{deploy_to}/MODE"
+    set :index_page, "slideshow.html"
+    link
+  end
+
+  desc <<-DESC
+    Links up index.html to another file on the site.  This over-writes the \
+    default index.html that's in the repository.  Probably you don't want to \
+    call this one directly, but you can.  More likely, this will be called \
+    by index:slideshow or index:news
+  DESC
+  task :link do
+    begin
+      run "ln -f -s #{current_path}/#{index_page} #{current_path}/index.html &&
+           echo \"#{index_page}\" > #{deploy_to}/MODE"
+    rescue NameError
+      puts "index_page is not defined.  You probably want to run 'cap index:slideshow'\nor 'cap index:news' instead.  If you really want to link to some other\npage, sprecify the value like so:\n\n       cap index:link -s 'index_page=some_other_page.html'"
+    end
+  end
+
+  desc <<-DESC
+    Re-links the index.html file back to whatever location we had previously \
+    used.  This is called post-deploy, and you probably won't need to call \
+    it directly.
+  DESC
+  task :relink do
+    run "ln -f -s #{current_path}/`cat #{deploy_to}/MODE` #{current_path}/index.html"
   end
 end
 
@@ -36,7 +60,7 @@ namespace :deploy do
   desc "Deploys your project. For our non-rails app, this just calls `update'"
   task :default do
     update
-    run "ln -f -s #{current_path}/`cat #{deploy_to}/MODE` #{current_path}/index.html"
+    index.relink
   end
   
   desc "Alias for deploy.  A cold-deploy is the same as a 'warm' one for non-rails apps"
