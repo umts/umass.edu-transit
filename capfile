@@ -2,7 +2,7 @@ require 'capistrano/version'
 load 'deploy' if respond_to?(:namespace) # cap2 differentiator
 
 set :application, "transit"
-set :repository,  "git@transit-dev.admin.umass.edu:public-sites/transit.git"
+set :repository,  "git://github.com/umts/umass.edu-transit.git"
 set :scm, "git"
 
 set :oit_location, "/transit"
