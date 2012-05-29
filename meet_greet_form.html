@@ -80,159 +80,152 @@
             <td id="right">
               <div id="page_title">Request Meet &amp; Greet Service</div>
               <div id="page_text_field">
-                <form method="post" action="https://www.umasstransit.org/meetandgreet/meetandgreet.php">
-                  <table cellspacing="2" id="form_table">
-                    <tr>
-                      <td colspan="2" align="center">Fields Marked With An <span class="required">*</span> Are Required</td>
-                    </tr>
+                <form id="mgform" method="post" action="https://www.umasstransit.org/meetandgreet/meetandgreet.php">
+                  <h2>Fields Marked With An <span class="required">*</span> Are Required</h2>
 
-                    <tr class="section_head">
-                      <td colspan="2">UMass Department</td>
-                    </tr>
-                    <tr>
-                      <td>Dept. Name</td>
-                      <td><input type="text" name="deptName" required autofocus></td>
-                    </tr>
-                    <tr>
-                      <td>Contact Person</td>
-                      <td><input type="text" name="contactPerson" required></td>
-                    </tr>
-                    <tr>
-                      <td>Email</td>
-                      <td><input type="email" name="email" required></td>
-                    </tr>
-                    <tr>
-                      <td>Phone</td>
-                      <td><input type="tel" name="phone" required></td>
-                    </tr>
-                    <tr>
-                      <td>Fax</td>
-                      <td><input type="tel" name="fax"></td>
-                    </tr>
+                  <fieldset>
+                    <legend>UMass Department</legend>
+                    <ol>
+                      <li>
+                        <label for="deptName">Dept. Name</label>
+                        <input type="text" name="deptName" required autofocus>
+                      </li>
+                      <li>
+                        <label for="contactPerson">Contact Person</label>
+                        <input type="text" name="contactPerson" required>
+                      </li>
+                      <li>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" required>
+                      </li>
+                      <li>
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="phone" required>
+                      </li>
+                      <li>
+                        <label for="fax">Fax</label>
+                        <input type="tel" name="fax">
+                      </li>
+                    </ol>
+                  </fieldset>
 
-                    <tr class="section_head">
-                       <td colspan="2">Passenger Information</td>
-                    </tr>
-                    <tr>
-                      <td>Number of Passengers</td>
-                      <td><input type="number" min="1" max="12" name="numberPax" required></td>
-                    </tr>
-                    <tr>
-                      <td>Name(s)</td>
-                      <td><input type="text" name="paxNames" required></td>
-                    </tr>
-                    <tr>
-                      <td>Cell Phone</td>
-                      <td>
+                  <fieldset>
+                    <legend>Passenger Information</legend>
+                    <ol>
+                      <li>
+                        <label for="numberPax">Number of Passengers</label>
+                        <input type="number" min="1" max="12" name="numberPax" required>
+                      </li>
+                      <li>
+                        <label for="paxNames">Name(s)</label>
+                        <input type="text" name="paxNames" required>
+                      </li>
+                      <li>
+                        <label for="cell">Cell Phone</label>
                         <input type="tel" name="cell">
                         <small class="fieldnote">Note: although a passenger cell phone number isn't required, it is the best way
                           for us to ensure that we can quickly and easily connect with our passenger.  Please
                           consider providing one.</small>
-                      </td>
-                    </tr>
+                      </li>
+                    </ol>
+                  </fieldset>
 
-                    <tr class="section_head">
-                      <td colspan="2">Trip Information</td>
-                    </tr>
-                    <tr>
-                      <td>Vehicle Requested<br><em>(subject to availability)</em></td>
-                      <td class="radio">
+                  <fieldset>
+                    <legend>Trip Information</legend>
+                    <ol>
+                      <li>
+                        <label for="vehicle">Vehicle Requested<br><em>(subject to availability)</em></label>
                         <div>Sedan</div><input type="radio" name="vehicle" value="sedan">
                         <div>Van</div><input type="radio" name="vehicle" value="van">
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Date</td>
-                      <td><input type="text" name="date" required></td>
-                    </tr>
-                    <tr>
-                      <td>Time</td>
-                      <td><input type="text" name="time" required></td>
-                    </tr>
-                    <tr>
-                      <td>Pickup Location</td>
-                      <td><input type="text" name="pickup" required></td>
-                    </tr>
-                    <tr>
-                      <td>Destination</td>
-                      <td><input type="text" name="location" required></td>
-                    </tr>
-                    <tr>
-                      <td></td>
-                      <td class="section_head">Flight, Train, or Bus Information</td>
-                    </tr>
-                    <tr>
-                      <td>Flight Number</td>
-                      <td><input type="text" name="flightNumber"></td>
-                    </tr>
-                    <tr>
-                      <td>Airline Or Provider</td>
-                      <td><input type="text" name="provider"></td>
-                    </tr>
-                    <tr>
-                      <td>Arrival/Departure Time</td>
-                      <td><input type="text" name="arrDepTime"></td>
-                    </tr>
+                      </li>
+                      <li>
+                        <label for="date">Date</label>
+                        <input type="text" name="date" required>
+                      </li>
+                      <li>
+                        <label for="time">Time</label>
+                        <input type="text" name="time" required>
+                      </li>
+                      <li>
+                        <label for="pickup">Pickup Location</label>
+                        <input type="text" name="pickup" required>
+                      </li>
+                      <li>
+                        <label for="location">Destination</label>
+                        <input type="text" name="location" required>
+                      </li>
+                      <li>
+                        <div class="section_head">Flight, Train, or Bus Information</div>
+                      </li>
+                      <li>
+                        <label for="flightNumber">Flight Number</label>
+                        <input type="text" name="flightNumber">
+                      </li>
+                      <li>
+                        <label for="provider">Airline Or Provider</label>
+                        <input type="text" name="provider">
+                      </li>
+                      <li>
+                        <label for="arrDepTime">Arrival/Departure Time</label>
+                        <input type="text" name="arrDepTime">
+                      </li>
+                    </ol>
+                  </fieldset>
 
-                    <tr class="section_head">
-                      <td colspan="2">Optional Return Trip</td>
-                    </tr>
-                    <tr>
-                      <td>Vehicle Requested<br><em>(subject to availability)</em></td>
-                      <td class="radio">
-                        <div>Sedan<input type="radio" name="vehicle2" value="sedan"></div>
-                        <div>Van<input type="radio" name="vehicle2" value="van"></div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Date</td>
-                      <td><input type="text" name="date2"></td>
-                    </tr>
-                    <tr>
-                      <td>Time</td>
-                      <td><input type="text" name="time2"></td>
-                    </tr>
-                    <tr>
-                      <td>Pickup Location</td>
-                      <td><input type="text" name="pickup2"></td>
-                    </tr>
-                    <tr>
-                      <td>Destination</td>
-                      <td><input type="text" name="location2"></td>
-                    </tr>
-                    <tr>
-                      <td></td>
-                      <td class="section_head">Flight, Train, or Bus Information</td>
-                    </tr>
-                    <tr>
-                      <td>Flight Number</td>
-                      <td><input type="text" name="flightNumber2"></td>
-                    </tr>
-                    <tr>
-                      <td>Airline Or Provider</td>
-                      <td><input type="text" name="provider2"></td>
-                    </tr>
-                    <tr>
-                      <td>Arrival/Departure Time</td>
-                      <td><input type="text" name="arrDepTime2"></td>
-                    </tr>
+                  <fieldset>
+                    <legend>Optional Return Trip</legend>
+                    <ol>
+                      <li>
+                        <label for="vehicle2">Vehicle Requested<br><em>(subject to availability)</em></label>
+                        <div>Sedan</div><input type="radio" name="vehicle2" value="sedan">
+                        <div>Van</div><input type="radio" name="vehicle2" value="van">
+                      </li>
+                      <li>
+                        <label for="date2">Date</label>
+                        <input type="text" name="date2">
+                      </li>
+                      <li>
+                        <label for="time2">Time</label>
+                        <input type="text" name="time2">
+                      </li>
+                      <li>
+                        <label for="pickup2">Pickup Location</label>
+                        <input type="text" name="pickup2">
+                      </li>
+                      <li>
+                        <label for="location2">Destination</label>
+                        <input type="text" name="location2">
+                      </li>
+                      <li>
+                        <div class="section_head">Flight, Train, or Bus Information</div>
+                      </li>
+                      <li>
+                        <label for="flightNumber2">Flight Number</label>
+                        <input type="text" name="flightNumber2">
+                      </li>
+                      <li>
+                        <label for="provider2">Airline Or Provider</label>
+                        <input type="text" name="provider2">
+                      </li>
+                      <li>
+                        <label for="arrDepTime2">Arrival/Departure Time</label>
+                        <input type="text" name="arrDepTime2">
+                      </li>
+                    </ol>
+                  </fieldset>
 
-                    <tr class="section_head">
-                      <td colspan="2">Notes</td>
-                    </tr>
-                    <tr>
-                      <td>Notes and Special Requests</td>
-                      <td><textarea rows=5 cols=39 name="notes"></textarea></td>
-                    </tr>
+                  <fieldset>
+                    <legend>Notes</legend>
+                    <ol>
+                      <li>
+                        <label for="notes">Notes and Special Requests</label>
+                        <textarea rows=5 cols=39 name="notes"></textarea>
+                      </li>
+                    </ol>
+                  </fieldset>
 
-                    <tr>
-                      <td colspan="2"><div align="center">
-                        <input type="submit" name="Submit" value="Submit">
-                        <br>(please make sure all fields are filled out before submitting)
-                      </td>
-                    </tr>
-                  </table>
-
+                  <input type="submit" name="Submit" value="Submit">
+                  (please make sure all fields are filled out before submitting)
                 </form>
               </div>
             </td>

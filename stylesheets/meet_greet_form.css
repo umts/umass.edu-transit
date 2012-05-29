@@ -6,26 +6,36 @@
   font-size: 15px;
 }
 
-#container #main_table #right #form_table {
+#container #main_table #right #mgform {
+  margin: 20px auto;
+  width: 547px;
   border: 0;
-  color: black;
   font-family: Verdona, Arial, Helvetica, sans-serif;
   font-size: 12px;
-  border-collapse: collapse;
 }
 
-#container #main_table #right #form_table th, #container #main_table #right #form_table td {
-  padding: 5px;
+#container #main_table #right #mgform fieldset {
+  margin: 0 0 20px;
+  padding: 20px;
   border: none;
 }
 
-#container #main_table #right #form_table td:first-child {
-  width: 294px;
-  text-align: right;
+#container #main_table #right #mgform ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-#container #main_table #right #form_table td:last-child {
-  width: 301px;
+#container #main_table #right #mgform li {
+  margin: 0 0 12px;
+  position: relative;
+}
+
+#container #main_table #right #mgform label {
+  width: 200px;
+  text-align: right;
+  display: inline-block;
+  vertical-align: top;
 }
 
 #container #main_table #right #form_table .section_head {
@@ -34,23 +44,10 @@
   font-weight: bold;
 }
 
-#container #main_table #right #form_table .section_head td{
-  text-align: left;
-}
+#container #main_table #right #mgform input,
+#container #main_table #right #mgform textarea,
+#container #main_table #right #mgform select {
 
-#container #main_table #right #form_table td.section_head {
-  text-align: center;
-}
-
-#container #main_table #right #form_table .radio div {
-  text-align: center;
-  float: left;
-  min-width: 4em;
-}
-
-#container #main_table #right #form_table .radio input {
-  display: block;
-  float: left;
 }
 
 .fieldnote {
