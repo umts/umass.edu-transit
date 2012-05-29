@@ -1,11 +1,6 @@
-#iframe{
-  padding-top: 0px;
-  position: relative;
-  height: 300px;
+#newsframe{
   width: 591px;
-  border: 0px;
-  text-align: center;
-  overflow: visible;
+  min-height: 300px;
 }
 
 #twitter-widget{

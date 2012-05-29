@@ -135,15 +135,22 @@
                     }
                   }).render().setUser('umasstransit').start();
                   </script>
-					
                 </div>
-                            
+
                 <h3>General News Items:</h3>
-                <iframe id="iframe" frameborder="0" src="https://www.umasstransit.org/news2.php" name="news">
+                <iframe id="newsframe" frameborder="0" src="https://www.umasstransit.org/news2.php" name="news">
                   <p>Your browser does not handle iframes... please go <a href="https://www.umasstransit.org/news.php">here</a> to read news items.</p>
                 </iframe>
               </div>
-            </td>   
+
+              <script type="text/javascript">
+                //Resize the news iframe.  See  http://stackoverflow.com/questions/153152/resizing-an-iframe-based-on-content
+                //for an explanation of why this is so complicated.
+                function resizeIframe(height) {
+                  document.getElementById("newsframe").height = parseInt(height) + 60;
+                }
+              </script>
+            </td>
           </tr>
         </tbody>
       </table>
