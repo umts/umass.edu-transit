@@ -8,7 +8,7 @@
 
 #container #main_table #right #mgform {
   margin: 20px auto;
-  width: 547px;
+  width: 560px;
   border: 0;
   font-family: Verdona, Arial, Helvetica, sans-serif;
   font-size: 12px;
@@ -113,7 +113,8 @@
 
 .required{
   color: red;
-  font-size: larger;
+  font-size: 18px;
+  vertical-align: sub;
 }
 
 #container #main_table #right #mgform .radio {
