@@ -81,13 +81,13 @@
               <div id="page_title">Request Meet &amp; Greet Service</div>
               <div id="page_text_field">
                 <form id="mgform" method="post" action="https://www.umasstransit.org/meetandgreet/meetandgreet.php">
-                  <h2>Fields Marked With An <span class="required">*</span> Are Required</h2>
+                  <h3>Fields Marked With An <span class="required">*</span> Are Required</h3>
 
                   <fieldset>
                     <legend>UMass Department</legend>
                     <ol>
                       <li>
-                        <label for="deptName">Dept. Name</label>
+                        <label for="deptName">Dept. Name<span class="required">*</span></label>
                         <input type="text" name="deptName" required autofocus>
                       </li>
                       <li>
@@ -123,9 +123,9 @@
                       <li>
                         <label for="cell">Cell Phone</label>
                         <input type="tel" name="cell">
-                        <small class="fieldnote">Note: although a passenger cell phone number isn't required, it is the best way
-                          for us to ensure that we can quickly and easily connect with our passenger.  Please
-                          consider providing one.</small>
+                        <small class="fieldnote"><strong>Note:</strong> Although a passenger cell phone number
+                          isn't required, it is the best way for us to ensure that we can quickly and easily
+                          connect with our passenger.  Please consider providing one.</small>
                       </li>
                     </ol>
                   </fieldset>
@@ -135,8 +135,12 @@
                     <ol>
                       <li>
                         <label for="vehicle">Vehicle Requested<br><em>(subject to availability)</em></label>
-                        <div>Sedan</div><input type="radio" name="vehicle" value="sedan">
-                        <div>Van</div><input type="radio" name="vehicle" value="van">
+                        <div class="radio">
+                          <label for="vehicle_sedan">Sedan</label>
+                          <input type="radio" id="vehicle_sedan" name="vehicle" value="sedan">
+                          <label for="vehicle_van">Van</label>
+                          <input type="radio" id="vehicle_van" name="vehicle" value="van">
+                        </div>
                       </li>
                       <li>
                         <label for="date">Date</label>
@@ -177,8 +181,12 @@
                     <ol>
                       <li>
                         <label for="vehicle2">Vehicle Requested<br><em>(subject to availability)</em></label>
-                        <div>Sedan</div><input type="radio" name="vehicle2" value="sedan">
-                        <div>Van</div><input type="radio" name="vehicle2" value="van">
+                        <div class="radio">
+                          <label for="vehicle2_sedan">Sedan</label>
+                          <input type="radio" id="vehicle2_sedan" name="vehicle2" value="sedan">
+                          <label for="vehicle2_van">Van</label>
+                          <input type="radio" id="vehicle2_van" name="vehicle2" value="van">
+                        </div>
                       </li>
                       <li>
                         <label for="date2">Date</label>
@@ -219,7 +227,7 @@
                     <ol>
                       <li>
                         <label for="notes">Notes and Special Requests</label>
-                        <textarea rows=5 cols=39 name="notes"></textarea>
+                        <textarea rows=5 name="notes"></textarea>
                       </li>
                     </ol>
                   </fieldset>

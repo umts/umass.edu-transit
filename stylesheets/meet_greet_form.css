@@ -15,7 +15,7 @@
 }
 
 #container #main_table #right #mgform fieldset {
-  margin: 0 0 20px;
+  margin: 0;
   padding: 20px;
   border: none;
 }
@@ -32,47 +32,100 @@
 }
 
 #container #main_table #right #mgform label {
-  width: 200px;
+  width: 160px;
   text-align: right;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
+  padding-right: 10px;
 }
 
-#container #main_table #right #form_table .section_head {
+#container #main_table #right #mgform legend,
+#container #main_table #right #mgform .section_head {
   background: #ECE0E0;
+  width: 100%;
   height: 20px;
+  padding: 5px;
   font-weight: bold;
 }
 
-#container #main_table #right #mgform input,
-#container #main_table #right #mgform textarea,
-#container #main_table #right #mgform select {
-
+#container #main_table #right #mgform .section_head {
+  width: 310px;
+  margin-left: 175px;
+  text-align: center;
 }
 
-.fieldnote {
-  float: left;
+#container #main_table #right #mgform fieldset input,
+#container #main_table #right #mgform fieldset select {
+  background: #fff url(ico_validation.png) 298px 24px no-repeat;
 }
 
-input {
+#container #main_table #right #mgform fieldset input,
+#container #main_table #right #mgform fieldset textarea,
+#container #main_table #right #mgform fieldset select {
+  display: inline-block;
+  width: 290px;
+  padding: 3px 26px 3px 3px;
+
+  -moz-transition: background-color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
-input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
+#container #main_table #right #mgform fieldset input[type=number] {
+  width: 319px;
+  padding: 3px;
 }
 
-input:required:invalid, input:focus:invalid {
-  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJPSURBVDjLpZPLS5RhFMYfv9QJlelTQZwRb2OKlKuINuHGLlBEBEOLxAu46oL0F0QQFdWizUCrWnjBaDHgThCMoiKkhUONTqmjmDp2GZ0UnWbmfc/ztrC+GbM2dXbv4ZzfeQ7vefKMMfifyP89IbevNNCYdkN2kawkCZKfSPZTOGTf6Y/m1uflKlC3LvsNTWArr9BT2LAf+W73dn5jHclIBFZyfYWU3or7T4K7AJmbl/yG7EtX1BQXNTVCYgtgbAEAYHlqYHlrsTEVQWr63RZFuqsfDAcdQPrGRR/JF5nKGm9xUxMyr0YBAEXXHgIANq/3ADQobD2J9fAkNiMTMSFb9z8ambMAQER3JC1XttkYGGZXoyZEGyTHRuBuPgBTUu7VSnUAgAUAWutOV2MjZGkehgYUA6O5A0AlkAyRnotiX3MLlFKduYCqAtuGXpyH0XQmOj+TIURt51OzURTYZdBKV2UBSsOIcRp/TVTT4ewK6idECAihtUKOArWcjq/B8tQ6UkUR31+OYXP4sTOdisivrkMyHodWejlXwcC38Fvs8dY5xaIId89VlJy7ACpCNCFCuOp8+BJ6A631gANQSg1mVmOxxGQYRW2nHMha4B5WA3chsv22T5/B13AIicWZmNZ6cMchTXUe81Okzz54pLi0uQWp+TmkZqMwxsBV74Or3od4OISPr0e3SHa3PX0f3HXKofNH/UIG9pZ5PeUth+CyS2EMkEqs4fPEOBJLsyske48/+xD8oxcAYPzs4QaS7RR2kbLTTOTQieczfzfTv8QPldGvTGoF6/8AAAAASUVORK5CYII=');
-  background-position: right top;
-  background-repeat: no-repeat;
+#container #main_table #right #mgform fieldset input::-webkit-input-placeholder,
+#container #main_table #right #mgform fieldset input:-moz-input-placeholder {
+  color: #A6A6A6;
 }
 
-input:required:valid {
-  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAGrSURBVDjLvZPZLkNhFIV75zjvYm7VGFNCqoZUJ+roKUUpjRuqp61Wq0NKDMelGGqOxBSUIBKXWtWGZxAvobr8lWjChRgSF//dv9be+9trCwAI/vIE/26gXmviW5bqnb8yUK028qZjPfoPWEj4Ku5HBspgAz941IXZeze8N1bottSo8BTZviVWrEh546EO03EXpuJOdG63otJbjBKHkEp/Ml6yNYYzpuezWL4s5VMtT8acCMQcb5XL3eJE8VgBlR7BeMGW9Z4yT9y1CeyucuhdTGDxfftaBO7G4L+zg91UocxVmCiy51NpiP3n2treUPujL8xhOjYOzZYsQWANyRYlU4Y9Br6oHd5bDh0bCpSOixJiWx71YY09J5pM/WEbzFcDmHvwwBu2wnikg+lEj4mwBe5bC5h1OUqcwpdC60dxegRmR06TyjCF9G9z+qM2uCJmuMJmaNZaUrCSIi6X+jJIBBYtW5Cge7cd7sgoHDfDaAvKQGAlRZYc6ltJlMxX03UzlaRlBdQrzSCwksLRbOpHUSb7pcsnxCCwngvM2Rm/ugUCi84fycr4l2t8Bb6iqTxSCgNIAAAAAElFTkSuQmCC');
-  background-position: right top;
-  background-repeat: no-repeat;
+#container #main_table #right #mgform fieldset input:focus:required:invalid {
+  background-color: pink;
+  background-position: 298px 3px;
+  outline: none;
+}
+
+#container #main_table #right #mgform fieldset input[type=text]:focus:not([pattern]):required:invalid {
+  background-color: #fff;
+  background-position: 298px -29px;
+}
+
+#container #main_table #right #mgform fieldset input:required:valid {
+  background-color: #fff;
+  background-position: 298px -61px;
+}
+
+.fieldnote {
+  margin-left: 175px;
+  display: block;
+}
+
+.required{
+  color: red;
+  font-size: larger;
+}
+
+#container #main_table #right #mgform .radio {
+  display: inline-block;
+}
+
+#container #main_table #right #mgform .radio label {
+  width: auto;
+  padding: 0;
+}
+
+#container #main_table #right #mgform .radio input {
+  width: auto;
+  margin-right: 20px;
 }
