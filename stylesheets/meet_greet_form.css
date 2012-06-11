@@ -55,16 +55,9 @@
 }
 
 #container #main_table #right #mgform fieldset input,
-#container #main_table #right #mgform fieldset select {
-  background: #fff url(ico_validation.png) 298px 24px no-repeat;
-}
-
-#container #main_table #right #mgform fieldset input,
 #container #main_table #right #mgform fieldset textarea,
 #container #main_table #right #mgform fieldset select {
   display: inline-block;
-  width: 290px;
-  padding: 3px 26px 3px 3px;
 
   -moz-transition: background-color 0.5s ease;
   -webkit-transition: background-color 0.5s ease;
@@ -80,9 +73,20 @@
   box-shadow: none;
 }
 
-#container #main_table #right #mgform fieldset input[type=number] {
-  width: 319px;
+#container #main_table #right #mgform fieldset textarea {
+  width: 316px;
   padding: 3px;
+}
+
+#container #main_table #right #mgform fieldset input,
+#container #main_table #right #mgform fieldset select {
+  background: #fff url(ico_validation.png) 290px 24px no-repeat;
+  width: 282px;
+  padding: 3px 34px 3px 3px;
+}
+
+#container #main_table #right #mgform fieldset input[type=number] {
+  /*padding: 3px; */
 }
 
 #container #main_table #right #mgform fieldset input::-webkit-input-placeholder,
@@ -92,18 +96,18 @@
 
 #container #main_table #right #mgform fieldset input:focus:required:invalid {
   background-color: pink;
-  background-position: 298px 3px;
+  background-position: 290px 3px;
   outline: none;
 }
 
 #container #main_table #right #mgform fieldset input[type=text]:focus:not([pattern]):required:invalid {
   background-color: #fff;
-  background-position: 298px -29px;
+  background-position: 290px -29px;
 }
 
 #container #main_table #right #mgform fieldset input:required:valid {
   background-color: #fff;
-  background-position: 298px -61px;
+  background-position: 290px -61px;
 }
 
 .fieldnote {
