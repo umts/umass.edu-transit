@@ -270,6 +270,12 @@ body
 	color: black;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
+
+#container #main_table #left ul.left_nav {
+  margin: 0;
+  list-style-type: none;
+}
+
 #container #main_table #right #page_title {
 	background-color: #993334;
 	height: 20px;
