@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns:fb="http://ogp.me/ns/fb#">
+  <head>
+    <title>UMass Transit</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <% @stylesheets.each do |s| %>
+      <link href="stylesheets/<%= s %>.css" rel="stylesheet" type="text/css">
+    <% end %>
+    <script src="javascript/prototype.js"></script>
+  </head>
+
+  <body>
+    <div id="fb-root"></div>
+    <script src="javascript/facebook.js"></script>
+
+    <div id="container" >
+      <%= render "_header.html.erb" %>
+
+      <table id="main_table">
+        <tbody>
+          <tr>
+            <td id="left">
+              <%= render "_left_column.html.erb" %>
+            </td>
+
+            <td id="right">
+              <%= yield %>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <%= render "_footer.html.erb" %>
+  </div>
+
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+    try {
+      var pageTracker = _gat._getTracker("UA-12415039-1");
+      pageTracker._trackPageview();
+    } catch(err) {}
+  </script>
+  </body>
+</html>
