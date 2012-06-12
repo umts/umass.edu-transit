@@ -80,13 +80,18 @@
 
 #container #main_table #right #mgform fieldset input,
 #container #main_table #right #mgform fieldset select {
-  background: #fff url(ico_validation.png) 290px 24px no-repeat;
-  width: 282px;
-  padding: 3px 34px 3px 3px;
+  background: #fff url(ico_validation.png) 300px 22px no-repeat;
+  width: 292px;
+  padding: 3px 24px 3px 3px;
 }
 
 #container #main_table #right #mgform fieldset input[type=number] {
   /*padding: 3px; */
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  display: none;
 }
 
 #container #main_table #right #mgform fieldset input::-webkit-input-placeholder,
@@ -95,19 +100,19 @@
 }
 
 #container #main_table #right #mgform fieldset input:focus:required:invalid {
-  background-color: pink;
-  background-position: 290px 3px;
+  background-color: #FFDBE1;
+  background-position: 300px 3px;
   outline: none;
 }
 
 #container #main_table #right #mgform fieldset input[type=text]:focus:not([pattern]):required:invalid {
   background-color: #fff;
-  background-position: 290px -29px;
+  background-position: 300px -31px;
 }
 
 #container #main_table #right #mgform fieldset input:required:valid {
   background-color: #fff;
-  background-position: 290px -61px;
+  background-position: 300px -63px;
 }
 
 .fieldnote {
