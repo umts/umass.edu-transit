@@ -1,4 +1,4 @@
-ignore /\/_.*/
+ignore /\/_.*/, ".git"
 
 layout "layout.html.erb"
 
