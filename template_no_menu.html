@@ -2,26 +2,28 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 
-<html>
+<html xmlns:fb="http://ogp.me/ns/fb#">
   <head>
     <title>UMass Transit</title>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <link href="stylesheets/base.css" rel="stylesheet" type="text/css">
-<script src="javascript/prototype.js"></script>
-
+    <script src="javascript/prototype.js"></script>
   </head>
-  
+
   <body>
+    <div id="fb-root"></div>
+    <script src="javascript/facebook.js"></script>
+
     <div id="container" >
       <!-- Begin UMass Amherst top banner --> 
       <div id="topbanner"> 
         <a  href="http://umass.edu">
           <img id="banner_wordmark" src="images/informal_fff_on_000.gif" alt="UMass Amherst">
         </a>
-          <form id="banner_search" action="http://googlebox.oit.umass.edu/search" method="get" name="gs" onsubmit="if (this.q.value=='Search UMass Amherst') return false;">
+          <form id="banner_search" action="http://googlebox.oit.umass.edu/search" method="get" name="gs">
             <div>
               <label for="q">
-              <input name="q" id="q" size="22" value="Search UMass Amherst" onfocus="if (this.value=='Search UMass Amherst') this.value=''" onblur="if (this.value=='') this.value='Search UMass Amherst'" type="text">
+                <input name="q" id="q" size="22" placeholder="Search UMass Amherst" type="text">
               </label>
               <input input="submit" name="sa" value="Go" type="submit">
               <input name="site" value="default_collection" type="hidden">
@@ -31,12 +33,12 @@
             </div>
           </form>
       </div>
-      
+
       <div id="banner">
         <!--Banner image rendered through css-->
         <a id="banner_link" href="./"></a>
       </div>
-      
+
       <div id="topmenu"> 
         <a href="news.html">NEWS</a>
         <a href="buses.html">PVTA</a>
@@ -46,7 +48,7 @@
         <a href="join_team.html">EMPLOYMENT</a>
         <a href="contactus.html">CONTACT</a>
       </div>
-      
+
       <table id="main_table">
         <tbody>
           <tr>
@@ -54,38 +56,38 @@
             <!-- InstanceBeginEditable name="Content" -->
             <td id="right">
               <div id="page_title">Maps</div>
-              <div id="page_text_field"> 
-	Add content here<br>
-	Add content here<br>
-	Add content here<br>
-	Add content here<br>
-	Add content here<br>
-	Add content here<br>
-	Add content here<br>
-	Add content here<br>
-	Add content here<br>
-	Add content here<br>
-	Add content here<br>
-	Add content here<br>
-	Add content here<br>
-	Add content here<br>
-	Add content here<br>
-	Add content here<br>
-	Add content here<br>
-	Add content here<br>
-	Add content here<br>
-	Add content here<br>
-	Add content here<br>
-	Add content here<br>
-	Add content here<br>
-	Add content here<br>
-	Add content here<br>
-	Add content here<br>
-	Add content here<br>
-	Add content here<br>
+              <div id="page_text_field">
+                Add content here<br>
+                Add content here<br>
+                Add content here<br>
+                Add content here<br>
+                Add content here<br>
+                Add content here<br>
+                Add content here<br>
+                Add content here<br>
+                Add content here<br>
+                Add content here<br>
+                Add content here<br>
+                Add content here<br>
+                Add content here<br>
+                Add content here<br>
+                Add content here<br>
+                Add content here<br>
+                Add content here<br>
+                Add content here<br>
+                Add content here<br>
+                Add content here<br>
+                Add content here<br>
+                Add content here<br>
+                Add content here<br>
+                Add content here<br>
+                Add content here<br>
+                Add content here<br>
+                Add content here<br>
+                Add content here<br>
 
               </div>
-            </td>   
+            </td>
           </tr>
         </tbody>
       </table>
@@ -95,11 +97,12 @@
           <tr>
             <td>
               <div id="footer">
-                <p><br>
+                <p>
                   This page is maintained by <a href="./">Umass Transit Services</a>.<br>
-                  &copy; 2010 <a href="http://www.umass.edu/">University of Massachusetts Amherst</a> &#8226; <a href="http://umass.edu/umhome/policies.html">Site Policies</a><br>
-                  <br>
-                  <img src="images/seal.jpg" id="seal" alt="Seal"></p>
+                  &copy; 2012 <a href="http://www.umass.edu/">University of Massachusetts Amherst</a>
+                  &#8226; <a href="http://umass.edu/umhome/policies.html">Site Policies</a>
+                </p>
+                <img src="images/seal.jpg" id="seal" alt="Seal">
               </div>
             </td>
           </tr>

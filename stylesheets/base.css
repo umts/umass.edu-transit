@@ -244,6 +244,10 @@ body
   padding: 5px;
 }
 
+#container #main_table #left .fb_iframe_widget {
+  margin: 0 20px 20px;
+}
+
 #container #main_table #right #page_title {
   background-color: #993334;
   height: 20px;
