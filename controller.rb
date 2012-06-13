@@ -27,3 +27,7 @@ before "jobapplication_bus.html.erb" do
   @stylesheets << "jobapplication_bus"
   layout "layout_no_menu.html.erb"
 end
+
+before "maps.html.erb" do
+  layout "layout_no_menu.html.erb"
+end
