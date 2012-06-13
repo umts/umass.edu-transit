@@ -1,4 +1,6 @@
-ignore /\/_.*/, ".git"
+ignore *%w{.gitignore LICENSE Gemfile Gemfile.lock Rakefile}
+ignore(/\.swp$/, %r{/\.git/}, %r{/\.sass-cache/})
+ignore /\/_.*/
 
 layout "layout.html.erb"
 
