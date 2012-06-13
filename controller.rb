@@ -18,3 +18,7 @@ before "contactus.html.erb" do
   @stylesheets += %w{tables contactus}
   @scripts << "tables"
 end
+
+before "directions.html.erb" do
+  @stylesheets << "directions"
+end
