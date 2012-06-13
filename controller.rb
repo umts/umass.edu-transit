@@ -31,3 +31,7 @@ end
 before "maps.html.erb" do
   layout "layout_no_menu.html.erb"
 end
+
+before "meet_greet.html.erb" do
+  @stylesheets << "meet_greet"
+end
