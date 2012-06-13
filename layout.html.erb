@@ -5,10 +5,14 @@
   <head>
     <title>UMass Transit</title>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
     <% @stylesheets.each do |s| %>
       <link href="stylesheets/<%= s %>.css" rel="stylesheet" type="text/css">
     <% end %>
-    <script src="javascript/prototype.js"></script>
+
+    <% @scripts.each do |s| %>
+      <script src="javascript/<%= s %>.js"></script>
+    <% end %>
   </head>
 
   <body>

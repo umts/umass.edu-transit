@@ -6,9 +6,15 @@ layout "layout.html.erb"
 
 before /.*/ do
   @stylesheets = %w{ base }
+  @scripts = %w{ prototype }
   @date = Time.now.year
 end
 
 before "bike_racks.html.erb" do
   @stylesheets << "bike_racks"
+end
+
+before "contactus.html.erb" do
+  @stylesheets += %w{tables contactus}
+  @scripts << "tables"
 end
