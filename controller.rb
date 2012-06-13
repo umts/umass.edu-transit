@@ -22,3 +22,8 @@ end
 before "directions.html.erb" do
   @stylesheets << "directions"
 end
+
+before "jobapplication_bus.html.erb" do
+  @stylesheets << "jobapplication_bus"
+  layout "layout_no_menu.html.erb"
+end
