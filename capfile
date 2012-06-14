@@ -11,7 +11,8 @@ set :user, "transit"
 set :use_sudo, false
 
 set :deploy_via, :copy
-set :copy_strategy, :export
+set :copy_cache, true
+set :build_script, "stasis"
 set :copy_remote_dir, deploy_to
 
 role :app, "webadmin.oit.umass.edu"
@@ -56,19 +57,19 @@ namespace :index do
 end
 
 # Overrides of default tasks:
-namespace :deploy do 
+namespace :deploy do
   desc "Deploys your project. For our non-rails app, this just calls `update'"
   task :default do
     update
     index.relink
   end
-  
+
   desc "Alias for deploy.  A cold-deploy is the same as a 'warm' one for non-rails apps"
   task :cold do
     update
     index.slideshow
   end
-  
+
   desc <<-DESC
     Rolls back to a previous version. This is handy if you ever \
     discover that you've deployed a lemon; `cap rollback' and you're right \
@@ -114,7 +115,7 @@ namespace :deploy do
     rewrite_file = <<-EOF
       RewriteEngine On
       RewriteRule ^/cwis.* #{oit_location}/ [R,L]
-      RewriteRule (.*) #{oit_location}/current/$1
+      RewriteRule (.*) #{oit_location}/current/public/$1
     EOF
     put rewrite_file, "#{deploy_to}/.htaccess" 
   end
