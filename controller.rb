@@ -72,3 +72,7 @@ before "schedules.html.erb" do
   @stylesheets += %w{schedules tables}
   @scripts << "lists"
 end
+
+before "slideshow.html.erb" do
+  layout "slideshow.html.erb"
+end

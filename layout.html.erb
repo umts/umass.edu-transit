@@ -1,13 +1,17 @@
+<% #This is the base layout file for all pages EXCEPT slideshow.html.erb
+   #If you change something in here, chances are that you'll have to change
+   #it in there as well.
+%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns:fb="http://ogp.me/ns/fb#">
   <head>
     <title>UMass Transit</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
 
     <% @stylesheets.each do |s| %>
-      <link href="stylesheets/<%= s %>.css" rel="stylesheet" type="text/css">
+      <link href="stylesheets/<%= s %>.css" rel="stylesheet" type="text/css"/>
     <% end %>
 
     <% @scripts.each do |s| %>
@@ -46,15 +50,6 @@
       <%= render "_footer.html.erb" %>
   </div>
 
-  <script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-  </script>
-  <script type="text/javascript">
-    try {
-      var pageTracker = _gat._getTracker("UA-12415039-1");
-      pageTracker._trackPageview();
-    } catch(err) {}
-  </script>
+  <%= render "_ga.html.erb" %>
   </body>
 </html>
