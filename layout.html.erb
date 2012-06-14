@@ -13,6 +13,11 @@
     <% @scripts.each do |s| %>
       <script src="javascript/<%= s %>.js"></script>
     <% end %>
+
+    <% if @rss %>
+      <link rel="alternate" type="application/rss+xml" title="UMTS Service Bulletins" 
+      href="http://www.umasstransit.org/feed.php"/>
+    <% end %>
   </head>
 
   <body>

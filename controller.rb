@@ -1,6 +1,7 @@
 ignore *%w{.gitignore LICENSE Gemfile Gemfile.lock Rakefile}
 ignore(/\.swp$/, %r{/\.git/}, %r{/\.sass-cache/})
 ignore /\/_.*/
+ignore /layout.*/
 
 layout "layout.html.erb"
 
@@ -34,4 +35,9 @@ end
 
 before "meet_greet.html.erb" do
   @stylesheets << "meet_greet"
+end
+
+before "news.html.erb" do
+  @rss = true
+  @stylesheets << "news"
 end
