@@ -67,3 +67,8 @@ before "related_info.html.erb" do
   @stylesheets << "related"
   @scripts << "tables"
 end
+
+before "schedules.html.erb" do
+  @stylesheets += %w{schedules tables}
+  @scripts << "lists"
+end
