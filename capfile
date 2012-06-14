@@ -1,6 +1,14 @@
 require 'capistrano/version'
 load 'deploy' if respond_to?(:namespace) # cap2 differentiator
 
+begin
+  require 'stasis'
+rescue LoadError
+  puts "You do not have the stasis gem installed."
+  puts "Run 'bundle' to install it."
+  exit 1
+end
+
 set :application, "transit"
 set :repository,  "git://github.com/umts/umass.edu-transit.git"
 set :scm, "git"
