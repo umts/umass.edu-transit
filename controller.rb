@@ -1,14 +1,30 @@
-ignore *%w{.gitignore LICENSE Gemfile Gemfile.lock Rakefile}
+# Put files in here that are part of the project, but not part of the site.
+# They won't be copied into the "public" folder when stasis builds the site.
+ignore *%w{.gitignore LICENSE Gemfile Gemfile.lock Rakefile capfile}
+
 ignore(/\.swp$/, %r{/\.git/}, %r{/\.sass-cache/})
 ignore /\/_.*/
 ignore /layout.*/
 
 layout "layout.html.erb"
 
+# These instance variables are the defaults and are available in every template.
+# They are overwritten or added to for specific pages below.
 before /.*/ do
+  # An array of .css files in the stylesheets/ directory to link in
   @stylesheets = %w{ base }
+
+  # An array of .js files in the javascript/ directory to link in
   @scripts = %w{ prototype }
-  @date = Time.now.year
+
+  # Whether or not to show the left-hand navigation menu (_left_column.html.erb)
+  @leftmenu = true
+
+  # Whether or not to inclue a <link rel="alternate" ...> tag for the rss feed
+  @rss = false
+
+  # The current year (gets used for the copyright notice in the footer)
+  @year = Time.now.year
 end
 
 before "bike_racks.html.erb" do
@@ -26,11 +42,11 @@ end
 
 before "jobapplication_bus.html.erb" do
   @stylesheets << "jobapplication_bus"
-  layout "layout_no_menu.html.erb"
+  @leftmenu = false
 end
 
 before "maps.html.erb" do
-  layout "layout_no_menu.html.erb"
+  @leftmenu = false
 end
 
 before "meet_greet.html.erb" do
@@ -44,5 +60,5 @@ end
 
 before "rates_ft.html.erb" do
   @stylesheets << "rates_ft"
-  layout "layout_no_menu.html.erb"
+  @leftmenu = false
 end

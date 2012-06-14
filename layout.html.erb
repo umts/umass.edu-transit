@@ -30,9 +30,11 @@
       <table id="main_table">
         <tbody>
           <tr>
-            <td id="left">
-              <%= render "_left_column.html.erb" %>
-            </td>
+            <% if @leftmenu %>
+              <td id="left">
+                <%= render "_left_column.html.erb" %>
+              </td>
+            <% end %>
 
             <td id="right">
               <%= yield %>
