@@ -97,3 +97,6 @@
 #container #navigation_table .bottom_nav li{
   padding: 5px;
 }
+
+#container #navigation_table .fb_iframe_widget {
+  margin: 0 20px;

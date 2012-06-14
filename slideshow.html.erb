@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html>
+<html xmlns:fb="http://ogp.me/ns/fb#">
   <head>
     <title>UMass Transit</title>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
@@ -11,6 +11,9 @@
   </head>
 
   <body>
+    <div id="fb-root"></div>
+    <script src="javascript/facebook.js"></script>
+
     <div id="container" >
       <%= render "_header.html.erb" %>
 
@@ -64,6 +67,12 @@
                 <li><a href="http://umasstransit.org">Transit Employee Login</a></li>
                 <li><a href="related_info.html">More Related Links</a></li>
               </ul>
+
+              <fb:like href="http://facebook.com/UMassTransit"
+                       send="false"
+                       layout="button_count"
+                       show_faces="false">
+              </fb:like>
             </td>
           </tr>
         </tbody>
