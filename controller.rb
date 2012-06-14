@@ -41,3 +41,8 @@ before "news.html.erb" do
   @rss = true
   @stylesheets << "news"
 end
+
+before "rates_ft.html.erb" do
+  @stylesheets << "rates_ft"
+  layout "layout_no_menu.html.erb"
+end
