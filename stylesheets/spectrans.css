@@ -1,37 +1,26 @@
-#spec-contacts{
+.contacts{
   border-collapse: collapse;
   font-size:15px;
 }
 
-#container #main_table #spec-contacts td{
+#container #main_table .contacts td{
   border: none;
 }
 
-#container #main_table #spec-contacts #alternate-header{
+#container #main_table .contacts #alternate-header{
   vertical-align: bottom;
   height: 40px;
   font-size:15px;
 }
 
-#container #main_table #sched-full{
+#container #main_table .schedule{
   border-collapse: collapse;
   width: 340px;
   font-size:15px;
+  margin-bottom: 20px;
+
 }
-#container #main_table #sched-full td{
-padding: 4px;
+#container #main_table .schedule td{
+  padding: 4px;
   border: none;
 }
-
-#container #main_table #sched-reduce{
-  border-collapse: collapse;
-  width: 340px;
-  font-size:15px;
-}
-
-#container #main_table #sched-reduce td{
-  
-  padding: 4px;
-  border:none;
-}
-

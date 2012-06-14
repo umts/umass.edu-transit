@@ -76,3 +76,8 @@ end
 before "slideshow.html.erb" do
   layout "slideshow.html.erb"
 end
+
+before "spectrans.html.erb" do
+  @stylesheets += %w{spectrans tables}
+  @scripts << "tables"
+end
