@@ -1,6 +1,6 @@
 # Put files in here that are part of the project, but not part of the site.
 # They won't be copied into the "public" folder when stasis builds the site.
-ignore *%w{.gitignore LICENSE Gemfile Gemfile.lock Rakefile capfile}
+ignore *%w{.gitignore .rvmrc LICENSE Gemfile Gemfile.lock Rakefile capfile}
 
 ignore(/\.swp$/, %r{/\.git/}, %r{/\.sass-cache/})
 ignore /\/_.*/
