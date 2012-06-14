@@ -53,6 +53,10 @@ before "meet_greet.html.erb" do
   @stylesheets << "meet_greet"
 end
 
+before "meet_greet_form.html.erb" do
+  @stylesheets += %w{meet_greet meet_greet_form}
+end
+
 before "news.html.erb" do
   @rss = true
   @stylesheets << "news"
