@@ -62,3 +62,8 @@ before "rates_ft.html.erb" do
   @stylesheets << "rates_ft"
   @leftmenu = false
 end
+
+before "related_info.html.erb" do
+  @stylesheets << "related"
+  @scripts << "tables"
+end

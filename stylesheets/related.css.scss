@@ -1,0 +1,21 @@
+#container #main_table #right .contacts{
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid rgb(200, 200, 200);
+  margin-bottom: 10px;
+
+  caption {
+    text-align: left;
+    font-weight: bold;
+    font-variant: small-caps;
+  }
+
+  .even {
+    background-color: white;
+  }
+
+  td {
+    border: none;
+    width: 50%;
+  }
+}
