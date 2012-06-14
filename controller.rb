@@ -81,3 +81,7 @@ before "spectrans.html.erb" do
   @stylesheets += %w{spectrans tables}
   @scripts << "tables"
 end
+
+before "staff.html.erb" do
+  @stylesheets << "staff"
+end
