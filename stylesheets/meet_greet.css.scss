@@ -1,0 +1,32 @@
+#container #main_table #right #ratesTable {
+  border-collapse: collapse;
+  width: 547px;
+  border: 0.5;
+
+  caption {
+    font-weight: bold;
+  }
+
+  th, td {
+    padding: 5px;
+    border: solid 2px #EEEEEE;
+  }
+
+  th {
+    font-weight: normal;
+    background: #CCC;
+  }
+
+  td {
+    background: #ECE0E0;
+  }
+
+  td:first-child {
+    background: #F3ECE0;
+  }
+}
+
+.required{
+  color: red;
+  font-size: 18px;
+}

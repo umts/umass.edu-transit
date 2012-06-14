@@ -1,0 +1,12 @@
+#container #page_text_field .image {
+  width: 200px;
+}
+
+#container #page_text_field .image div {
+  text-align: center;
+  font-weight: bold;
+}
+
+#container #page_text_field #bike_rack_video {
+  margin: 15px 0;
+}
