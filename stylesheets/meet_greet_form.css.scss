@@ -82,17 +82,20 @@
       color: #A6A6A6;
     }
 
+    input.error,
     input:focus:required:invalid {
       background-color: #FFDBE1;
-      background-position: 300px 3px;
+      background-position: 300px 1px;
       outline: none;
     }
 
+    input.required,
     input[type=text]:focus:not([pattern]):required:invalid {
       background-color: #fff;
       background-position: 300px -31px;
     }
 
+    input.valid,
     input:required:valid {
       background-color: #fff;
       background-position: 300px -63px;
@@ -124,7 +127,7 @@ input::-webkit-outer-spin-button {
   display: block;
 }
 
-.required{
+.ast{
   color: red;
   font-size: 18px;
   vertical-align: sub;

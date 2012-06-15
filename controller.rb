@@ -55,6 +55,7 @@ end
 
 before "meet_greet_form.html.erb" do
   @stylesheets += %w{meet_greet meet_greet_form}
+  @scripts << "h5f.min"
 end
 
 before "news.html.erb" do
