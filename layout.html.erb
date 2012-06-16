@@ -7,7 +7,7 @@
 
 <html xmlns:fb="http://ogp.me/ns/fb#">
   <head>
-    <title>UMass Transit</title>
+    <title>UMass Transit - <%= @title %></title>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
 
     <% @stylesheets.each do |s| %>
@@ -41,7 +41,11 @@
             <% end %>
 
             <td id="right">
-              <%= yield %>
+              <div id="page_title"><%= @title %></div>
+                <div id="page_text_field">
+                  <%= yield %>
+                </div>
+              </div>
             </td>
           </tr>
         </tbody>

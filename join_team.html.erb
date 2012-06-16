@@ -6,90 +6,87 @@
     }
 %>
 
-<div id="page_title">Join the Team!</div>
-<div id="page_text_field"> 
-  <p>UMass Transit Service (UMTS) employs more than 150 (University of Massachusetts)
-  graduate and undergraduate students.  The majority of employees operate vans and
-  PVTA buses, while others maintain our grounds and buildings. Employees must
-  work a minimum of 180 hours each semester. At the beginning of each semester,
-  shifts are assigned to employees around their class schedules. UMTS is now paying
-  $9.00-hour for training and a base starting rate of $9.75-hour with opportunity
-  for advancement.</p>
+<p>UMass Transit Service (UMTS) employs more than 150 (University of Massachusetts)
+graduate and undergraduate students.  The majority of employees operate vans and
+PVTA buses, while others maintain our grounds and buildings. Employees must
+work a minimum of 180 hours each semester. At the beginning of each semester,
+shifts are assigned to employees around their class schedules. UMTS is now paying
+$9.00-hour for training and a base starting rate of $9.75-hour with opportunity
+for advancement.</p>
 
-  <h3 class="pageSubTitle">Who is Eligible to Drive for UMTS?</h3>
-  <p>Even though most UMass students have no prior experience driving buses or vans,
-  our training programs cover everything needed to learn to become a successful
-  operator.  If you currently hold a Massachusetts Commercial Driver's License, call
-  Don Chapman at (413)545-0056 for additional information on applying to work at UMass
-  Transit Services.</p>
+<h3 class="pageSubTitle">Who is Eligible to Drive for UMTS?</h3>
+<p>Even though most UMass students have no prior experience driving buses or vans,
+our training programs cover everything needed to learn to become a successful
+operator.  If you currently hold a Massachusetts Commercial Driver's License, call
+Don Chapman at (413)545-0056 for additional information on applying to work at UMass
+Transit Services.</p>
 
-  <p>To qualify for the training programs, students must:</p>
-  <ul>
-    <li>
-    have at least 3 semesters remaining as a UMass student, taking at least six
-    credits in a degree program.
-    </li>
-    <li>
-    be willing to work a minimum of 15 hours per week for at least 2 semesters
-    after completing the training program.
-    </li>
-    <li>
-    be able to pass a NIDA-5 pre-employment drug screen; All UMTS employees are
-    subject to drug testing regulations as per the Federal Transit Administration.
-    </li>
-    <li>
-    be able to communicate clearly in English.
-    </li>
-    <li>
-    be able to exercise a high degree of personal responsibility.
-    </li>
-    <li>
-    possess a valid drivers license of any classification, that is honored in the
-    United States. Applicants will be required to obtain a Massachusetts Class D
-    license and, if hired as a bus driver, a Class B learner's permit as soon as
-    they are accepted into the training program.
-    </li>
-    <li>
-    have at least one year of experience driving in the United States.
-    </li>
-    <li>
-    be able to obtain a CDL medical card.
-    </li>
-  </ul>
+<p>To qualify for the training programs, students must:</p>
+<ul>
+  <li>
+  have at least 3 semesters remaining as a UMass student, taking at least six
+  credits in a degree program.
+  </li>
+  <li>
+  be willing to work a minimum of 15 hours per week for at least 2 semesters
+  after completing the training program.
+  </li>
+  <li>
+  be able to pass a NIDA-5 pre-employment drug screen; All UMTS employees are
+  subject to drug testing regulations as per the Federal Transit Administration.
+  </li>
+  <li>
+  be able to communicate clearly in English.
+  </li>
+  <li>
+  be able to exercise a high degree of personal responsibility.
+  </li>
+  <li>
+  possess a valid drivers license of any classification, that is honored in the
+  United States. Applicants will be required to obtain a Massachusetts Class D
+  license and, if hired as a bus driver, a Class B learner's permit as soon as
+  they are accepted into the training program.
+  </li>
+  <li>
+  have at least one year of experience driving in the United States.
+  </li>
+  <li>
+  be able to obtain a CDL medical card.
+  </li>
+</ul>
 
-  <h3 class="pageSubTitle">To Schedule a Bus Driver Interview</h3> 
-  <%= if @hiring[:bus]
-       render "_jobinfo_bus.html.erb"
-     else
-       render "_jobinfo_not_hiring.html.erb", :locals => { :job => "Bus Drivers" }
-     end
-  %>
+<h3 class="pageSubTitle">To Schedule a Bus Driver Interview</h3>
+<%= if @hiring[:bus]
+     render "_jobinfo_bus.html.erb"
+   else
+     render "_jobinfo_not_hiring.html.erb", :locals => { :job => "Bus Drivers" }
+   end
+%>
 
-  <h3 class="pageSubTitle">To Schedule a Van Driver Interview</h3>
-  <%= if @hiring[:st]
-      render "_jobinfo_st.html.erb"
-    else
-      render "_jobinfo_not_hiring.html.erb", :locals => { :job => "Van Drivers" }
-    end
-  %>
+<h3 class="pageSubTitle">To Schedule a Van Driver Interview</h3>
+<%= if @hiring[:st]
+    render "_jobinfo_st.html.erb"
+  else
+    render "_jobinfo_not_hiring.html.erb", :locals => { :job => "Van Drivers" }
+  end
+%>
 
-  <h3 class="pageSubTitle">To Schedule a Service Department Interview</h3>
-  <%= if @hiring[:sv]
-       render "_jobinfo_sv.html.erb"
-    else
-      render "_jobinfo_not_hiring.html.erb", :locals => { :job => "Service employees" }
-    end
-  %>
+<h3 class="pageSubTitle">To Schedule a Service Department Interview</h3>
+<%= if @hiring[:sv]
+     render "_jobinfo_sv.html.erb"
+  else
+    render "_jobinfo_not_hiring.html.erb", :locals => { :job => "Service employees" }
+  end
+%>
 
-  <h3 class="pageSubTitle">What Opportunities for Advancement Are There?</h3>
-  <p>All UMass Transit employees start out as drivers. But there are many promotional
-  positions available to student employees. For instance, you can become a field trip
-  driver, a trainer, a radio operator, a driver supervisor, or a student staff member.
-  These are supervisory positions, and they can help you gain valuable experience that
-  future employers will be looking for.</p>
+<h3 class="pageSubTitle">What Opportunities for Advancement Are There?</h3>
+<p>All UMass Transit employees start out as drivers. But there are many promotional
+positions available to student employees. For instance, you can become a field trip
+driver, a trainer, a radio operator, a driver supervisor, or a student staff member.
+These are supervisory positions, and they can help you gain valuable experience that
+future employers will be looking for.</p>
 
-  <p>In addition, it is common for employees to work in several different departments.
-  For instance, you can work as a bus driver, van driver, service worker, trainer, and
-  field trip driver. This allows for a very diverse work-week, and creates more
-  money-making opportunities.</p>
-</div>
+<p>In addition, it is common for employees to work in several different departments.
+For instance, you can work as a bus driver, van driver, service worker, trainer, and
+field trip driver. This allows for a very diverse work-week, and creates more
+money-making opportunities.</p>

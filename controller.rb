@@ -36,6 +36,7 @@ before /.*/ do
   # The current year (gets used for the copyright notice in the footer)
   @year = Time.now.year
 
+  # The page title.  This one can be overwritten, but its better to use page_titles.yml
   path = String.new(@_stasis.path)
   path.slice!(File.dirname(__FILE__) + '/')
   @title = titles[path]

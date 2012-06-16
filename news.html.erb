@@ -1,45 +1,42 @@
-<div id="page_title">News</div>
-<div id="page_text_field">
-  <h3 class="pageSubTitle">Service Bulletins:</h3>
-  <div id="twitter-widget">
-    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
-    <script>
-    new TWTR.Widget({
-      version: 2,
-      type: 'profile',
-      rpp: 3,
-      interval: 5000,
-      width: 500,
-      height: 180,
-      theme: {
-        shell: {
-          background: '#666666',
-          color: '#ffffff'
-        },
-        tweets: {
-          background: '#333333',
-          color: '#eeeeee',
-          links: '#993334'
-        }
+<h3 class="pageSubTitle">Service Bulletins:</h3>
+<div id="twitter-widget">
+  <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+  <script>
+  new TWTR.Widget({
+    version: 2,
+    type: 'profile',
+    rpp: 3,
+    interval: 5000,
+    width: 500,
+    height: 180,
+    theme: {
+      shell: {
+        background: '#666666',
+        color: '#ffffff'
       },
-      features: {
-        scrollbar: false,
-        loop: true,
-        live: true,
-        hashtags: false,
-        timestamp: true,
-        avatars: false,
-        behavior: 'default'
+      tweets: {
+        background: '#333333',
+        color: '#eeeeee',
+        links: '#993334'
       }
-    }).render().setUser('umasstransit').start();
-    </script>
-  </div>
-
-  <h3 class="pageSubTitle">General News Items:</h3>
-  <iframe id="newsframe" frameborder="0" src="https://www.umasstransit.org/news2.php" name="news">
-    <p>Your browser does not handle iframes... please go <a href="https://www.umasstransit.org/news.php">here</a> to read news items.</p>
-  </iframe>
+    },
+    features: {
+      scrollbar: false,
+      loop: true,
+      live: true,
+      hashtags: false,
+      timestamp: true,
+      avatars: false,
+      behavior: 'default'
+    }
+  }).render().setUser('umasstransit').start();
+  </script>
 </div>
+
+<h3 class="pageSubTitle">General News Items:</h3>
+<iframe id="newsframe" frameborder="0" src="https://www.umasstransit.org/news2.php" name="news">
+  <p>Your browser does not handle iframes... please go <a href="https://www.umasstransit.org/news.php">here</a> to read news items.</p>
+</iframe>
 
 <script type="text/javascript">
   //Resize the news iframe.  See  http://stackoverflow.com/questions/153152/resizing-an-iframe-based-on-content
