@@ -27,66 +27,44 @@ before /.*/ do
   @year = Time.now.year
 end
 
-before "bike_racks.html.erb" do
-  @stylesheets << "bike_racks"
+# These pages each have their own stylesheet of the same name
+%w{bike_racks contactus directions jobapplication_bus meet_greet meet_greet_form
+   news rates_ft related_info schedules spectrans staff}.each do |page|
+  before "#{page}.html.erb" do
+    @stylesheets << page
+  end
 end
 
-before "contactus.html.erb" do
-  @stylesheets += %w{tables contactus}
-  @scripts << "tables"
+# These pages have no left-hand navigation column
+%w{jobapplication_bus maps rates_ft}.each do |page|
+  before "#{page}.html.erb" do
+    @leftmenu = false
+  end
 end
 
-before "directions.html.erb" do
-  @stylesheets << "directions"
-end
-
-before "jobapplication_bus.html.erb" do
-  @stylesheets << "jobapplication_bus"
-  @leftmenu = false
-end
-
-before "maps.html.erb" do
-  @leftmenu = false
-end
-
-before "meet_greet.html.erb" do
-  @stylesheets << "meet_greet"
+# These pages have tables
+%w{contact_us related_info spectrans}.each do |page|
+  before "#{page}.html.erb" do
+    @stylesheets << "tables"
+    @scripts << "tables"
+  end
 end
 
 before "meet_greet_form.html.erb" do
-  @stylesheets += %w{meet_greet meet_greet_form}
+  @stylesheets << "meet_greet"
   @scripts << "h5f.min"
 end
 
 before "news.html.erb" do
   @rss = true
-  @stylesheets << "news"
-end
-
-before "rates_ft.html.erb" do
-  @stylesheets << "rates_ft"
-  @leftmenu = false
-end
-
-before "related_info.html.erb" do
-  @stylesheets << "related"
-  @scripts << "tables"
 end
 
 before "schedules.html.erb" do
-  @stylesheets += %w{schedules tables}
+  @stylesheets << "tables"
   @scripts << "lists"
 end
 
+# Setting layout to itself is stasis's way of saying "no layout"
 before "slideshow.html.erb" do
   layout "slideshow.html.erb"
-end
-
-before "spectrans.html.erb" do
-  @stylesheets += %w{spectrans tables}
-  @scripts << "tables"
-end
-
-before "staff.html.erb" do
-  @stylesheets << "staff"
 end
