@@ -1,3 +1,13 @@
+# Load the filename => title hash from yaml.  Also, specify a default title.
+# The default title is the filename without the extension, all the underscores
+# turned into spaces, and every word capitalized.  If you ask the hash for a
+# key that doesn't exists, you'll get that.
+require 'yaml'
+titles = YAML.load_file( File.join( File.dirname( __FILE__ ), "page_titles.yml" ) )
+titles.default_proc = proc do |hash, key|
+  hash[key] = key.split('.').first.gsub(/_/, ' ').gsub(/\b('?[a-z])/) { $1.capitalize }
+end
+
 # Put files in here that are part of the project, but not part of the site.
 # They won't be copied into the "public" folder when stasis builds the site.
 ignore *%w{.gitignore .rvmrc LICENSE Gemfile Gemfile.lock Rakefile capfile}
@@ -25,6 +35,10 @@ before /.*/ do
 
   # The current year (gets used for the copyright notice in the footer)
   @year = Time.now.year
+
+  path = String.new(@_stasis.path)
+  path.slice!(File.dirname(__FILE__) + '/')
+  @title = titles[path]
 end
 
 # These pages each have their own stylesheet of the same name
