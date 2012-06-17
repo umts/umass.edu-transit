@@ -44,8 +44,13 @@ end
 
 # These pages each have their own stylesheet of the same name
 %w{bike_racks contactus directions jobapplication_bus meet_greet meet_greet_form
-   news rates_ft related_info schedules spectrans staff}.each do |page|
+   news rates_ft related_info spectrans staff}.each do |page|
   before "#{page}.html.erb" do
+    @stylesheets << page
+  end
+end
+%w{schedules}.each do |page|
+  before "#{page}.html.md" do
     @stylesheets << page
   end
 end
@@ -72,11 +77,6 @@ end
 
 before "news.html.erb" do
   @rss = true
-end
-
-before "schedules.html.erb" do
-  @stylesheets << "tables"
-  @scripts << "lists"
 end
 
 # Setting layout to itself is stasis's way of saying "no layout"
