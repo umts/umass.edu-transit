@@ -25,7 +25,7 @@ before /.*/ do
   @stylesheets = %w{ base }
 
   # An array of .js files in the javascript/ directory to link in
-  @scripts = []
+  @scripts = %w{ facebook }
 
   # Whether or not to show the left-hand navigation menu (_left_column.html.erb)
   @leftmenu = true
