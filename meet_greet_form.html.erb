@@ -161,7 +161,7 @@
   </fieldset>
 
   <div id="submitBtn">
-    <input type="submit" name="Submit" value="Submit" />
+    <input type="submit" name="Submit" value="Submit" onClick="validateMessage();" />
     <p>(please make sure all fields are filled out before submitting)</p>
   </div>
 </form>
@@ -169,5 +169,11 @@
 <script>
   window.onload = function() {
     H5F.setup(document.getElementById("mgform"));
+  }
+
+  function validateMessage() {
+    if (!document.getElementById("mgform").checkValidity()) {
+      alert('Some requried fields are blank or have invalid input\nCorrect these errors and try again.');
+    }
   }
 </script>
