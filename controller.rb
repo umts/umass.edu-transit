@@ -27,6 +27,9 @@ before /.*/ do
   # An array of .js files in the javascript/ directory to link in
   @scripts = %w{ facebook }
 
+  # Does the page need jquery?
+  @jquery = false
+
   # Whether or not to show the left-hand navigation menu (_left_column.html.erb)
   @leftmenu = true
 
@@ -71,6 +74,7 @@ end
 end
 
 before "meet_greet_form.html.erb" do
+  @jquery = true
   @stylesheets << "meet_greet"
   @scripts << "h5f.min"
 end
