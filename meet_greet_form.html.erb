@@ -167,13 +167,17 @@
 </form>
 
 <script>
-  window.onload = function() {
+  head.ready(function () {
     H5F.setup(document.getElementById("mgform"));
-  }
 
-  function validateMessage() {
-    if (!document.getElementById("mgform").checkValidity()) {
-      alert('Some requried fields are blank or have invalid input\nCorrect these errors and try again.');
-    }
-  }
+    $('#mgform input[type=submit]').click(function(e) {
+      if (!$('#mgform')[0].checkValidity()) {
+        alert("Foo");
+        var firstError = $('#mgform input.required').first()
+        var destination = firstError.offset().top;
+        $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination-20}, 500 );
+        firstError.focus();
+      }
+    });
+  });
 </script>
