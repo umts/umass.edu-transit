@@ -75,8 +75,8 @@ end
 
 before "meet_greet_form.html.erb" do
   @jquery = true
-  @stylesheets << "meet_greet"
-  @scripts << "h5f.min"
+  @stylesheets += %w{meet_greet reveal}
+  @scripts += %w{h5f.min jquery.reveal}
 end
 
 before "news.html.erb" do

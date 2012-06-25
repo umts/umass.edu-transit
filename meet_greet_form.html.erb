@@ -161,10 +161,19 @@
   </fieldset>
 
   <div id="submitBtn">
-    <input type="submit" name="Submit" value="Submit" onClick="validateMessage();" />
+    <input type="submit" name="Submit" value="Submit" />
     <p>(please make sure all fields are filled out before submitting)</p>
   </div>
 </form>
+
+<div id="errorMessage" class="reveal-modal">
+  <h2>There are problems with your request</h2>
+  <p>Some required fields are invalid or have been left blank.  Please correct the
+  errors and re-submit.</p>
+  <p>Fields with errors are marked with a <span class="validationIcon required"></span>
+  or <span class="validationIcon error"></span>.</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
 
 <script>
   head.ready(function () {
@@ -172,11 +181,26 @@
 
     $('#mgform input[type=submit]').click(function(e) {
       if (!$('#mgform')[0].checkValidity()) {
-        alert("Foo");
-        var firstError = $('#mgform input.required').first()
-        var destination = firstError.offset().top;
-        $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination-20}, 500 );
-        firstError.focus();
+        // The first field on the page that has an error
+        var firstError, destination;
+        firstError = $('#mgform input.required, #mgform input.error').first()
+        destination = firstError.offset().top;
+
+        // Prevent default validation messages from showing
+        e.preventDefault();
+
+        // When the user closes the error message, scroll to and focus the
+        // first error (doesn't handle ESC)
+        $("#errorMessage .close-reveal-modal").click(function(e) {
+          $("html:not(:animated), body:not(:animated)").animate({ scrollTop: destination-20}, 500);
+          firstError.focus();
+        });
+
+        // Show the error message
+        $('#errorMessage').reveal({
+          animation: 'fade',
+          closeonbackgroundclick: false
+        });
       }
     });
   });

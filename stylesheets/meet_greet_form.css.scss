@@ -149,3 +149,26 @@ input::-webkit-outer-spin-button {
   vertical-align: sub;
 }
 
+#errorMessage {
+  //background: white;
+
+  h2 {
+    text-align: center;
+  }
+
+  .validationIcon {
+    display: inline-block;
+    height: 17px;
+    width: 17px;
+    background: url(ico_validation.png) 0 22px no-repeat;
+  }
+
+  .required {
+    background-position: 0 -31px;
+  }
+
+  .error {
+    background-position: 0 1px;
+  }
+
+}
