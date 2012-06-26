@@ -50,6 +50,12 @@
       <%= render "_footer.html.erb" %>
   </div>
 
+  <% if @jquery %>
+    <script type="text/javascript">
+      head.js({jquery: "//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"});
+    </script>
+  <% end %>
+
   <% unless @scripts.empty? %>
     <script type="text/javascript">
       head.js("<%= @scripts.map{|s| "javascript/#{s}.js"}.join('", "') %>");
