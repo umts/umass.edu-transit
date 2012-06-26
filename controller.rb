@@ -63,7 +63,7 @@ end
 end
 
 # These pages have tables
-%w{contact_us related_info spectrans}.each do |page|
+%w{contactus related_info spectrans}.each do |page|
   before "#{page}.html.erb" do
     @stylesheets << "tables"
     @scripts << "tables"

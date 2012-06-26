@@ -13,9 +13,6 @@
     <td>(413) 545-1633</td>
   </tr>
 </table>
-<script type="text/javascript">
-  alternateClasses("transit");
-</script>
 
 <table class="contacts" id="other">
   <caption>Other UMass Departments:</caption>
@@ -40,9 +37,6 @@
     <td><a href="mailto:umtc@ecs.umass.edu">umtc@ecs.umass.edu</a></td>
   </tr>
 </table>
-<script type="text/javascript">
-  alternateClasses("other");
-</script>
 
 <table class="contacts" id="college">
   <caption>College Info Desks:</caption>
@@ -67,9 +61,6 @@
     <td>(413) 256-8316</td>
   </tr>
 </table>
-<script type="text/javascript">
-  alternateClasses("college");
-</script>
 
 <table class="contacts" id="pvta">
   <caption>Pioneer Valley Transit Authority:</caption>
@@ -90,9 +81,6 @@
     <td>(413) 586-5806</td>
   </tr>
 </table>
-<script type="text/javascript">
-  alternateClasses("pvta");
-</script>
 
 <table class="contacts" id="peter_pan">
   <caption>Peter Pan:</caption>
@@ -104,9 +92,6 @@
     <td colspan="2"><a href="http://www.peterpanbus.com/tickets/terminal-listings.php">Terminal Listings</a> (where to buy tickets)</td>
   </tr>
 </table>
-<script type="text/javascript">
-  alternateClasses("peter_pan");
-</script>
 
 <table class="contacts" id="otherTrans">
   <caption>Other Transportation Links:</caption>
@@ -130,9 +115,6 @@
     <td colspan="2"><a href="http://maps.google.com/maps?&ie=UTF8&oe=UTF-8&q=taxi+amherst,+ma&fb=1&view=map&cd=1&hl=en&ll=42.390628,-72.529335&spn=0.08355,0.181961&z=13">Taxi Services</a></td>
   </tr>
 </table>
-<script type="text/javascript">
-  alternateClasses("otherTrans");
-</script>
 
 <table class="contacts" id="misc">
   <caption>Miscellaneous:</caption>
@@ -158,9 +140,6 @@
     <td colspan="2"><a href="http://prisms.cs.umass.edu/dome/index.php?page=umassdieselnet">DieselNet</a></td>
   </tr>
 </table>
-<script type="text/javascript">
-  alternateClasses("misc");
-</script>
 
 <table class="contacts" id="industry">
   <caption>Transportation Industry Organizations:</caption>
@@ -174,6 +153,16 @@
     <td colspan="2"><a href='http://utc.umasstransit.org/'>University Transportation and Communities</a></td>
   </tr>
 </table>
+
 <script type="text/javascript">
-  alternateClasses("industry");
+  head.ready( function() {
+    alternateClasses("transit");
+    alternateClasses("other");
+    alternateClasses("college");
+    alternateClasses("pvta");
+    alternateClasses("peter_pan");
+    alternateClasses("otherTrans");
+    alternateClasses("misc");
+    alternateClasses("industry");
+  });
 </script>
