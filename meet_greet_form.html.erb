@@ -170,7 +170,7 @@
   <h2>There are problems with your request</h2>
   <p>Some required fields are invalid or have been left blank.  Please correct the
   errors and re-submit.</p>
-  <p>Fields with errors are marked with a <span class="validationIcon required"></span>
+  <p>Errors are marked with a <span class="validationIcon required"></span>
   or <span class="validationIcon error"></span>.</p>
   <a class="close-reveal-modal">&#215;</a>
 </div>
@@ -191,7 +191,7 @@
 
         // When the user closes the error message, scroll to and focus the
         // first error (doesn't handle ESC)
-        $("#errorMessage .close-reveal-modal").click(function(e) {
+        $("#errorMessage .close-reveal-modal").unbind("click").click(function(e) {
           $("html:not(:animated), body:not(:animated)").animate({ scrollTop: destination-20}, 500);
           firstError.focus();
         });
