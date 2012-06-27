@@ -7,13 +7,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
     <link href="stylesheets/base.css" rel="stylesheet" type="text/css"/>
     <link href="stylesheets/slideshow.css" rel="stylesheet" type="text/css"/>
-    <script src="javascript/prototype.js"></script>
+    <script src="javascript/head.min.js"></script>
   </head>
 
   <body>
     <div id="fb-root"></div>
-    <script src="javascript/facebook.js"></script>
-
     <div id="container" >
       <%= render "_header.html.erb" %>
 
@@ -80,6 +78,11 @@
 
       <%= render "_footer.html.erb" %>
     </div>
+
+    <script type="text/javascript">
+      head.js("javascript/facebook.js");
+    </script>
+
     <%= render "_ga.html.erb" %>
   </body>
 </html>
