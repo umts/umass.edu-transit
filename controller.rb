@@ -25,7 +25,7 @@ before /.*/ do
   @stylesheets = %w{ base }
 
   # An array of .js files in the javascript/ directory to link in
-  @scripts = %w{ facebook }
+  @scripts = %w{ facebook log }
 
   # Does the page need jquery?
   @jquery = false
