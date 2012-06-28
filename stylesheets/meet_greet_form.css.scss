@@ -1,3 +1,20 @@
+@mixin err {
+  background-color: #FFDBE1;
+  background-position: 300px 1px;
+  outline: none;
+}
+
+@mixin req {
+  background-color: #fff;
+  background-position: 300px -31px;
+}
+
+@mixin ok {
+  background-color: #fff;
+  background-position: 300px -63px;
+}
+
+
 #container #main_table #right #page_text_field{
   margin-left: 0px;
   margin-top: 0px;
@@ -98,23 +115,25 @@
       color: #A6A6A6;
     }
 
-    input.error,
+    input.error {
+      @include err;
+    }
     input:focus:required:invalid {
-      background-color: #FFDBE1;
-      background-position: 300px 1px;
-      outline: none;
+      @include err;
     }
 
-    input.required,
+    input.required {
+      @include req;
+    }
     input[type=text]:focus:not([pattern]):required:invalid {
-      background-color: #fff;
-      background-position: 300px -31px;
+      @include req;
     }
 
-    input.required.valid,
+    input.required.valid {
+      @include ok;
+    }
     input:required:valid {
-      background-color: #fff;
-      background-position: 300px -63px;
+      @include ok;
     }
   }
 
