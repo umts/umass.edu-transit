@@ -2,7 +2,9 @@
 
 **PDF Schedules:**
 
-* [29][VS]: Amherst / Holyoke via Route 116
+New schedules which go into effect on Tuesday, September 4 are available
+[here][newsched].
+
 * [30][30]: North Amherst / UMass / Old Belchertown Road
 * [31][31]: Sunderland / UMass / South Amherst
 * [32][OR]: Puffers Pond / UMass / Atkins Corner
@@ -37,3 +39,4 @@ Campus Center concourse information booth.
 [cal]:  calendar.html
 [trip]: trip_planner.html
 [dir]:  directions.html
+[newsched]: schedules_new.html
