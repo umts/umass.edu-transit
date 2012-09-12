@@ -1,17 +1,17 @@
 @mixin err {
   background-color: #FFDBE1;
-  background-position: 300px 1px;
+  background-position: right 1px;
   outline: none;
 }
 
 @mixin req {
   background-color: #fff;
-  background-position: 300px -31px;
+  background-position: right -31px;
 }
 
 @mixin ok {
   background-color: #fff;
-  background-position: 300px -63px;
+  background-position: right -63px;
 }
 
 
@@ -104,10 +104,14 @@
       padding: 3px;
     }
 
-    input, select {
-      background: #fff url(ico_validation.png) 300px 22px no-repeat;
+    input {
+      background: #fff url(ico_validation.png) right 22px no-repeat;
       width: 292px;
       padding: 3px 24px 3px 3px;
+    }
+
+    select {
+      height: 21px;
     }
 
     input::-webkit-input-placeholder,
@@ -148,6 +152,20 @@
     input {
       width: auto;
       margin-right: 20px;
+      background-color: #EEE;
+    }
+  }
+
+  .time {
+    display: inline-block;
+    width: 323px;
+
+    input {
+      width: 237px;
+    }
+
+    select {
+      width: 50px;
     }
   }
 }

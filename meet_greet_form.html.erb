@@ -73,7 +73,13 @@
       </li>
       <li>
         <label for="time">Time</label>
-        <input type="text" name="time" required />
+        <div class="time">
+          <input type="text" name="time" required />
+          <select name="timeAmPm">
+            <option>AM</option>
+            <option>PM</option>
+          </select>
+        </div>
         <span class="ast">*</span>
       </li>
       <li>
@@ -99,7 +105,13 @@
       </li>
       <li>
         <label for="arrDepTime">Arrival/Departure Time</label>
-        <input type="text" name="arrDepTime" />
+        <div class="time">
+          <input type="text" name="arrDepTime" />
+          <select name="arrDepTimeAmPm">
+            <option>AM</option>
+            <option>PM</option>
+          </select>
+        </div>
       </li>
     </ol>
   </fieldset>
@@ -122,7 +134,13 @@
       </li>
       <li>
         <label for="time2">Time</label>
-        <input type="text" name="time2" />
+        <div class="time">
+          <input type="text" name="time2" />
+          <select name="time2AmPm">
+            <option>AM</option>
+            <option>PM</option>
+          </select>
+        </div>
       </li>
       <li>
         <label for="pickup2">Pickup Location</label>
@@ -145,7 +163,13 @@
       </li>
       <li>
         <label for="arrDepTime2">Arrival/Departure Time</label>
-        <input type="text" name="arrDepTime2" />
+        <div class="time">
+          <input type="text" name="arrDepTime2" />
+          <select name="arrDepTime2AmPm">
+            <option>AM</option>
+            <option>PM</option>
+          </select>
+        </div>
       </li>
     </ol>
   </fieldset>
@@ -190,16 +214,16 @@
         e.preventDefault();
 
         // When the user closes the error message, scroll to and focus the
-        // first error (doesn't handle ESC)
-        $("#errorMessage .close-reveal-modal").unbind("click").click(function(e) {
+        // first error.
+        $('#errorMessage').bind('reveal:close', function(e) {
           $("html:not(:animated), body:not(:animated)").animate({ scrollTop: destination-20}, 500);
           firstError.focus();
         });
 
+
         // Show the error message
         $('#errorMessage').reveal({
-          animation: 'fade',
-          closeonbackgroundclick: false
+          animation: 'fade'
         });
       }
     });
