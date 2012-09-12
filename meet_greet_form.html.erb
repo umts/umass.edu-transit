@@ -73,7 +73,13 @@
       </li>
       <li>
         <label for="time">Time</label>
-        <input type="text" name="time" required />
+        <div class="time">
+          <input type="text" name="time" required />
+          <select name="timeAmPm">
+            <option>AM</option>
+            <option>PM</option>
+          </select>
+        </div>
         <span class="ast">*</span>
       </li>
       <li>
@@ -99,7 +105,13 @@
       </li>
       <li>
         <label for="arrDepTime">Arrival/Departure Time</label>
-        <input type="text" name="arrDepTime" />
+        <div class="time">
+          <input type="text" name="arrDepTime" />
+          <select name="arrDepTimeAmPm">
+            <option>AM</option>
+            <option>PM</option>
+          </select>
+        </div>
       </li>
     </ol>
   </fieldset>
@@ -122,7 +134,13 @@
       </li>
       <li>
         <label for="time2">Time</label>
-        <input type="text" name="time2" />
+        <div class="time">
+          <input type="text" name="time2" />
+          <select name="time2AmPm">
+            <option>AM</option>
+            <option>PM</option>
+          </select>
+        </div>
       </li>
       <li>
         <label for="pickup2">Pickup Location</label>
@@ -145,7 +163,13 @@
       </li>
       <li>
         <label for="arrDepTime2">Arrival/Departure Time</label>
-        <input type="text" name="arrDepTime2" />
+        <div class="time">
+          <input type="text" name="arrDepTime2" />
+          <select name="arrDepTime2AmPm">
+            <option>AM</option>
+            <option>PM</option>
+          </select>
+        </div>
       </li>
     </ol>
   </fieldset>
@@ -166,8 +190,42 @@
   </div>
 </form>
 
+<div id="errorMessage" class="reveal-modal">
+  <h2>There are problems with your request</h2>
+  <p>Some required fields are invalid or have been left blank.  Please correct the
+  errors and re-submit.</p>
+  <p>Errors are marked with a <span class="validationIcon required"></span>
+  or <span class="validationIcon error"></span>.</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
 <script>
-  window.onload = function() {
+  head.ready(function () {
     H5F.setup(document.getElementById("mgform"));
-  }
+
+    $('#mgform input[type=submit]').click(function(e) {
+      if (!$('#mgform')[0].checkValidity()) {
+        // The first field on the page that has an error
+        var firstError, destination;
+        firstError = $('#mgform input.required, #mgform input.error').first()
+        destination = firstError.offset().top;
+
+        // Prevent default validation messages from showing
+        e.preventDefault();
+
+        // When the user closes the error message, scroll to and focus the
+        // first error.
+        $('#errorMessage').bind('reveal:close', function(e) {
+          $("html:not(:animated), body:not(:animated)").animate({ scrollTop: destination-20}, 500);
+          firstError.focus();
+        });
+
+
+        // Show the error message
+        $('#errorMessage').reveal({
+          animation: 'fade'
+        });
+      }
+    });
+  });
 </script>

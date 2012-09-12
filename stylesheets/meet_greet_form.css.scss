@@ -1,3 +1,20 @@
+@mixin err {
+  background-color: #FFDBE1;
+  background-position: right 1px;
+  outline: none;
+}
+
+@mixin req {
+  background-color: #fff;
+  background-position: right -31px;
+}
+
+@mixin ok {
+  background-color: #fff;
+  background-position: right -63px;
+}
+
+
 #container #main_table #right #page_text_field{
   margin-left: 0px;
   margin-top: 0px;
@@ -87,10 +104,14 @@
       padding: 3px;
     }
 
-    input, select {
-      background: #fff url(ico_validation.png) 300px 22px no-repeat;
+    input {
+      background: #fff url(ico_validation.png) right 22px no-repeat;
       width: 292px;
       padding: 3px 24px 3px 3px;
+    }
+
+    select {
+      height: 21px;
     }
 
     input::-webkit-input-placeholder,
@@ -98,23 +119,25 @@
       color: #A6A6A6;
     }
 
-    input.error,
+    input.error {
+      @include err;
+    }
     input:focus:required:invalid {
-      background-color: #FFDBE1;
-      background-position: 300px 1px;
-      outline: none;
+      @include err;
     }
 
-    input.required,
+    input.required {
+      @include req;
+    }
     input[type=text]:focus:not([pattern]):required:invalid {
-      background-color: #fff;
-      background-position: 300px -31px;
+      @include req;
     }
 
-    input.valid,
+    input.required.valid {
+      @include ok;
+    }
     input:required:valid {
-      background-color: #fff;
-      background-position: 300px -63px;
+      @include ok;
     }
   }
 
@@ -129,6 +152,20 @@
     input {
       width: auto;
       margin-right: 20px;
+      background-color: #EEE;
+    }
+  }
+
+  .time {
+    display: inline-block;
+    width: 323px;
+
+    input {
+      width: 237px;
+    }
+
+    select {
+      width: 50px;
     }
   }
 }
@@ -149,3 +186,26 @@ input::-webkit-outer-spin-button {
   vertical-align: sub;
 }
 
+#errorMessage {
+  //background: white;
+
+  h2 {
+    text-align: center;
+  }
+
+  .validationIcon {
+    display: inline-block;
+    height: 17px;
+    width: 17px;
+    background: url(ico_validation.png) 0 22px no-repeat;
+  }
+
+  .required {
+    background-position: 0 -31px;
+  }
+
+  .error {
+    background-position: 0 1px;
+  }
+
+}
