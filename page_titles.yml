@@ -9,10 +9,11 @@ ft_maroonwhite.html.md: Field Trip Maroon and White
 ft_rts.html.md: Field Trip City Bus
 ft_schoolbuses.html.md: Field Trip School Buses
 ft_st_vans.html.md: Field Trip Wheelchair Vans
-ft_vans.html.md: Field Trip Van Pictures
+ft_vans.html.md: Field Trip Vans
 jobapplication_bus.html.erb: Job Application
 join_team.html.erb: Join the Team!
 meet_greet.html.erb: Meet & Greet
+meet_greet_sedans.html.md: Meet & Greet Sedan
 meet_greet_form.html.erb: Request Meet & Greet Service
 rates_ft.html.erb: FT Rates
 schedules.html.md: PVTA Schedules
