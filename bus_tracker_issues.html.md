@@ -1,4 +1,4 @@
-Below are known-issues affecting the [Amherst-area][track] and [Northampton-area][ntrack] bus trackers:
+#### Known-issues affecting the [bus tracker][track]:
 
 1. Information can be several minutes old.
 1. Age of information is not indicated.
@@ -12,7 +12,7 @@ Below are known-issues affecting the [Amherst-area][track] and [Northampton-area
 1. The [text-only][text] main page is missing route numbers.
 1. The [text-only][text] stops pages do not display times for Routes 34 and 35.
 
-Future Plans:
+#### Future Plans:
 
 * Improve accuracy of information.
 * Indicate age of information.
@@ -24,8 +24,6 @@ Please [contact PVTA][cpvta] with any questions or suggestions.
 
 [sched]: schedules.html
 [trip]: trip_planner.html
-[track]: http://umts.pvta.com:81/InfoPoint
-[ntrack]: http://ntf.pvta.com:81/InfoPoint
-[strack]: http://stf.pvta.com:81/InfoPoint
-[text]: http://umts.pvta.com:81/infopoint/noscript.aspx
+[track]: http://uts.pvta.com:81/InfoPoint
+[text]: http://uts.pvta.com:81/infopoint/noscript.aspx
 [cpvta]: http://www.pvta.com/contact.php
