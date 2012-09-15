@@ -15,7 +15,7 @@
 * [40][VS]: Smith College / UMass
 * [43][VS]: Smith College / UMass / Amherst College
 
-Go to [Service Bulletins][news], [PVTA Buses][bus], [Maps][maps], [Service Calendar][cal],
+Go to [Service Bulletins][news], [PVTA Buses][bus], [Maps][maps], [Service Calendar][cal], [Bus Tracker][track],
 and [Trip Planner][trip] for more information about our routes and service area. Printed
 schedules are available on our buses, at the [UMass Bus Garage][dir], and at the UMass
 Campus Center concourse information booth.
@@ -37,3 +37,4 @@ Campus Center concourse information booth.
 [trip]: trip_planner.html
 [dir]:  directions.html
 [newsched]: schedules_new.html
+[track]: bus_tracker.html
