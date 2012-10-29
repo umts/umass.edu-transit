@@ -1,35 +1,22 @@
 <h3 class="pageSubTitle">Service Bulletins:</h3>
+<%# Note: to customize the appearance of the Twitter widget, go
+    here - https://twitter.com/settings/widgets/262939575813545985/edit #%>
 <div id="twitter-widget">
-  <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+  <a class="twitter-timeline" 
+    href="https://twitter.com/umasstransit" 
+    width="500"
+    data-aria-polite="assertive"
+    data-widget-id="262939575813545985">Tweets by @umasstransit</a>
   <script>
-  new TWTR.Widget({
-    version: 2,
-    type: 'profile',
-    rpp: 3,
-    interval: 5000,
-    width: 500,
-    height: 180,
-    theme: {
-      shell: {
-        background: '#666666',
-        color: '#ffffff'
-      },
-      tweets: {
-        background: '#222222',
-        color: '#eeeeee',
-        links: '#999966'
+    !function(d,s,id){
+      var js,fjs=d.getElementsByTagName(s)[0];
+      if(!d.getElementById(id)){
+        js=d.createElement(s);
+        js.id=id;
+        js.src="//platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js,fjs);
       }
-    },
-    features: {
-      scrollbar: false,
-      loop: true,
-      live: true,
-      hashtags: false,
-      timestamp: true,
-      avatars: false,
-      behavior: 'default'
-    }
-  }).render().setUser('umasstransit').start();
+    }(document,"script","twitter-wjs");
   </script>
 </div>
 
