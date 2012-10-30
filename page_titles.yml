@@ -17,7 +17,6 @@ meet_greet_sedans.html.md: Meet & Greet Sedan
 meet_greet_form.html.erb: Request Meet & Greet Service
 rates_ft.html.erb: FT Rates
 schedules.html.md: PVTA Schedules
-schedules_new.html.md: New Schedules - Effective 9/4/2012
 spectrans.html.erb: Special Transportation
 staff.html.erb: Transit Staff
 student_ft.html.md: Student Groups
