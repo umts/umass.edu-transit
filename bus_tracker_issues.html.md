@@ -4,7 +4,9 @@
 2. Age of information is not indicated.
 3. Sometimes, not all buses are displayed.
 4. In certain circumstances, buses may appear on the wrong route.
-5. There are separate bus trackers for [Amherst][track], [Northampton][ntrack], and [Springfield][strack]. Routes common to multiple regions only appear on one bus tracker.
+5. There are separate bus trackers for [Amherst][track], [Northampton][ntrack],
+   and [Springfield][strack]. Routes common to multiple regions only appear on
+   one bus tracker.
 6. Information in the bus icon pop-up window can be misleading or inaccurate:
     * "Last updated on:" is not when the bus was at its shown location.
     * "Status:" (ON-TIME, LATE, EARLY) is sometimes wrong.
@@ -21,9 +23,10 @@
 * Combine all PVTA routes onto one bus tracker.
 * Add departure estimates to: 
     * The [trip planner][trip] (using [GTFS-realtime][gtfs])
-    * The bus stops mobile pages (QRCodes posted at bus stops currently display scheduled times).
+    * The bus stops mobile pages (QRCodes posted at bus stops currently display
+      scheduled times).
 
-Please [contact PVTA][cpvta] with any questions or suggestions.  
+Please [contact PVTA][cpvta] with any questions or suggestions.
 
 [gtfs]: https://developers.google.com/transit/gtfs-realtime/
 [track]: http://uts.pvta.com:81/InfoPoint
