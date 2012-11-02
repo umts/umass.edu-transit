@@ -12,15 +12,13 @@
     * "Status:" (ON-TIME, LATE, EARLY) is sometimes wrong.
     * "Last Stop:" is sometimes contradicted by the location of the bus' icon.
 7. The [text-only][text] main page is missing route numbers.
-8. The [text-only][text] stops pages do not display times for Routes 34 and 35.
+
 
 #### Future Plans:
 
 * Improve accuracy of information.
-* Indicate age of information.
 * Add route numbers to the main page of the [text-only version][text].
-* Add Routes 34 and 35 to the [text-only version][text].
-* Combine all PVTA routes onto one bus tracker.
+* Replace this bus tracker with one that shows all PVTA routes (and also indicates age of information).
 * Add departure estimates to: 
     * The [trip planner][trip] (using [GTFS-realtime][gtfs])
     * The bus stops mobile pages (QRCodes posted at bus stops currently display
