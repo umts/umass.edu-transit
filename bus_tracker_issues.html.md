@@ -11,13 +11,11 @@
     * "Last updated on:" is not when the bus was at its shown location.
     * "Status:" (ON-TIME, LATE, EARLY) is sometimes wrong.
     * "Last Stop:" is sometimes contradicted by the location of the bus' icon.
-7. The [text-only][text] main page is missing route numbers.
-
+7. The bus icon pop-up window does not show "Status" for some routes.
 
 #### Future Plans:
 
 * Improve accuracy of information.
-* Add route numbers to the main page of the [text-only version][text].
 * Replace this bus tracker with one that shows all PVTA routes (and also indicates age of information).
 * Add departure estimates to: 
     * The [trip planner][trip] (using [GTFS-realtime][gtfs])
