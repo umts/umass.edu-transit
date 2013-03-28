@@ -20,11 +20,14 @@
           <tr>
             <td id="image_column">
               <div id="slideshow">
-                <script type="text/javascript" src="javascript/rotate.js">
-                </script>
+                <img src="images/bus_bike_night.jpg">
+                <img src="images/gilligside.jpg">
+                <img src="images/transit.jpg">
+                <img src="images/commencement_buses.jpg">
+                <img src="images/bus_on_campus.jpg">
               </div>
             </td>
-            <td id="discription_column">
+            <td id="description_column">
               <div id="text_field">
                 <p>UMass Transit provides <a href="buses.html">bus</a> and
                 <a href="spectrans.html">van</a> service to the University/Five College
@@ -83,6 +86,24 @@
 
     <script type="text/javascript">
       head.js("javascript/facebook.js");
+      head.js("javascript/sliderman.1.3.7.js");
+      head.ready(function() {
+          var slider = Sliderman.slider({container: 'slideshow',
+                                         width: 532,
+                                         height: 318,
+                                         effects: 'fade',
+                                         display: {
+                                           autoplay: 6000,
+                                           autostart: false,
+                                           buttons: {
+                                             hide: true,
+                                             opacity: 1,
+                                             prev: {className: 'slideshow_nav slideshow_prev'},
+                                             next: {className: 'slideshow_nav slideshow_next'}
+                                           }
+                                         }
+                                         })
+      });
     </script>
 
     <%= render "_ga.html.erb" %>
