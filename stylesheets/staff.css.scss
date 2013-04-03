@@ -1,0 +1,33 @@
+#main_table table.contacts {
+  border-collapse: collapse;
+  border-width: 0;
+  border-spacing: 0;
+  padding: 0;
+
+  tr {
+    height: 45px;
+    vertical-align: top;
+  }
+  td {
+    border: none;
+  }
+  tr.supervisor {
+    background-color: #dfdfdf;
+    height: 20px;
+    vertical-align: center;
+  }
+  tr > td:first-child {
+    width: 160px;
+  }
+  tr > td:last-child {
+    width: 342px;
+  }
+  a, .noemail{
+    font-weight: bold;
+  }
+}
+
+#main_table .dept_separator{
+  font-weight: bold;
+  padding: 15px 0;
+}

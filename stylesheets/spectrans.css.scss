@@ -1,0 +1,19 @@
+#main_table {
+  .contacts, .schedule {
+    border-collapse: collapse;
+    font-size:15px;
+
+    td {
+      border: none;
+    }
+  }
+
+  .schedule {
+    width: 340px;
+    margin-bottom: 20px;
+
+    td {
+      padding: 4px;
+    }
+  }
+}

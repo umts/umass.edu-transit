@@ -1,0 +1,26 @@
+#rates{
+  border-collapse: collapse;
+
+  td, th {
+    background-color: #EEE;
+    padding: 5px;
+    border: solid black 1px;
+    text-align: center;
+  }
+  tr {
+    height: 10px;
+  }
+  thead {
+    vertical-align: bottom;
+  }
+  tbody {
+    vertical-align: middle;
+  }
+  em {
+    font-style: normal;
+    color: #990000;
+  }
+  p{
+    margin: 5px 0px;
+  }
+}

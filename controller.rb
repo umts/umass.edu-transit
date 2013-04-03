@@ -8,6 +8,9 @@ titles.default_proc = proc do |hash, key|
   hash[key] = key.split('.').first.gsub(/_/, ' ').gsub(/\b('?[a-z])/) { $1.capitalize }
 end
 
+#Compress (minify) Sass output
+Stasis::Options.set_template_option "scss", {:style => :compressed}
+
 # Put files in here that are part of the project, but not part of the site.
 # They won't be copied into the "public" folder when stasis builds the site.
 ignore *%w{.gitignore .rvmrc capfile LICENSE Gemfile Gemfile.lock Rakefile README.md page_titles.yml}
