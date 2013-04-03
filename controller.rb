@@ -1,8 +1,10 @@
+require 'yaml'
+require 'uglifier'
+
 # Load the filename => title hash from yaml.  Also, specify a default title.
 # The default title is the filename without the extension, all the underscores
 # turned into spaces, and every word capitalized.  If you ask the hash for a
 # key that doesn't exists, you'll get that.
-require 'yaml'
 titles = YAML.load_file( File.join( File.dirname( __FILE__ ), "page_titles.yml" ) )
 titles.default_proc = proc do |hash, key|
   hash[key] = key.split('.').first.gsub(/_/, ' ').gsub(/\b('?[a-z])/) { $1.capitalize }
@@ -46,6 +48,12 @@ before /.*/ do
   path = String.new(@_stasis.path)
   path.slice!(File.dirname(__FILE__) + '/')
   @title = titles[path]
+end
+
+# "Uglify" the Javascript.  Essentially replaces the output content with the
+# result of the call to .compile
+before /\.js$/ do
+  instead Uglifier.compile(File.read(@_stasis.path))
 end
 
 # These pages each have their own stylesheet of the same name
