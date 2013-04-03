@@ -88,20 +88,21 @@
       head.js("javascript/facebook.js");
       head.js("javascript/sliderman.1.3.7.js");
       head.ready(function() {
-          var slider = Sliderman.slider({container: 'slideshow',
-                                         width: 532,
-                                         height: 318,
-                                         effects: 'fade',
-                                         display: {
-                                           autoplay: 6000,
-                                           buttons: {
-                                             hide: true,
-                                             opacity: 1,
-                                             prev: {className: 'slideshow_nav slideshow_prev'},
-                                             next: {className: 'slideshow_nav slideshow_next'}
-                                           }
-                                         }
-                                         })
+          var slider = Sliderman.slider(
+            {container: 'slideshow',
+             width: 532,
+             height: 318,
+             effects: 'fade',
+             display: {
+               autoplay: 6000,
+               buttons: {
+                 hide: true,
+                 opacity: 1,
+                 prev: {className: 'slideshow_nav slideshow_prev'},
+                 next: {className: 'slideshow_nav slideshow_next'}
+               }
+             }
+           })
       });
     </script>
 
