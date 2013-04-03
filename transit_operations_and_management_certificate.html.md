@@ -1,4 +1,10 @@
-The Certificate in Transit Operations and Management is designed to provide opportunities for students to learn about the transit industry and to provide them with the training and tools necessary to become leaders in the field. The program has a balanced focus on academic course work and practical experience to prepare them for jobs within the transit industry.  Requirements include five courses, a workshop, and the completion of an internship with a transit property.
+The Certificate in Transit Operations and Management is designed to provide
+opportunities for students to learn about the transit industry and to
+provide them with the training and tools necessary to become leaders in the
+field. The program has a balanced focus on academic course work and practical
+experience to prepare them for jobs within the transit industry.
+Requirements include five courses, a workshop, and the completion of an
+internship with a transit property.
 
 ####Information:
 * [General Information about the certificate][info-gen]
