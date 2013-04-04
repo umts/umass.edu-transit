@@ -1,13 +1,17 @@
 require 'capistrano/version'
-load 'deploy' if respond_to?(:namespace) # cap2 differentiator
+require 'bundler'
 
+# Check for missing gems. Practically the same as `bundle check`
 begin
-  require 'stasis'
-rescue LoadError
-  puts "You do not have the stasis gem installed."
-  puts "Run 'bundle' to install it."
+  definition = Bundler.definition
+  not_installed = definition.missing_specs
+rescue Bundler::GemNotFound, Bundler::VersionConflict
+  $stderr.puts "Bundler can't satisfy your Gemfile's dependencies."
+  $stderr.puts "Install missing gems with `bundle install`."
   exit 1
 end
+
+load 'deploy' if respond_to?(:namespace) # cap2 differentiator
 
 set :application, "transit"
 set :repository,  "git://github.com/umts/umass.edu-transit.git"
@@ -57,7 +61,7 @@ namespace :index do
            echo \"#{index_page}\" > #{deploy_to}/MODE"
     rescue NameError
       puts "index_page is not defined.  You probably want to run 'cap index:slideshow'
-            or 'cap index:news' instead.  If you really want to link to some other
+            or 'cap index:news' instead. If you really want to link to some other
             page, sprecify the value like so:
             > cap index:link -s 'index_page=some_other_page.html'".gsub(/  +/, '').gsub(/>/, "\t")
     end
