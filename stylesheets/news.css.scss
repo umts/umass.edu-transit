@@ -1,17 +1,18 @@
-#newsframe{
-  width: 591px;
-  min-height: 300px;
+h3{
+  padding: 0px 20px;
 }
 
 #twitter-widget{
   padding: 0 45px 15px;
 }
 
-h3{
-  padding: 0px 20px;
-}
-
-#page_text_field {
-  margin: 0px;
-  padding: 0px;
+#news-items{
+  padding: 0 45px 15px;
+  & > li {
+    list-style: none;
+    padding: 10px 0;
+  }
+  a {
+    font-weight: bold;
+  }
 }

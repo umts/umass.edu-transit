@@ -1,5 +1,7 @@
-require 'yaml'
+require 'json'
+require 'tzinfo'
 require 'uglifier'
+require 'yaml'
 
 # Load the filename => title hash from yaml.  Also, specify a default title.
 # The default title is the filename without the extension, all the underscores
@@ -15,7 +17,17 @@ Stasis::Options.set_template_option "scss", {:style => :compressed}
 
 # Put files in here that are part of the project, but not part of the site.
 # They won't be copied into the "public" folder when stasis builds the site.
-ignore *%w{.gitignore .rvmrc capfile LICENSE Gemfile Gemfile.lock Rakefile README.md page_titles.yml}
+ignore *%w{.gitignore
+           .rvmrc
+           Gemfile
+           Gemfile.lock
+           LICENSE
+           README.md
+           Rakefile
+           capfile
+           news.yml
+           page_titles.yml
+}
 
 ignore(/\.swp$/, %r{/\.git/}, %r{/\.sass-cache/})
 ignore /\/_.*/
@@ -92,9 +104,33 @@ end
 
 before "news.html.erb" do
   @rss = true
+  @jquery = true
 end
 
 # Setting layout to itself is stasis's way of saying "no layout"
 before "slideshow.html.erb" do
   layout "slideshow.html.erb"
+end
+
+before "news.json" do
+  output = []
+  File.open('news.yml') do |file|
+    YAML.load_documents(file) do |doc|
+      %w{posted start end}.each do |field|
+        doc[field] = UMTS::Time.formatted_time(doc[field])
+      end
+      output << doc
+    end
+  end
+  instead output.to_json
+end
+
+module UMTS
+  class Time
+    def self.formatted_time(time)
+      tz = TZInfo::Timezone.get('America/New_York')
+      dt = DateTime.parse(time)
+      return tz.local_to_utc(dt).rfc2822
+    end
+  end
 end
