@@ -19,25 +19,25 @@ Stasis::Options.set_template_option "scss", {:style => :compressed}
 # They won't be copied into the "public" folder when stasis builds the site.
 ignore *%w{.gitignore
            .rvmrc
+           capfile
            Gemfile
            Gemfile.lock
            LICENSE
-           README.md
-           Rakefile
-           capfile
            news.yml
            page_titles.yml
+           README.md
+           Rakefile
 }
 
 ignore(/\.swp$/, %r{/\.git/}, %r{/\.sass-cache/})
 ignore /\/_.*/
-ignore /layout.*/
+ignore /layout/
 
 layout "layout.html.erb"
 
 # These instance variables are the defaults and are available in every template.
 # They are overwritten or added to for specific pages below.
-before /.*/ do
+before /./ do
   # An array of .css files in the stylesheets/ directory to link in
   @stylesheets = %w{ base }
 
@@ -112,12 +112,15 @@ before "slideshow.html.erb" do
   layout "slideshow.html.erb"
 end
 
+#news.json is a json representation of the news items listed in news.yml
+#in an array. YAML is easier for people to read, json is easier for
+#javascript to read. We also do some time manipulation.
 before "news.json" do
   output = []
   File.open('news.yml') do |file|
     YAML.load_documents(file) do |doc|
       %w{posted start end}.each do |field|
-        doc[field] = UMTS::Time.formatted_time(doc[field])
+        doc[field] = formatted_time(doc[field])
       end
       output << doc
     end
@@ -125,12 +128,10 @@ before "news.json" do
   instead output.to_json
 end
 
-module UMTS
-  class Time
-    def self.formatted_time(time)
-      tz = TZInfo::Timezone.get('America/New_York')
-      dt = DateTime.parse(time)
-      return tz.local_to_utc(dt).rfc2822
-    end
+helpers do
+  def formatted_time(time)
+    tz = TZInfo::Timezone.get('America/New_York')
+    dt = DateTime.parse(time)
+    return tz.local_to_utc(dt).rfc2822
   end
 end
