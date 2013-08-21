@@ -128,6 +128,9 @@ before "news.json" do
   instead output.to_json
 end
 
+#Call DateTime.parse on a string and return a rfc2822 formatted string which is
+#what most browsers' javascript would like to consume.  Treats all times as local
+#to 'America/New_York'
 helpers do
   def formatted_time(time)
     tz = TZInfo::Timezone.get('America/New_York')
