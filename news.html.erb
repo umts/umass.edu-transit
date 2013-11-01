@@ -34,9 +34,9 @@
       $.each(data.sort(sortByPosted), function(index, item) {
           if (item.published && Date.now() >= Date.parse(item.start) && Date.now() < Date.parse(item.end)){
             if (item.link === null) {
-              $("#news-items").append("<li><strong>" + item.title + "</strong>: </li>");
+              $("#news-items").append("<li><strong class='item_title'>" + item.title + "</strong>: </li>");
             } else {
-              $("#news-items").append("<li><a href='" + item.link + "'>" + item.title + "</a>: </li>");
+              $("#news-items").append("<li><a class='item_title' href='" + item.link + "'>" + item.title + "</a>: </li>");
             }
             $("#news-items li:last").append(item.description);
           }

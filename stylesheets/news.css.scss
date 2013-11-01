@@ -7,12 +7,13 @@ h3{
 }
 
 #news-items{
+  color: #666;
   padding: 0 45px 15px;
   & > li {
     list-style: none;
     padding: 10px 0;
   }
-  a {
+  a.item_title {
     font-weight: bold;
   }
 }
