@@ -1,51 +1,88 @@
-published: true
-posted: 2013-08-01T12:45
-start: 2013-08-05T00:00
-end: 2013-08-14T17:00
-title: "Another Example"
-link: null
-description: >
-  This is a another long description of a news item.  I would like if it would
-  support <strong>formatting</strong>, etc.
----
-published: true
-posted: 2013-07-01T12:45
-start: 2013-07-05T00:00
-end: 2013-09-03T04:00
-title: "Example News Post"
-link: "http://example.com/"
-description: >
-  This is a long description of a news item.  I would like if it would
-  support <strong>formatting</strong>, etc.
-
-  <ul>
-    <li>Apples</li>
-    <li>Bananas</li>
-  <ul>
----
 published: false
-posted: 2013-07-15T10:00
-start: 2013-07-16T00:00
-end: 2013-09-03T00:00
-title: "Not Posted"
+posted: 2013-11-01T13:20
+start: 2013-11-01T13:25
+end: 2023-11-01T04:00
+title: "Instructions"
 link: null
 description: >
-  This news item is secret (not posted)
+  <p>This file populates the nes items shown on the `news' page of the web site.
+  Here's a quick run-down on how the various fields work:</p>
+
+  <dl>
+    <dt>published</dt>
+    <dd>Boolean, no quotes, whether the news item is live yet</dd>
+
+    <dt>posted</dt>
+    <dd>A time stamp, yyyy-mm-ddThh:nn (24-hour, local time) that the
+        news item was posted at.  News items are shown on the page in
+        descending order by posted date/time</dd>
+
+    <dt>start</dt>
+    <dd>A time stamp; when the news item should start showing up on the
+        news page</dt>
+
+    <dt>end</dt>
+    <dd>A time stamp; when the news item should stop being shown on the
+        news page</dd>
+
+    <dt>title</dt>
+    <dd>A string, quoted; the title of the post</dd>
+
+    <dt>link</dt>
+    <dd>Either the special value, null, no quotes, or a string that
+        contains a URL that will be put on the post title.</dd>
+
+    <dt>description</dt>
+    <dd>Put just a ">" on the field line.  Every line after that until
+        the record seperator (which is three hyphens "---" alone on a
+        line) will be the body of the news post. You can put any HTML
+        in here you like.</dd>
+  </dl>
+
+  <p>Making a change to this file requires a deploy, but you can stage changes,
+  schedule end-dates, etc. well ahead of time.</p>
 ---
 published: true
-posted: 2012-12-25T11:59
-start: 2012-12-28T00:00
-end: 2013-01-05T04:00
-title: "In the past"
-link: "http://time-machine.org/"
+posted: 1995-01-01T09:00
+start: 1969-09-01T00:00
+end:   2200-01-01T00:00
+title: "UMass Transit is Now Hiring!"
+link: "join_team.html"
 description: >
-  This news item is in the past
+  Do you enjoy driving? How would you like to get behind the  wheel of a 40-foot,
+  14-ton vehicle? No experience required. Classes are forming now!
+  <a href="join_team.html">Join</a> the team that moves UMass!
 ---
 published: true
-posted: 2013-08-01T03:00
-start: 2013-09-03T04:00
-end: 2013-12-01T20:00
-title: "In the future"
+posted: 2012-03-16T17:00
+start: 2012-03-16T17:30
+end: 2015-03-16T04:00
+title: "Hasbrouck Bus Stop Closed"
 link: null
 description: >
-  This post is in the fuuuutuuure!
+  Effective March 19, 2012, and until further notice, the UMass Hasbrouck
+  southbound bus stop will be closed due to construction. Please catch buses at
+  GRC or Fine Arts Center.
+---
+published: true
+posted: 2013-10-04T16:00
+start: 2013-10-04T16:00
+end: 2013-11-16T04:00
+title: "Route 32 Detour"
+link: null
+description: >
+  The Route 32 detour has evolved so that buses are currently able to service
+  all stops. This may change as construction progresses; please check the
+  <a href="https://twitter.com/umasstransit">UMass Transit Twitter feed</a> for
+   updates.
+---
+published: true
+posted: 2013-10-30T14:00
+start: 2013-10-30T14:00
+end: 2013-12-07T00:00
+title: "Updated Route 32 Schedule"
+link: "pdf/outreachnew.pdf"
+description: >
+  Effective Friday, November 1, UMTS will be extending route 32 service to the
+  Amherst Survival Center.  A new schedule and map are available
+  <a href="pdf/outreachnew.pdf">here</a>[PDF].
