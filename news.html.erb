@@ -25,7 +25,7 @@
 </ul>
 <script>
   function sortByPosted(a, b) {
-    return a.posted > b.posted ? 1 : -1;
+    return Date.parse(a.posted) < Date.parse(b.posted) ? 1 : -1;
   }
 
   head.ready(function() {
