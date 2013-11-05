@@ -50,9 +50,6 @@ before /./ do
   # Whether or not to show the left-hand navigation menu (_left_column.html.erb)
   @leftmenu = true
 
-  # Whether or not to inclue a <link rel="alternate" ...> tag for the rss feed
-  @rss = false
-
   # The current year (gets used for the copyright notice in the footer)
   @year = Time.now.year
 
@@ -103,7 +100,6 @@ before "meet_greet_form.html.erb" do
 end
 
 before "news.html.erb" do
-  @rss = true
   @jquery = true
 end
 
