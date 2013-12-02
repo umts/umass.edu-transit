@@ -54,14 +54,17 @@ description: >
   <a href="join_team.html">Join</a> the team that moves UMass!
 ---
 published: true
-posted: 2013-11-26T13:40
-start: 2013-11-26T13:40
-end: 2013-12-01T04:00
-title: "Thanksgiving Break Reminder"
-link: "calendar.html"
+posted: 2013-12-02T12:00
+start: 2013-12-02T10:30
+end: 2013-12-12T21:00
+title: "PVTA Public Feedback Meetings"
+link: "http://www.pvta.com/csaMeetings.php"
 description: >
-  There are various service changes on Wed 11/27, and no service from Thu 11/28 
-  to Sat 11/30. See <a href="calendar.html">the calendar</a> for details.
+  The PVTA is hosting <a href="http://www.pvta.com/csaMeetings.php">four public
+  workshops</a> about improving bus service, one of which will be in the Amherst
+  Bangs Community Center Activity Room on Thursday December 12th at 3-7 PM.
+  Please stop by to learn more and voice your opinion! Click 
+  <a href="http://www.pvta.com/csa.php">here</a> for more details.
 ---
 published: true
 posted: 2013-11-25T12:00
@@ -71,11 +74,11 @@ title: "Winter Storms and UMass Closings"
 link: "buses.html"
 description: >
   When UMass Fall or Spring classes are canceled for the entire day, buses will
-  run on a typical mid-semester Holiday schedule (similar to Veterans Day). When 
-  UMass opens late or classes end early, buses will run as scheduled (as 
-  conditions permit). Information will be tweeted at 
-  <a href="http://www.twitter.com/umasstransit">@umasstransit</a>. See the 
-  <a href="http://www.umass.edu/transit/buses.html">PVTA Buses page</a> for more 
+  run on a typical mid-semester Holiday schedule (similar to Veterans Day). When
+  UMass opens late or classes end early, buses will run as scheduled (as
+  conditions permit). Information will be tweeted at
+  <a href="http://www.twitter.com/umasstransit">@umasstransit</a>. See the
+  <a href="http://www.umass.edu/transit/buses.html">PVTA Buses page</a> for more
   details.
 ---
 published: true
@@ -92,7 +95,7 @@ description: >
 published: true
 posted: 2013-10-04T16:00
 start: 2013-10-04T16:00
-end: 2013-12-01T04:00
+end: 2013-12-31T04:00
 title: "Route 32 Detour"
 link: null
 description: >
@@ -103,25 +106,10 @@ description: >
 published: true
 posted: 2013-10-30T14:00
 start: 2013-10-30T14:00
-end: 2013-12-07T00:00
+end: 2014-09-02T00:00
 title: "Updated Route 32 Schedule"
 link: "pdf/outreach.pdf"
 description: >
   Effective Friday, November 1, UMTS will be extending route 32 service to the
   Amherst Survival Center.  A new schedule and map are available
   <a href="pdf/outreach.pdf">here</a>[PDF].
----
-published: true
-posted: 2013-11-06T11:35
-start: 2013-11-06T11:00
-end: 2013-11-12T04:00
-title: "Veterans Day"
-link: null
-description: >
-  On Veterans Day, Monday, November 11, UMass Transit is operating the following service:
-  <ul>
-    <li>Reduced Service: Routes 30, 31, 45, and 46</li>
-    <li>Full Service: Routes 32, 37, 38 and 39</li>
-    <li>No Service: Route 34</li>
-    <li>Weekend/Holiday Service: Route 35</li>
-  </ul>
