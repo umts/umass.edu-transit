@@ -43,6 +43,19 @@ description: >
   schedule end-dates, etc. well ahead of time.</p>
 ---
 published: true
+posted: 2014-02-05T05:00
+start: 2014-02-05T05:00
+end:   2014-02-06T04:00
+title: "Snow Storm Wed, 2/5" 
+link: "http://www.umass.edu/transit/buses.html"
+description: >
+  Due to UMass being closed today, buses are running on a mid-semester holiday 
+  schedule: Reduced Service: Routes 30, 31, 45, 46. Full Service: Routes 32, 
+  37, 38, 39. Weekend Service: Route 35. Canceled: Route 34. Service bulletins 
+  will be <a href="https://twitter.com/umasstransit">tweeted</a>. For information 
+  about Routes 39E, B43, and M40, see <a href="http://www.pvta.com/">pvta.com</a>. 
+---
+published: true
 posted: 1995-01-01T09:00
 start: 1969-09-01T00:00
 end:   2200-01-01T00:00
@@ -54,43 +67,18 @@ description: >
   <a href="join_team.html">Join</a> the team that moves UMass!
 ---
 published: true
-posted: 2013-12-11T11:00
-start: 2013-12-11T11:00
-end: 2014-01-22T04:00
-title: "Wintersession Break"
-link: "calendar.html"
-description: >
-  There are various service changes over the holidays and during Wintersession 
-  (Friday, 12/13/2013 through Monday, 1/20/2014). Please see the
-  <a href="calendar.html">calendar</a> for details.
----
-published: true
-posted: 2013-12-02T12:00
-start: 2013-12-02T10:30
-end: 2013-12-12T21:00
-title: "PVTA Public Feedback Meetings"
-link: "http://www.pvta.com/csaMeetings.php"
-description: >
-  The PVTA is hosting <a href="http://www.pvta.com/csaMeetings.php">four public
-  workshops</a> about improving bus service, one of which will be in the
-  <a href="https://maps.google.com/maps?q=70+Boltwood+Walk,+Amherst,+MA">Amherst
-  Bangs Community Center</a> (Activity Room) on Thursday, December 12th at 3-7
-  PM. Please stop by to learn more and voice your opinion! Click
-  <a href="http://www.pvta.com/csa.php">here</a> for more details.
----
-published: true
 posted: 2013-11-25T12:00
 start: 2013-11-27T10:30
 end: 2014-04-01T04:00
 title: "Winter Storms and UMass Closings"
-link: "buses.html"
+link: "buses.html#umass_closings"
 description: >
   When UMass Fall or Spring classes are canceled for the entire day, buses will
   run on a typical mid-semester Holiday schedule (similar to Veterans Day). When
   UMass opens late or classes end early, buses will run as scheduled (as
   conditions permit). Information will be tweeted at
   <a href="http://www.twitter.com/umasstransit">@umasstransit</a>. See the
-  <a href="http://www.umass.edu/transit/buses.html">PVTA Buses page</a> for more
+  <a href="buses.html#umass_closings">PVTA Buses page</a> for more
   details.
 ---
 published: true
@@ -105,17 +93,6 @@ description: >
   GRC or Fine Arts Center.
 ---
 published: true
-posted: 2013-10-04T16:00
-start: 2013-10-04T16:00
-end: 2013-12-31T04:00
-title: "Route 32 Detour"
-link: null
-description: >
-  Construction on Pine Street is ongoing; please check the
-  <a href="https://twitter.com/umasstransit">UMass Transit Twitter feed</a> for
-   detour updates.
----
-published: true
 posted: 2013-10-30T14:00
 start: 2013-10-30T14:00
 end: 2014-09-02T00:00
@@ -124,4 +101,4 @@ link: "pdf/outreach.pdf"
 description: >
   Effective Friday, November 1, UMTS will be extending route 32 service to the
   Amherst Survival Center.  A new schedule and map are available
-  <a href="pdf/outreach.pdf">here</a>[PDF].
+  <a href="pdf/outreach.pdf">here</a> [PDF].
