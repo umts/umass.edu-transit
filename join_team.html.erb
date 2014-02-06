@@ -1,10 +1,14 @@
-<%
-  @hiring = {
-    :bus => true,
-    :st  => true,
-    :sv  => false
-    }
-%>
+<% @departments = {
+    "bus" => {
+      position: "Bus Driver",
+      hiring:   true },
+    "st" => {
+      position: "Van Driver",
+      hiring: true },
+    "sv" => {
+      position: "Service Employee",
+      hiring: false }
+} %>
 
 <p>UMass Transit Service (UMTS) employs more than 150 (University of Massachusetts)
 graduate and undergraduate students.  The majority of employees operate vans and
@@ -55,29 +59,14 @@ Transit Services.</p>
   </li>
 </ul>
 
-<h3 class="pageSubTitle">To Schedule a Bus Driver Interview</h3>
-<%= if @hiring[:bus]
-     render "_jobinfo_bus.html.erb"
+<% @departments.each do |abbr, dept| %>
+  <h3 class="pageSubTitle">To Schedule a <%= dept[:position] %> Interview</h3>
+    <%= if dept[:hiring]
+     render "_jobinfo_#{abbr}.html.erb"
    else
-     render "_jobinfo_not_hiring.html.erb", :locals => { :job => "Bus Drivers" }
-   end
-%>
-
-<h3 class="pageSubTitle">To Schedule a Van Driver Interview</h3>
-<%= if @hiring[:st]
-    render "_jobinfo_st.html.erb"
-  else
-    render "_jobinfo_not_hiring.html.erb", :locals => { :job => "Van Drivers" }
-  end
-%>
-
-<h3 class="pageSubTitle">To Schedule a Service Department Interview</h3>
-<%= if @hiring[:sv]
-     render "_jobinfo_sv.html.erb"
-  else
-    render "_jobinfo_not_hiring.html.erb", :locals => { :job => "Service employees" }
-  end
-%>
+     render "_jobinfo_not_hiring.html.erb", locals: { job: dept[:position] + 's' }
+   end %>
+<% end %>
 
 <h3 class="pageSubTitle">What Opportunities for Advancement Are There?</h3>
 <p>All UMass Transit employees start out as drivers. But there are many promotional
