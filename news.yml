@@ -43,11 +43,11 @@ description: >
   schedule end-dates, etc. well ahead of time.</p>
 ---
 published: true
-posted: 2014-02-05T05:00
-start: 2014-02-05T05:00
-end:   2014-02-06T04:00
-title: "Snow Storm Wed, 2/5" 
-link: "http://www.umass.edu/transit/buses.html"
+posted: 2014-02-13T05:00
+start: 2014-02-13T05:00
+end:   2014-02-14T04:00
+title: "Snow Storm Thu, 2/13" 
+link: "buses.html#umass_closings"
 description: >
   Due to UMass being closed today, buses are running on a mid-semester holiday 
   schedule: Reduced Service: Routes 30, 31, 45, 46. Full Service: Routes 32, 
