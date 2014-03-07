@@ -5,7 +5,7 @@ end: 2023-11-01T04:00
 title: "Instructions"
 link: null
 description: >
-  <p>This file populates the nes items shown on the `news' page of the web site.
+  <p>This file populates the news items shown on the `news' page of the web site.
   Here's a quick run-down on how the various fields work:</p>
 
   <dl>
@@ -43,30 +43,36 @@ description: >
   schedule end-dates, etc. well ahead of time.</p>
 ---
 published: true
-posted: 2014-02-14T06:00
-start: 2014-02-14T06:00
-end:   2014-02-15T04:00
-title: "Fri, 2/14: UMass Delayed Opening" 
-link: "buses.html"
+posted: 2014-03-07T15:00
+start: 2014-03-07T15:00
+end: 2014-03-15T04:00
+title: "Last Day Before Spring Break"
+link: null
 description: >
-  Buses resume running full service today (Friday, 2/14). Several detours are 
-  in effect; please refer to the <a href="https://twitter.com/umasstransit">
-  twitter feed</a>. 
+  On Friday, March 14, Full Service will end early
+  <ul>
+    <li><b>Route 34</b>: Ends at 7:56pm in Lot 11</li>
+    <li><b>Route 35</b>: Ends at 9:13pm in Lot 25</li>
+    <li><b>Route 38</b>: The last bus from UMass to Mt. Holyoke will be at 6:45pm
+        and the last bus from Mt. Holyoke to UMass will be at 7:35pm</li>
+    <li><b>Route 39</b>: The last bus from Smith to Hampshire will be at 7:15pm
+        and the last bus from Hampshire to Smith will be at 6:45 pm</li>
+    <li><b>All other routes</b>: End on a Mon-Wed schedule</li>
+  </ul>
 ---
 published: true
-posted: 2014-02-13T05:00
-start: 2014-02-13T05:00
-end:   2014-02-14T04:00
-title: "Snow Storm Thu, 2/13" 
-link: "buses.html#umass_closings"
+posted: 2014-03-07T15:00
+start: 2014-03-07T15:00
+end: 2014-03-23T04:00
+title: "UMass Spring Break Service"
+link: null
 description: >
-  Due to UMass being closed today, buses are running on a mid-semester holiday 
-  schedule: Reduced Service: Routes 30, 31, 45, 46. Full Service: Routes 32, 
-  37, 38, 39. Weekend Service: Route 35. Canceled: Route 34. Service bulletins 
-  will be <a href="https://twitter.com/umasstransit">tweeted</a> (common 
-  detours also listed at the <a href="buses.html#common_detours">PVTA Buses 
-  page</a>). For information about Routes 39E, B43, and M40, see 
-  <a href="http://www.pvta.com/">pvta.com</a>. 
+  From Saturday, March 15th, through Saturday, March 22th, UMTS will be operating on
+  a Spring Break schedule.  There will be no service on routes 34, 35 and 39; Spring
+  Break service on route 38; and reduced service on all other routes. Full service
+  will resume on Sunday, March 23th.  See our
+  <a href="http://www.umass.edu/transit/calendar.html">service calendar</a> for up
+  to date information.
 ---
 published: true
 posted: 1995-01-01T09:00
