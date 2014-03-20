@@ -42,6 +42,10 @@ td{
 }
 
 #slideshow {
+  & > img:not(.slideshow_fallback) {
+    display: none;
+  }
+
   #image {
      height: 318px;
      width: 531px;
