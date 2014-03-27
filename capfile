@@ -102,6 +102,11 @@ namespace :deploy do
     index.slideshow
   end
 
+  desc <<-DESC
+    Clean up old releases. By default, the last 5 releases are kept on each \
+    server (though you can change this with the keep_releases variable). All \
+    other deployed revisions are removed from the servers.
+  DESC
   task :cleanup do
     count = fetch(:keep_releases, 5).to_i
 
