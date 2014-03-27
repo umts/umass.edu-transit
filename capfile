@@ -101,6 +101,16 @@ namespace :deploy do
     update
     index.slideshow
   end
+
+  task :cleanup do
+    count = fetch(:keep_releases, 5).to_i
+
+    #All these acrobatics just because OIT's server doesn't have `xargs`. This is the default:
+    #run "ls -1dt #{releases_path}/* | tail -n +#{count + 1} | #{try_sudo} xargs rm -rf"
+    run "ls -1dt #{releases_path}/* | tail -n +#{count + 1} > #{deploy_to}/CLEANUP"
+    run "while read f; do rm -rf $f; done < #{deploy_to}/CLEANUP"
+    run "rm -f #{deploy_to}/CLEANUP"
+  end
 end
 
 # vi: set filetype=ruby :
