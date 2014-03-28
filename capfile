@@ -116,6 +116,12 @@ namespace :deploy do
     run "while read f; do rm -rf $f; done < #{deploy_to}/CLEANUP"
     run "rm -f #{deploy_to}/CLEANUP"
   end
+
+  namespace :rollback do
+    task :cleanup, :except => { :no_release => true } do
+      run "if [ `ls -l  #{current_path} | sed -e 's/.*-> \\(.*\\)/\\1/'` != #{current_release} ]; then #{try_sudo} rm -rf #{current_release}; fi"
+    end
+  end
 end
 
 # vi: set filetype=ruby :
