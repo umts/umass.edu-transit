@@ -28,7 +28,7 @@ set :build_script, "stasis"
 
 set :deploy_via, :copy
 set :copy_cache, true
-set :copy_exclude, Dir['*'] - ['public']
+set :copy_exclude, Dir['*', '.*'] - ['public', '.', '..']
 set :copy_remote_dir, deploy_to
 
 role :app, "webadmin.oit.umass.edu"
