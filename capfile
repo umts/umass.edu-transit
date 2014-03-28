@@ -24,9 +24,11 @@ set :use_sudo, false
 set :shared_children, []
 set :normalize_asset_timestamps, false
 
+set :build_script, "stasis"
+
 set :deploy_via, :copy
 set :copy_cache, true
-set :build_script, "stasis"
+set :copy_exclude, Dir['*'] - ['public']
 set :copy_remote_dir, deploy_to
 
 role :app, "webadmin.oit.umass.edu"
