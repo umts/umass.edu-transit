@@ -43,23 +43,31 @@ description: >
   schedule end-dates, etc. well ahead of time.</p>
 ---
 published: true
-posted: 2014-03-19T16:50
-start: 2014-03-19T16:00
-end: 2014-04-14T20:00
-title: "Public Meetings on PVTA Service Recomendations"
-link: "http://pvta.com/csaMeetings.php"
+posted: 2014-04-18T11:30
+start: 2014-04-18T11:30
+end: 2014-04-20T22:00
+title: "No Route 37 Easter Sunday"
 description: >
-  PVTA invites you to attend public meetings on new service recommendations.
-  These include new crosstown routes, improved hours of service and improved
-  frequencies. Your participation and comments are very important.  The meeting for
-  the Amherst area is scheduled for April 4, from 4:00pm to 7:00pm, at the Amherst 
-  Town Hall.  For information on other meetings in the PVTA service area or how to
-  submit a comment, click <a href="http://pvta.com/csaMeetings.php">here</a>.
+  On Easter Sunday, April 20, there will be no service on route 37, Amity Shuttle.
+---
+published: true
+posted: 2014-04-18T11:20
+start: 2014-04-18T11:20
+end: 2014-04-22T04:00
+title: "Patriots Day"
+description: >
+  On Patriots Day, Monday, April 21, UMass Transit is operating the following service:
+  <ul>
+    <li>Reduced Service: Routes 30, 31, 45, and 46</li>
+    <li>Full Service: Routes 32, 37, 38 and 39</li>
+    <li>No Service: Route 34</li>
+    <li>Weekend/Holiday Service: Route 35</li>
+  </ul>
 ---
 published: true
 posted: 2014-03-13T03:00
 start: 2014-03-13T03:00
-end: 2014-07-01T04:00
+end: 2014-05-09T04:00
 title: "Campus Shuttle Detours Due to Potholes"
 link: null
 description: >
@@ -67,23 +75,6 @@ description: >
   21/22 (catch buses at University Drive or temporary stops at Dallas Mall), Lots 12/25 
   (catch buses at temporary stops on Holdsworth Way), and Admissions Center (catch buses at 
   Sig Ep).
----
-published: true
-posted: 2014-03-07T15:00
-start: 2014-03-07T15:00
-end: 2014-03-23T04:00
-title: "UMass Spring Break Service"
-link: null
-description: >
-  <p>From Saturday, March 15th, through Saturday, March 22th, UMTS will be operating on
-  a Spring Break schedule.  There will be no service on routes 34, 35 and 39; Spring
-  Break weekday service on route 38; and reduced service on all other routes. Full service
-  will resume on Sunday, March 23th.  See our
-  <a href="http://www.umass.edu/transit/calendar.html">service calendar</a> for up
-  to date information.</p>
-  <p><em>Note that the printed schedules for some routes erroneously state that service
-  is ending early on March 15th, 16th and 22nd. Service will run until normal, Reduced-service
-  times on those days.</em></p>
 ---
 published: true
 posted: 1995-01-01T09:00
@@ -95,21 +86,6 @@ description: >
   Do you enjoy driving? How would you like to get behind the  wheel of a 40-foot,
   14-ton vehicle? No experience required. Classes are forming now!
   <a href="join_team.html">Join</a> the team that moves UMass!
----
-published: true
-posted: 2013-11-25T12:00
-start: 2013-11-27T10:30
-end: 2014-04-01T04:00
-title: "Winter Storms and UMass Closings"
-link: "buses.html#umass_closings"
-description: >
-  When UMass Fall or Spring classes are canceled for the entire day, buses will
-  run on a typical mid-semester Holiday schedule (similar to Veterans Day). When
-  UMass opens late or classes end early, buses will run as scheduled (as
-  conditions permit). Information will be tweeted at
-  <a href="http://www.twitter.com/umasstransit">@umasstransit</a>. See the
-  <a href="buses.html#umass_closings">PVTA Buses page</a> for more
-  details.
 ---
 published: true
 posted: 2012-03-16T17:00
