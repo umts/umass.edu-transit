@@ -33,7 +33,7 @@
     $.getJSON( "news.json",function(data) {
       $.each(data.sort(sortByPosted), function(index, item) {
           if (item.published && Date.now() >= Date.parse(item.start) && Date.now() < Date.parse(item.end)){
-            if (item.link === null) {
+            if (item.link === null || typeof item.link === "undefined") {
               $("#news-items").append("<li><strong class='item_title'>" + item.title + "</strong>: </li>");
             } else {
               $("#news-items").append("<li><a class='item_title' href='" + item.link + "'>" + item.title + "</a>: </li>");
