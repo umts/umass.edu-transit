@@ -7,7 +7,7 @@ for [student groups][stud] or for trips sponsored by [University departments][de
 >
 > [UMass Maroon and White][cch]:
 > These buses are considerably more comfortable than a school bus and have seating
-> capacity for 38.
+> capacity for 38. *To be retired May 2014*
 >
 > [City Bus Style][rts]:
 > Similar to the PVTA buses around campus, this style vehicle seats 35-40 people
