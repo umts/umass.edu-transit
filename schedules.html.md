@@ -4,7 +4,7 @@
 
 * [30][30]: North Amherst / UMass / Old Belchertown Road
 * [31][31]: Sunderland / UMass / South Amherst
-* [32][32]: Puffers Pond / UMass / Atkins Corner
+* [32][OR]: Puffers Pond / UMass / Atkins Corner
 * [34][CS]: UMass Campus Shuttle Northbound
 * [35][CS]: UMass Campus Shuttle Southbound
 * [37][37]: Amity Shuttle / UMass
@@ -22,7 +22,6 @@ and service area. Printed schedules are available on our buses, at the
 
 [30]: pdf/route30.pdf
 [31]: pdf/route31.pdf
-[32]: pdf/route32-summer2014.pdf
 [37]: pdf/route37.pdf
 [38]: pdf/route38.pdf
 [39]: pdf/route39.pdf
