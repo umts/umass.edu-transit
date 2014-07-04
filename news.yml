@@ -46,11 +46,11 @@ published: true
 posted: 2014-06-30T07:00
 start: 2014-06-30T07:00
 end: 2014-07-04T23:59
-title: "July 4th Fireworks Buses"
+title: "Fireworks Buses"
 link: null
 description: >
-  There is no service on any UMass Transit routes on July 4th. However, UMass Transit will operate
-  buses to and from the Amherst fireworks display.
+  The Amherst Independence Day festivities have been postponed to Saturday, July 5.  UMass Transit
+  will operate buses to and from the Amherst fireworks display that evening.
 
   <p>Before the Fireworks:</p>
   <ul>
@@ -76,15 +76,6 @@ description: >
 ---
 published: true
 posted: 2014-05-02T15:25
-start: 2014-05-12T00:00
-end: 2014-05-27T04:00
-title: "No Service Memorial Day"
-link: null
-description: >
-  There will be no UMass Transit service on Memorial Day, May 26.
----
-published: true
-posted: 2014-05-02T15:25
 start: 2014-06-20T00:00
 end: 2014-07-05T04:00
 title: "No Service Independence Day"
@@ -93,69 +84,12 @@ description: >
   There will be no UMass Transit service on Independence Day, July 4.
 ---
 published: true
-posted: 2014-05-02T12:25
-start: 2014-05-02T12:25
-end: 2014-05-09T04:00
-title: "Last Day of Spring Semester"
-link: "calendar.html"
-description: >
-  On Thursday, May 8, Routes 34 &amp; 35 will operate a Full Service schedule ending at approximately
-  8:00pm.  All other UMass routes will operate a Full Service Monday-Wednesday schedule.
----
-published: true
-posted: 2014-05-02T09:50
-start: 2014-05-02T09:50
-end: 2014-05-16T18:00
-title: "End of Semester Five-College Schedule"
-link: "https://www.fivecolleges.edu/bus/end-of-year-schedule"
-description: >
-  <p>For the end of the academic year, routes 38 and 39 have a number of schedule changes.
-  A summary can be found below and more information is available
-  <a href="https://www.fivecolleges.edu/bus/end-of-year-schedule">here</a>.</p>
-
-  <ul>
-    <li><strong>Thursday, May 8</strong>: Both routes 38 and 39 end on a Full Service,
-      Mon-Wed schedule</li>
-    <li><strong>Friday, May 9</strong>: Route 38 operates Full Service ending at approximately
-      11:00pm. Route 39 operates Full Service ending at approximately 8:00pm.</li>
-    <li><strong>Saturday, May 10, and Sunday, May 11</strong>: Route 38 operates Full Service
-      ending at approximately 11:00pm. There will be no service on route 39.</li>
-    <li><strong>Monday, May 12, through Friday, May 16</strong>: Route 38 operates a
-      <a href="https://www.fivecolleges.edu/system/files/Route%2038%20AC%20finals%20schedule%202014.pdf">
-      special finals schedule</a>. There will be no service on route 39.</li>
-    <li><strong>Beginning Saturday, May 17</strong>: No service on either route 38 or 39 until the start of
-      the fall semester.</li>
-  </ul>
----
-published: true
-posted: 2014-05-02T09:45
-start: 2014-05-02T09:45
-end: 2014-05-16T18:00
-title: "Summer Service"
-link: "calendar.html"
-description: >
-  <p>Beginning Friday, May 9, until Tuesday, September 2, UMass Transit will operate on Summer Service:</p>
-
-  <ul>
-    <li>Routes 30, 31, 32, 45, and 46 will operate on a reduced service schedule</li>
-    <li>There will be no service on routes 34 or 35</li>
-    <li>There will be no service on routes 38 or 39 beginning Saturday, May 17. Until then, there are
-      various service changes listed above.</li>
-    <li>Route 37 will continue operating on a full-service schedule</li>
-  </ul>
-
-  <p>Additionally, there will be no service on Memorial Day (5/26) and Independence Day (7/4).</p>
-  <p>Full Service resumes on Tuesday, September 2.</p>
-  <p>See the <a href="calendar.html">service calendar</a> for more details.</p>
----
-published: true
 posted: 2014-05-02T09:45
 start: 2014-05-16T18:00
 end: 2014-09-02T04:00
 title: "Summer Service"
 link: "calendar.html"
 description: >
-  <!-- Duplicate copy with extraneous 5-Coll info removed -->
   <p>Beginning Friday, May 9, until Tuesday, September 2, UMass Transit will operate on Summer Service:</p>
 
   <ul>
@@ -197,6 +131,5 @@ end: 2014-09-02T00:00
 title: "Route 32 Summer schedule"
 link: "pdf/outreach.pdf"
 description: >
-  Route 32 has increased its service to the Amherst Survival Center over the summer. A new schedule is available
-  <a href="pdf/outreach.pdf">here</a> (note that the Outreach PDF has not yet been updated to reflect 
-  these changes).
+  Route 32 has increased its service to the Amherst Survival Center over the
+  summer. A new schedule is available <a href="pdf/outreach.pdf">here</a>.
