@@ -2,7 +2,7 @@ As a result of a [comprehensive service analysis][csa], UMass Transit is
 implementing a number of service adjustments to routes in the Amherst
 area. Service changes outlined below are effective Tuesday, September 3.
 Maps of these changes, as well as service changes for the rest of the
-PVTA service area (including the R29, B43 and M40) are available
+PVTA service area (including the B43, M40, and the new R29) are available
 [here][newpvta].
 
 New Routes
@@ -30,9 +30,11 @@ Modified Routes
 * **Route 31** will have 15-minute service extended to 8:00pm, and several
   more weekend trips due to the elimination of weekend route 46 service.
 
-* **Route 34** will no longer service Haigis Mall.
+* **Route 34** will no longer service Haigis Mall and will have 15-minute
+  service extended to 8:00pm.
 
-* **Route 35** will no longer service Haigis Mall.
+* **Route 35** will no longer service Haigis Mall and will have 15-minute
+  service extended to 8:00pm.
 
 * **Route 38** will have 30-minute service extended to 8:40pm.
 
