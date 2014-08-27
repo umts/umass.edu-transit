@@ -1,6 +1,6 @@
 As a result of a [comprehensive service analysis][csa], UMass Transit is
 implementing a number of service adjustments to routes in the Amherst
-area. Service changes outlined below are effective Tuesday, September 3.
+area. Service changes outlined below are effective Tuesday, September 2nd.
 Maps of these changes, as well as service changes for the rest of the
 PVTA service area (including the B43, M40, and the new R29) are available
 [here][newpvta].
