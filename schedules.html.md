@@ -42,9 +42,9 @@ and service area. Printed schedules are available on our buses, at the
 [39]: http://pvta.com/schedules/Rt39.pdf
 [39map]: http://pvta.com/Rt39x.php
 [45]: http://pvta.com/schedules/Rt45.pdf
-[45map]: http://pvta.com/media/maps/newService/G45.png
+[45map]: http://pvta.com/Rt45x.php
 [46]: http://pvta.com/schedules/Rt46.pdf
-[46map]: http://pvta.com/media/maps/newService/G46.png
+[46map]: http://pvta.com/Rt46x.php
 [VS]: other_routes.html
 
 
