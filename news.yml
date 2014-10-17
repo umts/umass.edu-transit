@@ -43,24 +43,6 @@ description: >
   schedule end-dates, etc. well ahead of time.</p>
 ---
 published: true
-posted: 2014-05-02T09:45
-start: 2014-05-16T18:00
-end: 2014-09-02T04:00
-title: "Summer Service"
-link: "calendar.html"
-description: >
-  <p>Beginning Friday, May 9, until Tuesday, September 2, UMass Transit will operate on Summer Service:</p>
-
-  <ul>
-    <li>Routes 30, 31, 32, 45, and 46 will operate on a reduced service schedule</li>
-    <li>There will be no service on routes 34, 35, 38 or 39</li>
-    <li>Route 37 will continue operating on a full-service schedule</li>
-  </ul>
-
-  <p>Full Service resumes on Tuesday, September 2.</p>
-  <p>See the <a href="calendar.html">service calendar</a> for more details.</p>
----
-published: true
 posted: 1995-01-01T09:00
 start: 1969-09-01T00:00
 end:   2200-01-01T00:00
@@ -72,24 +54,22 @@ description: >
   <a href="join_team.html">Join</a> the team that moves UMass!
 ---
 published: true
-posted: 2014-07-25T13:50
-start: 2014-07-25T14:00
-end: 2014-09-06T00:00
-title: "Transportation Projects that are Important to You"
-link: "http://www.pvpc.org/content/survey-transportation-projects-are-important-you"
+posted: 2014-10-17T16:00
+start: 2014-10-07T16:00
+end: 2015-09-02T04:00
+title: "Route 33 Longterm Detour"
+link: null
 description: >
-  <p>Do you have an opinion about what transportation projects are important to
-  the Pioneer Valley? Click
-  <a href="http://www.pvpc.org/content/survey-transportation-projects-are-important-you">
-  here</a> to let the Pioneer Valley Planning Commision know what you think.</p>
+  Until further notice, Route 33 is bypassing Eastman Ln, East Pleasant St, Henry 
+  St, and Pine St (due to road work). Please catch buses at Mill Hollow.
 ---
 published: true
-posted: 2014-08-01T11:00
-start: 2014-08-01T11:00
-end: 2014-10-01T04:00
-title: "Service Changes Effective September 2"
-link: "2014_service_changes.html"
+posted: 2014-10-17T16:00
+start: 2014-10-07T16:00
+end: 2015-09-02T04:00
+title: "Routes 34 and 35 Longterm Detour"
+link: null
 description: >
-  UMass Transit implemented a number of service adjustments to routes in the
-  Amherst area on Tuesday, September 2nd. Additional
-  information is available <a href="2014_service_changes.html">here</a>.
+  Until further notice, Routes 34 and 35 are bypassing Lots 12 and 25 (due to road 
+  conditions). Please catch buses at temporary stops on Holdsworth Way (near the 
+  intersection at Commonwealth Ave).
