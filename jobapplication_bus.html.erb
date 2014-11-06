@@ -224,8 +224,15 @@ This is how/where you will be contacted for an interview.
       <td><input type="text" name="enrolled_credits" size="2">
       </td>
     </tr>
-    <tr>
-      <td><div align="right">Are you interested in Summer Training?</div></td>
+  <tr>
+      <% date = Time.now.month
+      if date > 8
+         period = "Winter"
+      else
+         period = "Summer"
+      end %>
+    <td><div align="right">Are you interested in training during <%= period %>?
+    </div></td>
       <td><table width="100" border="0">
           <tr>
             <td><div align="center"> Yes <br>
