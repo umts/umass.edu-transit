@@ -225,13 +225,7 @@ This is how/where you will be contacted for an interview.
       </td>
     </tr>
   <tr>
-      <% date = Time.now.month
-      if date > 8
-         period = "Winter"
-      else
-         period = "Summer"
-      end %>
-    <td><div align="right">Are you interested in training during <%= period %>?
+    <td><div align="right">Are you interested in training during <%= @intersession %>?
     </div></td>
       <td><table width="100" border="0">
           <tr>
