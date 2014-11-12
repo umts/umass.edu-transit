@@ -5,10 +5,6 @@ for [student groups][stud] or for trips sponsored by [University departments][de
 > [School Bus Style][sch]:
 > Our buses are designed with extra leg room, and have seating capacity for 38.
 >
-> [UMass Maroon and White][cch]:
-> These buses are considerably more comfortable than a school bus and have seating
-> capacity for 38. *To be retired May 2014*
->
 > [City Bus Style][rts]:
 > Similar to the PVTA buses around campus, this style vehicle seats 35-40 people
 > with room for standees. These are our only buses with A/C.
@@ -32,7 +28,6 @@ The Field Trip Services Department also operates the [Meet & Greet Service][mgs]
 [stud]: student_ft.html
 [dept]: depts_ft.html
 [sch]: ft_schoolbuses.html
-[cch]: ft_maroonwhite.html
 [rts]: ft_rts.html
 [van]: ft_vans.html
 [stv]: ft_st_vans.html
