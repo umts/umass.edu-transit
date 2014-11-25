@@ -57,8 +57,27 @@ published: true
 posted: 2014-11-24T10:00
 start: 2014-11-24T10:00
 end: 2014-11-30T04:00
-title: "Thanksgiving Break Reminder"
+title: "Thanksgiving Break"
 link: "calendar.html"
 description: >
-  There are various service changes on Wed 11/26, and no service from Thu 11/27 
-  to Sat 11/29. See <a href="calendar.html">the calendar</a> for details.
+  There are various service changes on Wed, 11/26, and no service from Thu, 11/27 
+  to Sat, 11/29. See <a href="calendar.html">the calendar</a> for details.
+---
+published: true
+posted: 2014-11-25T05:00
+start: 2014-11-25T05:00
+end: 2014-11-27T04:00
+title: "Snow Storm"
+link: "https://twitter.com/umasstransit"
+description: >
+  Due to the snow storm, UMass is closed on Wed, 11/26 (Thanksgiving Eve). Buses 
+  will run the following (as conditions allow):
+  <ul>
+    <li>Reduced Service: Routes 30, 31, 45, and 46</li>
+    <li>Full Service: Routes 33</li>
+    <li>Full Service Ends Early: Route 38: Last bus leaves Mt. Holyoke 8:05 PM; 
+        Last bus leaves UMass 7:15 PM</li>
+    <li>No Service: Route 34, 35, 36, and 39</li>
+  </ul>
+  Please check <a href="https://twitter.com/umasstransit">twitter</a> during the 
+  storm for updates. Read about common detours <a href="http://umass.edu/transit/buses.html#common_detours">here</a>.
