@@ -54,16 +54,6 @@ description: >
   <a href="join_team.html">Join</a> the team that moves UMass!
 ---
 published: true
-posted: 2014-11-24T10:00
-start: 2014-11-24T10:00
-end: 2014-11-30T04:00
-title: "Thanksgiving Break"
-link: "calendar.html"
-description: >
-  There are various service changes on Wed, 11/26, and no service from Thu, 11/27 
-  to Sat, 11/29. See <a href="calendar.html">the calendar</a> for details.
----
-published: true
 posted: 2014-11-25T05:00
 start: 2014-11-25T05:00
 end: 2014-11-27T04:00
@@ -82,3 +72,14 @@ description: >
   Any <a href="buses.html#common_detours">detours</a> or service cancellations will 
   be <a href="https://twitter.com/umasstransit">tweeted</a> (for R29, M40, and B43, 
   see <a href="http://www.pvta.com">pvta.com</a>).
+---
+published: true
+posted: 2014-12-09T12:45
+start: 2014-12-09T12:00
+end: 2015-01-20T04:00
+title: "Wintersession Break"
+link: "calendar.html"
+description: >
+  There are various service changes over the holidays and during Wintersession
+  (Friday, December 12, through Monday, January 19). Please see the
+  <a href="calendar.html">calendar</a> for details.
