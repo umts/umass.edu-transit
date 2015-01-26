@@ -56,6 +56,17 @@ description: >
 published: true
 posted: 2015-01-26T06:00
 start: 2015-01-26T06:00
+end: 2015-01-29T04:00
+title: "Winter Storm 1/26 - 1/28"
+link: "https://twitter.com/umasstransit"
+description: >
+  Due to the snow storm, buses will be off the road by 11 PM on Mon, 1/26 (possibly 
+  earlier, depending on conditions). Buses will not run at all on Tue, 1/27. Service 
+  on Wed, 1/28 is TBD. More details to follow.
+---
+published: true
+posted: 2015-01-26T06:00
+start: 2015-01-26T06:00
 end: 2015-05-01T04:00
 title: "Snow Storms"
 link: "buses.html#inclement_weather"
