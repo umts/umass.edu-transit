@@ -101,6 +101,7 @@ description: >
   }
   table#endtimes, table#endtimes th, table#endtimes td {
     border: none;
+    padding: 5px;
   }
   table#endtimes th {
     background-color: black;
