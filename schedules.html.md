@@ -1,8 +1,8 @@
-**Recent Service Changes**: Click [here][changes] for a summary of service changes that took effect Tuesday, September 2nd, 2014.
+**2014 Service Changes**: Click [here][changes] for a summary of service changes that took effect Tuesday, September 2nd, 2014.
 
 **System Map:** Available on the [PVTA website][map].
 
-**Mobile Schedules:** [m.pvta.com][m]
+**Mobile Schedules**: [m.pvta.com][m]
 
 **PDF Schedules:** Maps and schedules are available at the [PVTA website][schedules], or by choosing from the list below.
 
@@ -21,7 +21,7 @@
 * [46][46]: South Deerfield / UMass ([map][46map])
 
 Go to [Service Bulletins][news], [PVTA Buses][bus], [Service Calendar][cal],
-[Bus Tracker][track], and [Trip Planner][trip] for more information about our routes
+[Where's the Bus?][track], and [Plan Trip][trip] for more information about our routes
 and service area. Printed schedules are available on our buses, at the
 [UMass Bus Garage][dir], and at the UMass Campus Center concourse information booth.
 

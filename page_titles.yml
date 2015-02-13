@@ -17,8 +17,8 @@ meet_greet.html.erb: Meet & Greet
 meet_greet_sedans.html.md: Meet & Greet Sedan
 meet_greet_form.html.erb: Request Meet & Greet Service
 rates_ft.html.erb: FT Rates
-schedules.html.md: PVTA Schedules and Maps
+schedules.html.md: PVTA Schedules
 spectrans.html.erb: Special Transportation
 staff.html.erb: Transit Staff
 student_ft.html.md: Student Groups
-bus_tracker.html.md: PVTA Bus Tracker
+bus_tracker.html.md: Where's the Bus?
