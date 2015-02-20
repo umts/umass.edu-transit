@@ -23,3 +23,4 @@ staff.html.erb: Transit Staff
 student_ft.html.md: Student Groups
 bus_tracker.html.md: Find My Bus
 trip_planner.html.erb: Plan Trip
+news.html.erb: News and Alerts
