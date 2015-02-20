@@ -1,8 +1,6 @@
-**2014 Service Changes**: Click [here][changes] for a summary of service changes that took effect Tuesday, September 2nd, 2014.
+**2014 Service Changes:** Click [here][changes] for a summary of service changes that took effect Tuesday, September 2nd, 2014.
 
 **System Map:** Available on the [PVTA website][map].
-
-**Mobile Schedules**: [m.pvta.com][m]
 
 **PDF Schedules:** Maps and schedules are available at the [PVTA website][schedules], or by choosing from the list below.
 
@@ -51,7 +49,6 @@ and service area. Printed schedules are available on our buses, at the
 [schedules]: http://pvta.com/schedules.php
 [map]: http://pvta.com/systemMap.php
 [oldmaps]: maps.html
-[m]:    http://m.pvta.com/
 [news]: news.html
 [bus]:  buses.html
 [cal]:  calendar.html
