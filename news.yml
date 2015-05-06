@@ -54,22 +54,58 @@ description: >
   <a href="join_team.html">Join</a> the team that moves UMass!
 ---
 published: true
-posted: 2015-02-09T04:30
-start: 2015-02-09T04:30
-end: 2015-02-10T04:00
-title: "Winter Storm Monday, 2/9"
-link: "https://twitter.com/umasstransit"
+posted: 2015-05-06T04:30
+start: 2015-05-06T04:30
+end: 2015-05-16T04:00
+title: "Amherst College Finals"
+link: 
 description: >
-  Buses are running on a mid-semester holiday schedule because UMass is closed 
-  due to the snow storm:
-  <p><ul>
-    <li>Reduced Service: Routes 30, 31, 45, and 46.
-    <li>Full Service: Routes 33, 38, and 39.
-    <li>No Service : Routes 34 and 36.
-    <li>Holiday Service: Route 35.
-  </ul></p>
-  Check <a href="https://twitter.com/umasstransit">twitter</a> for detour 
-  updates throughout the day.
+  Route 38 is running limited service May 11 - 15:
+
+  <style>
+  table#schedule {
+    width: 90%;
+    font-size: 12px;
+    padding: 2px;
+    text-align: center;
+  }
+  </style>
+  <table id="schedule">
+    <tr>
+      <th>MHC</th>
+      <th>HC</th>
+      <th>AC</th>
+      <th>HC</th>
+      <th>MHC</th>
+    <tr>
+      <td>8:20 AM</td>
+      <td>8:35 AM</td>
+      <td>8:45 AM</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>12:15 PM</td>
+      <td>12:25 PM</td>
+      <td>12:40 PM</td>
+    </tr>
+    <tr>
+      <td>1:20 PM</td>
+      <td>1:35 PM</td>
+      <td>1:45 PM</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>5:15 PM</td>
+      <td>5:25 PM</td>
+      <td>5:40 PM</td>
+    </tr>
+  </table>
 ---
 published: true
 posted: 2015-03-13T09:00
