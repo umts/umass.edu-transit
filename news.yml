@@ -54,68 +54,34 @@ description: >
   <a href="join_team.html">Join</a> the team that moves UMass!
 ---
 published: true
-posted: 2015-05-06T04:30
-start: 2015-05-06T04:30
-end: 2015-05-16T04:00
-title: "Amherst College Finals"
+posted: 2015-06-10T09:00
+start: 2015-06-10T09:00
+end: 2015-06-22T19:30
+title: "Proposed Changes to Routes 45 and 46"
 link: 
 description: >
-  Route 38 is running limited service May 11 - 15:
-
-  <style>
-  table#schedule {
-    width: 90%;
-    font-size: 12px;
-    padding: 2px;
-    text-align: center;
-  }
-  </style>
-  <table id="schedule">
-    <tr>
-      <th>MHC</th>
-      <th>HC</th>
-      <th>AC</th>
-      <th>HC</th>
-      <th>MHC</th>
-    <tr>
-      <td>8:20 AM</td>
-      <td>8:35 AM</td>
-      <td>8:45 AM</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>-</td>
-      <td>-</td>
-      <td>12:15 PM</td>
-      <td>12:25 PM</td>
-      <td>12:40 PM</td>
-    </tr>
-    <tr>
-      <td>1:20 PM</td>
-      <td>1:35 PM</td>
-      <td>1:45 PM</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>-</td>
-      <td>-</td>
-      <td>5:15 PM</td>
-      <td>5:25 PM</td>
-      <td>5:40 PM</td>
-    </tr>
-  </table>
+  PVTA is holding public hearings about proposed changes to Routes 45 and 46:
+  <ul><li>Eliminate the trip at ~10 PM (due to low ridership)</li>
+  <li>Add a mid-morning trip at ~10-11 AM (due to a large schedule gap)</li>
+  </ul>
+  Details for the Belchertown hearing (June 18th): 
+  <ul><li><a href="http://www.pvta.com/media/pdfs/PublicHearingBTownJune2015.pdf">English PDF</a></li>
+  <li><a href="http://www.pvta.com/media/pdfs/PublicHearingsBTownJune2015SP.pdf">Spanish PDF</a></li>
+    </ul>
+  Details for the Amherst hearing (June 22nd): 
+  <ul><li><a href="http://www.pvta.com/media/pdfs/PublicHearingsAmherstJune2015.pdf">English PDF</a></li>
+  <li><a href="http://www.pvta.com/media/pdfs/PublicHearingsAmherstJune2015SP.pdf">Spanish PDF</a></li>
+    </ul> 
 ---
 published: true
-posted: 2015-03-13T09:00
-start: 2015-03-13T09:00
-end: 2015-03-22T04:00
-title: "Spring Break"
-link: "calendar.html"
+posted: 2015-06-08T09:00
+start: 2015-06-08T09:00
+end: 2016-01-01T04:00
+title: "GRC Bus Stop"
+link: 
 description: >
-  Most buses are operating on reduced schedule during Spring Break. See the 
-  <a href="calendar.html">calendar</a> for details. 
+  The UMass GRC bus stop has been moved approximately 400 hundred feet north 
+  (it's still on North Pleasant St).
 ---
 published: true
 posted: 2015-01-26T06:00
