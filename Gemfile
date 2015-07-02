@@ -1,10 +1,10 @@
 source "http://rubygems.org"
 
+gem "pry"
 gem "stasis"
 gem "redcarpet"
 gem "sass"
 gem "tzinfo"
 gem "uglifier"
-gem "therubyracer"
 gem "capistrano", "~> 2.0"
 gem "net-ssh", "~> 2.7.0"
