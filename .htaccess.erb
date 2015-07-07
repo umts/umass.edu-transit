@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^index.html$ http://umass.edu/transportation/transit [R,L]
+<% @redirects.each do |path, redirect_url| %>
+  RewriteRule ^<%= path %>$ <%= redirect_url %> [R,L]
+<% end %>

@@ -132,6 +132,31 @@ before "news.json" do
   instead output.to_json
 end
 
+before '.htaccess.erb' do
+  layout '.htaccess.erb'
+  @redirects = File.exist?('redirects.yml') ? YAML.load_file('redirects.yml') : {}
+  ignores = @_stasis.plugins.find { |p| p.is_a? Stasis::Ignore }.instance_variable_get(:@ignore).keys
+
+  # First strip out the ignores
+  paths = @_stasis.paths.reject do |path|
+    ignores.find { |i| path.match(i) }
+  end
+
+  # Now just include html and pdfs
+  paths.select! { |path| path =~ /\/[^\/]*\.(html|pdf)/ }
+
+  # Pull the root off the front and the parser extension off the back
+  paths.map! { |path| path.slice(@_stasis.root.length+1..-1).gsub(/\.(erb|md)$/, '') }
+
+  paths.each do |path|
+    @redirects[path] ||= 'http://umass.edu/transportation/transit'
+  end
+
+  File.open('redirects.yml', 'w') do |file|
+    file.write YAML.dump(@redirects)
+  end
+end
+
 #Call DateTime.parse on a string and return a rfc2822 formatted string which is
 #what most browsers' javascript would like to consume.  Treats all times as local
 #to 'America/New_York'
