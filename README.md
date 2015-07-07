@@ -105,8 +105,7 @@ Luckily, all "copy" needs is sftp access and "tar"/"gzip".
 For a similar reason, we need to have a `.htaccess` file at the root of
 the deployment location to rewrite requests into the `current/public`
 directory.  This file is created by Capistrano after you run the
-`deploy:setup` task.  There is also an `.htaccess` file within the project
-that keeps it from being an infinite rewrite loop.
+`deploy:setup` task.
 
 The project doesn't actually have a "real" `index.html` in it.  Instead,
 Capistrano sym-links index to another file on deploy.
