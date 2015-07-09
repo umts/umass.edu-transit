@@ -34,7 +34,7 @@ other_routes.html: http://umass.edu/transportation/route-schedules
 pdf/2010_Spring_Break_Posting.pdf: http://umass.edu/transportation/transit
 pdf/2012VoterShuttleSchedule.pdf: http://umass.edu/transportation/transit
 pdf/Amherst_250_Parade_Service_Change_Poster.pdf: http://umass.edu/transportation/transit
-pdf/CampusShuttle DetourMap.pdf: http://umass.edu/transportation/transit
+pdf/CampusShuttle%20DetourMap.pdf: http://umass.edu/transportation/transit
 pdf/Labor_Day_Schedule_2009.pdf: http://umass.edu/transportation/transit
 pdf/MP-worksession2final.pdf: http://umass.edu/transportation/transit
 pdf/Pats_day_posting.pdf: http://umass.edu/transportation/transit
@@ -46,7 +46,7 @@ pdf/VRB_Form_2009-11-09.pdf: http://umass.edu/transportation/sites/default/files
 pdf/Vehicle_Acquisition_form.pdf: http://umass.edu/transportation/sites/default/files/Vehicle_Acquisition_form.pdf
 pdf/Vehicle_Review_Board_Process.pdf: http://umass.edu/transportation/sites/default/files/Vehicle_Review_Board_Process.pdf
 pdf/Veterans_Day_Holiday_Posting.pdf: http://umass.edu/transportation/transit
-pdf/Voting Day Shuttle 2010.pdf: http://umass.edu/transportation/transit
+pdf/Voting%20Day%20Shuttle%202010.pdf: http://umass.edu/transportation/transit
 #pdf/application_bus.pdf: http://umass.edu/transportation/transit
 pdf/commencement_detour2009.pdf: http://umass.edu/transportation/transit
 pdf/finals_buses_2008.12.20.pdf: http://umass.edu/transportation/transit
@@ -88,4 +88,4 @@ slideshow.html: http://umass.edu/transportation/transit
 spectrans.html: http://umass.edu/transportation/special-transportation
 staff.html: http://umass.edu/transportation/staff
 student_ft.html: http://umass.edu/transportation/field-trip-services-0
-trip_planner.html: "https://www.google.com/maps/dir///@42.387585,-72.528648,13z/data=!4m2!4m1!3e3"
+trip_planner.html: https://www.google.com/maps/dir///@42.387585,-72.528648,13z/data=!4m2!4m1!3e3

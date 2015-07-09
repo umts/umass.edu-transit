@@ -146,7 +146,7 @@ before '.htaccess.erb' do
   paths.select! { |path| path =~ /\/[^\/]*\.(html|pdf)/ }
 
   # Pull the root off the front and the parser extension off the back
-  paths.map! { |path| path.slice(@_stasis.root.length+1..-1).gsub(/\.(erb|md)$/, '') }
+  paths.map! { |path| path.slice(@_stasis.root.length+1..-1).gsub(' ', '%20').gsub(/\.(erb|md)$/, '') }
 
   paths.each do |path|
     @redirects[path] ||= 'http://umass.edu/transportation/transit'
