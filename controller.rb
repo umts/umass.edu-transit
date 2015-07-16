@@ -136,6 +136,7 @@ before '.htaccess.erb' do
   layout '.htaccess.erb'
   @redirects = File.exist?('redirects.yml') ? YAML.load_file('redirects.yml') : {}
   ignores = @_stasis.plugins.find { |p| p.is_a? Stasis::Ignore }.instance_variable_get(:@ignore).keys
+  ignores_override = %w(channel.html jobapplication_bus.html meet_greet_form.html)
 
   # First strip out the ignores
   paths = @_stasis.paths.reject do |path|
@@ -149,7 +150,11 @@ before '.htaccess.erb' do
   paths.map! { |path| path.slice(@_stasis.root.length+1..-1).gsub(' ', '%20').gsub(/\.(erb|md)$/, '') }
 
   paths.each do |path|
-    @redirects[path] ||= 'http://umass.edu/transportation/transit'
+    if ignores_override.include? path
+      @redirects.delete path
+    else
+      @redirects[path] ||= 'http://umass.edu/transportation/transit'
+    end
   end
 
   File.open('redirects.yml', 'w') do |file|

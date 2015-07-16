@@ -1,6 +1,5 @@
 ---
 2014_service_changes.html: http://umass.edu/transportation/transit
-#bike_racks.html: http://umass.edu/transportation/transit
 bus_tracker.html: http://bustracker.pvta.com/infopoint
 buses.html: http://umass.edu/transportation/pvta-buses
 calendar.html: http://umass.edu/transportation/transit-calendar
@@ -23,11 +22,9 @@ ft_schoolbuses.html: http://umass.edu/transportation/school-bus
 ft_st_vans.html: http://umass.edu/transportation/wheelchair-accessible-van
 ft_vans.html: http://umass.edu/transportation/sprinter-vans
 index.html: http://umass.edu/transportation/transit
-jobapplication_bus.html: http://transit-jobapps.admin.umass.edu/bus
 join_team.html: http://umass.edu/transportation/bus-drivers
 maps.html: http://umass.edu/transportation/maps-and-directions
 meet_greet.html: http://umass.edu/transportation/meet-and-greet-service
-#meet_greet_form.html: http://umass.edu/transportation/transit
 meet_greet_sedans.html: http://umass.edu/transportation/sedan
 news.html: http://umass.edu/transportation/transit-news
 other_routes.html: http://umass.edu/transportation/route-schedules
@@ -89,3 +86,4 @@ spectrans.html: http://umass.edu/transportation/special-transportation
 staff.html: http://umass.edu/transportation/staff
 student_ft.html: http://umass.edu/transportation/field-trip-services-for-student-groups
 trip_planner.html: http://umass.edu/transportation/trip-planner
+bike_racks.html: http://umass.edu/transportation/bicycle-commute-program
