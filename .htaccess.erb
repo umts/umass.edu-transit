@@ -3,4 +3,9 @@ RewriteRule ^index.html$ http://umass.edu/transportation/transit [R=301,L]
 <% @redirects.each do |path, redirect_url| %>
   RewriteRule ^<%= path %>$ <%= redirect_url %> [R=301,L]
 <% end %>
-RewriteRule ^.*$ http://umass.edu/transportation/transit [R=301,L]
+RewriteRule ^/?$ http://umass.edu/transportation/transit [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule ^.*$ http://umass.edu/transportation/node/273 [R,L]
