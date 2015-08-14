@@ -136,7 +136,7 @@ before '.htaccess.erb' do
   layout '.htaccess.erb'
   @redirects = File.exist?('redirects.yml') ? YAML.load_file('redirects.yml') : {}
   ignores = @_stasis.plugins.find { |p| p.is_a? Stasis::Ignore }.instance_variable_get(:@ignore).keys
-  ignores_override = %w(channel.html jobapplication_bus.html meet_greet_form.html)
+  ignores_override = %w(channel.html)
 
   # First strip out the ignores
   paths = @_stasis.paths.reject do |path|
